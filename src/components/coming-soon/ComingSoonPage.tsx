@@ -22,6 +22,10 @@ export function ComingSoonPage() {
 
   return (
     <div className="relative flex min-h-screen flex-col overflow-x-hidden bg-background text-foreground">
+      <div
+        className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top,_color-mix(in_srgb,var(--vil-blue)_35%,transparent)_0%,transparent_55%)]"
+        aria-hidden
+      />
       <div className="paper-grain" aria-hidden />
 
       <div className="relative z-10 flex flex-1 flex-col">
@@ -30,7 +34,7 @@ export function ComingSoonPage() {
             initial={reduce ? false : { opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: EASE }}
-            className="font-display text-lg font-extrabold tracking-tight text-[color:var(--text-main)]"
+            className="font-display text-lg font-extrabold tracking-tight text-[color:var(--vil-navy)]"
           >
             VIIB
           </motion.div>
@@ -117,7 +121,11 @@ export function ComingSoonPage() {
                   <span
                     key={`${copy}-${i}`}
                     className={`whitespace-nowrap font-display text-xl font-bold uppercase tracking-tight md:text-2xl ${
-                      i % 2 === 0 ? "text-[color:var(--text-main)]" : "accent-text"
+                      i % 3 === 0
+                        ? "text-[color:var(--vil-navy)]"
+                        : i % 3 === 1
+                          ? "accent-text"
+                          : "text-[color:var(--vil-blue)]"
                     }`}
                   >
                     {item}

@@ -51,7 +51,7 @@ export function CountdownTimer() {
             className="date-stamp flex flex-col items-center px-6 py-8 text-center"
             aria-hidden
           >
-            <span className="font-display text-5xl font-extrabold tracking-tighter text-[color:var(--text-main)] md:text-6xl">
+            <span className="font-display text-5xl font-extrabold tracking-tighter text-[color:var(--vil-navy)] md:text-6xl">
               —
             </span>
             <span className="mt-2 editorial-label">{unit.label}</span>
@@ -71,7 +71,7 @@ export function CountdownTimer() {
       {UNITS.map((unit) => (
         <div key={unit.key} className="date-stamp flex flex-col items-center px-6 py-8 text-center">
           <div className="date-stamp__corner" />
-          <span className="font-display text-5xl font-extrabold tabular-nums tracking-tighter text-[color:var(--text-main)] md:text-6xl">
+          <span className="font-display text-5xl font-extrabold tabular-nums tracking-tighter text-[color:var(--vil-navy)] md:text-6xl">
             {String(timeLeft[unit.key]).padStart(2, "0")}
           </span>
           <span className="mt-2 editorial-label">{unit.label}</span>
