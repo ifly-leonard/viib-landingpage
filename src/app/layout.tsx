@@ -16,14 +16,15 @@ const interTight = Inter_Tight({
 });
 
 export const metadata: Metadata = {
-  title: "Vibe Coding: The Right Way - AI Product Workshop, Chennai",
+  title: "VIIB — Coming Soon | Varman Innovation Labs",
   description:
-    "A 4-hour hands-on workshop in Chennai with Hameed, Leo and Hari. Go from idea to product to customer using modern AI tools and proven startup thinking.",
+    "Something new is building. A product-first venture from Varman Innovation Labs — scalable products, platforms, and growth systems from India for the world. Launching August 15, 2026.",
   openGraph: {
-    title: "Vibe Coding: The Right Way",
+    title: "VIIB — Coming Soon",
     description:
-      "Build the right thing. Build it the right way. Take it to the right people. A 4-hour AI product workshop in Chennai.",
+      "Building venture-grade technology from India for the world. Launching August 15, 2026 from Varman Innovation Labs.",
     type: "website",
+    url: "https://varmaninnovationlabs.com",
   },
 };
 

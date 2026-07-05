@@ -1,5 +1,5 @@
-import { LandingPage } from "@/components/landing/LandingPage";
+import { ComingSoonPage } from "@/components/coming-soon/ComingSoonPage";
 
 export default function Page() {
-  return <LandingPage />;
+  return <ComingSoonPage />;
 }
