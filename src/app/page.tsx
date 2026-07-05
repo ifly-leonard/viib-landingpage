@@ -1,5 +1,5 @@
-import { ComingSoonPage } from "@/components/coming-soon/ComingSoonPage";
+import { ViivLandingPage } from "@/components/viiv/ViivLandingPage";
 
 export default function Page() {
-  return <ComingSoonPage />;
+  return <ViivLandingPage />;
 }

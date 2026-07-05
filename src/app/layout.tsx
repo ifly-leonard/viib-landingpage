@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Inter_Tight } from "next/font/google";
+import { Fraunces, Inter_Tight } from "next/font/google";
+
+import { siteMeta } from "@/content/homepage";
 
 import "../styles.css";
 
-const bricolage = Bricolage_Grotesque({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-display",
+  variable: "--font-serif",
   display: "swap",
 });
 
@@ -16,25 +18,18 @@ const interTight = Inter_Tight({
 });
 
 export const metadata: Metadata = {
-  title: "VIIB — Coming Soon | Varman Innovation Labs",
-  description:
-    "Something new is building. A product-first venture from Varman Innovation Labs — scalable products, platforms, and growth systems from India for the world. Launching August 15, 2026.",
+  title: "VIIV | Varman Institute of Venture Building",
+  description: siteMeta.oneLiner,
   openGraph: {
-    title: "VIIB — Coming Soon",
-    description:
-      "Building venture-grade technology from India for the world. Launching August 15, 2026 from Varman Innovation Labs.",
+    title: "VIIV — Earn the BBA. Build the venture. Graduate with proof.",
+    description: siteMeta.oneLiner,
     type: "website",
-    url: "https://varmaninnovationlabs.com",
   },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`${bricolage.variable} ${interTight.variable}`}
-      suppressHydrationWarning
-    >
+    <html lang="en" className={`${fraunces.variable} ${interTight.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased" suppressHydrationWarning>
         {children}
       </body>

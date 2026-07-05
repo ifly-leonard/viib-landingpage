@@ -6,7 +6,8 @@
 
 @theme inline {
   --font-sans: var(--font-sans), "Inter Tight", system-ui, sans-serif;
-  --font-display: var(--font-display), "Bricolage Grotesque", system-ui, sans-serif;
+  --font-serif: var(--font-serif), "Fraunces", Georgia, serif;
+  --font-display: var(--font-serif);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -47,13 +48,14 @@
   --vil-gold-dim: #bb8806;
   --vil-navy: #1f3149;
   --vil-blue: #b6c7e6;
+  --vil-ivory: #f5f3ee;
   --vil-surface: #ffffff;
-  --vil-surface-muted: #f4f4f4;
+  --vil-surface-muted: #ece8df;
   --vil-on-surface: #121414;
   --vil-on-surface-variant: #5c5f66;
   --vil-outline-variant: #c4c6ce;
 
-  --bg-main: var(--vil-surface);
+  --bg-main: var(--vil-ivory);
   --bg-section: var(--vil-surface-muted);
   --bg-card: var(--vil-surface);
   --text-main: var(--vil-on-surface);
@@ -106,7 +108,12 @@
   }
 
   .font-display {
-    font-family: var(--font-display);
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
     font-optical-sizing: auto;
   }
 
@@ -627,6 +634,97 @@
   .link-underline:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+  }
+
+  /* VIIV layout */
+  .viiv-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .viiv-section {
+    padding: 88px 0;
+  }
+
+  @media (max-width: 768px) {
+    .viiv-section {
+      padding: 64px 0;
+    }
+  }
+
+  .viiv-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+
+  .viiv-heading {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 4.5vw, 3.25rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--vil-navy);
+  }
+
+  .viiv-display {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 600;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    color: var(--vil-navy);
+  }
+
+  .viiv-card {
+    border: 1px solid color-mix(in srgb, var(--vil-navy) 10%, transparent);
+    border-radius: 1.25rem;
+    background: var(--vil-ivory);
+    transition:
+      transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .viiv-card:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--vil-gold) 35%, transparent);
+    box-shadow: 0 18px 40px color-mix(in srgb, var(--vil-navy) 8%, transparent);
+  }
+
+  .viiv-nav-link {
+    position: relative;
+  }
+
+  .viiv-nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1.5px;
+    background: var(--vil-gold);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  .viiv-nav-link:hover {
+    color: var(--vil-navy);
+  }
+
+  .viiv-nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .viiv-hero-panel {
+    position: relative;
+    min-height: 22rem;
+    box-shadow: 0 28px 80px color-mix(in srgb, var(--vil-navy) 18%, transparent);
   }
 }
 
