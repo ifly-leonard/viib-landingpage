@@ -12,11 +12,60 @@ export const siteMeta = {
 } as const;
 
 export const navigation = [
-  { href: "#program", label: "Program" },
-  { href: "#method", label: "Method" },
-  { href: "#outcomes", label: "Outcomes" },
-  { href: "#admissions", label: "Admissions" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/program", label: "Program" },
+  { href: "/campus", label: "Campus Life" },
+  { href: "/admissions", label: "Admissions" },
+  { href: "/about", label: "About" },
+] as const;
+
+export const heroWords = ["earn.", "build.", "prove."] as const;
+
+export const outcomeStats = [
+  { value: "3", label: "Years", detail: "Full-time venture-building college" },
+  { value: "BBA", label: "Degree", detail: "Online BBA from Kalasalingam University" },
+  { value: "₹8L", label: "All-in", detail: "Degree fee included for 3 years" },
+  { value: "0", label: "Entrance exams", detail: "Selection by fit and interview" },
+] as const;
+
+export const programPaths = [
+  {
+    title: "Degree + Venture Builder",
+    duration: "3 years · Full-time Chennai",
+    headline: "Become a builder with a recognized BBA",
+    description:
+      "Earn the degree while running venture sprints, campaigns, MVPs, and revenue experiments on campus every week.",
+    tag: "Core pathway",
+    tone: "gold" as const,
+  },
+  {
+    title: "Creator + Founder Track",
+    duration: "Embedded across program",
+    headline: "Build brands while building businesses",
+    description:
+      "Content systems, storytelling, distribution, and creator-led venture experiments for students who think in audience and product.",
+    tag: "Creator lane",
+    tone: "blue" as const,
+  },
+  {
+    title: "Operator + Placement Track",
+    duration: "Year 2 onward",
+    headline: "Graduate job-ready or startup-ready",
+    description:
+      "Sales, communication, research, project management, and portfolio proof for placements, internships, or family business.",
+    tag: "Career lane",
+    tone: "navy" as const,
+  },
+] as const;
+
+export const marqueePhrases = [
+  "VENTURE STUDIO",
+  "PITCH REVIEWS",
+  "BBA INCLUDED",
+  "CHENNAI CAMPUS",
+  "BUILD IN PUBLIC",
+  "MENTOR FEEDBACK",
+  "REAL MVPS",
+  "NO ENTRANCE EXAM",
 ] as const;
 
 export const heroContent = {
