@@ -21,6 +21,7 @@
   "registries": {
     "@aceternity": "https://ui.aceternity.com/registry/{name}.json",
     "@magicui": "https://magicui.design/r/{name}",
-    "@smoothui": "https://smoothui.dev/r/{name}.json"
+    "@smoothui": "https://smoothui.dev/r/{name}.json",
+    "@ogimagecn": "https://ogimagecn.vercel.app/r/{name}.json"
   }
 }

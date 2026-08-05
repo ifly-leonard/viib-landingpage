@@ -2,18 +2,21 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 
 import { Footer } from "@/components/viiv/Footer";
+import { FooterCtaProvider } from "@/components/viiv/FooterCtaContext";
 import { Header } from "@/components/viiv/Header";
 import { GridBackground } from "@/components/viiv/GridBackground";
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative min-h-screen overflow-x-clip bg-[color:var(--vil-ivory)] text-[color:var(--text-main)]">
-      <div className="relative z-10">
-        <Header />
-        <main>{children}</main>
-        <Footer />
+    <FooterCtaProvider>
+      <div className="relative min-h-screen overflow-x-clip bg-[color:var(--vil-ivory)] text-[color:var(--text-main)]">
+        <div className="relative z-10">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </div>
-    </div>
+    </FooterCtaProvider>
   );
 }
 

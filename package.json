@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "og:build": "node scripts/generate-og.mjs",
+    "push": "sh scripts/push.sh"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",

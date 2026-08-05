@@ -136,38 +136,38 @@ export const navItems: readonly NavItem[] = [
         {
           title: "Life at VIIV",
           description: "A full-time builder campus.",
-          href: "/campus",
+          href: "/campus-life/life-at-viiv",
           icon: "building",
         },
         {
           title: "Studios & Labs",
           description: "Where MVPs get built.",
-          href: "/campus",
+          href: "/campus-life/studios-and-labs",
           icon: "flask",
         },
         {
           title: "Demo Days",
           description: "Ship, pitch, get feedback.",
-          href: "/campus",
+          href: "/campus-life/demo-days",
           icon: "presentation",
         },
         {
           title: "Gallery",
           description: "Builder moments, documented.",
-          href: "/campus",
+          href: "/campus-life/gallery",
           icon: "images",
           badge: "New",
         },
         {
           title: "Community",
           description: "Founders, mentors, peers.",
-          href: "/campus",
+          href: "/campus-life/community",
           icon: "users",
         },
         {
           title: "Location",
           description: "In the heart of Chennai.",
-          href: "/campus",
+          href: "/campus-life/location",
           icon: "pin",
         },
       ],
@@ -177,7 +177,7 @@ export const navItems: readonly NavItem[] = [
           {
             title: "Campus brochure",
             description: "Download the PDF",
-            href: "/campus",
+            href: "/campus-life/campus-brochure",
             icon: "file",
           },
           {

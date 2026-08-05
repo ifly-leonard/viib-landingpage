@@ -1,7 +1,10 @@
+"use client";
+
 import Link from "next/link";
 
 import { GlyphMatrix } from "@/components/ui/glyph-matrix";
 import { CtaButton } from "@/components/viiv/CtaButton";
+import { useFooterCta } from "@/components/viiv/FooterCtaContext";
 import { footerContent, siteMeta } from "@/content/homepage";
 import { admissionsConfig } from "@/lib/admissions.config";
 
@@ -18,6 +21,7 @@ const admissionsLinks = [
 ] as const;
 
 export function Footer() {
+  const { footerCta: cta } = useFooterCta();
   const year = new Date().getFullYear();
 
   return (
@@ -37,28 +41,34 @@ export function Footer() {
             <div className="max-w-xl">
               <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[color:var(--vil-gold-dim)]">
                 <span className="h-px w-8 bg-[color:var(--vil-gold)]" />
-                {admissionsConfig.batchLabel} · admissions open
+                {cta ? cta.eyebrow : `${admissionsConfig.batchLabel} · admissions open`}
               </p>
               <h2 className="mt-5 text-[clamp(1.9rem,3.6vw,2.9rem)] font-bold leading-[1.08] tracking-tight text-[color:var(--vil-navy)]">
-                Earn the degree.
-                <br />
-                Build the venture.
+                {cta ? cta.headline : (
+                  <>
+                    Earn the degree.
+                    <br />
+                    Build the venture.
+                  </>
+                )}
               </h2>
               <p className="mt-4 max-w-md text-sm leading-relaxed text-[color:var(--text-muted)]">
-                {siteMeta.oneLiner}
+                {cta ? cta.description : siteMeta.oneLiner}
               </p>
             </div>
 
             <div className="flex flex-col items-start gap-4 md:items-end">
-              <CtaButton href={admissionsConfig.applyUrl} variant="gold">
-                Apply Now
+              <CtaButton href={cta ? cta.buttonHref : admissionsConfig.applyUrl} variant="gold">
+                {cta ? cta.buttonLabel : "Apply Now"}
               </CtaButton>
-              <a
-                href={footerContent.phoneHref}
-                className="text-sm font-semibold text-[color:var(--vil-navy)] transition-colors hover:text-[color:var(--vil-gold-dim)]"
-              >
-                {footerContent.phone}
-              </a>
+              {!cta ? (
+                <a
+                  href={footerContent.phoneHref}
+                  className="text-sm font-semibold text-[color:var(--vil-navy)] transition-colors hover:text-[color:var(--vil-gold-dim)]"
+                >
+                  {footerContent.phone}
+                </a>
+              ) : null}
             </div>
           </div>
         </div>

@@ -3,12 +3,15 @@ import Script from "next/script";
 
 import { AnalyticsScripts } from "@/components/viiv/AnalyticsScripts";
 import { siteMeta } from "@/content/homepage";
+import { latestOgImagePath, ogConfig } from "@/lib/og.config";
 
 import "../styles.css";
 import "./page-flip.css";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+
+const ogImagePath = latestOgImagePath();
 
 export const metadata: Metadata = {
   title: "VIIV | Varman Institute of Venture Building",
@@ -29,6 +32,11 @@ export const metadata: Metadata = {
     title: "VIIV — Earn the BBA. Build the venture. Graduate with proof.",
     description: siteMeta.oneLiner,
     type: "website",
+    images: [{ url: ogImagePath, width: ogConfig.width, height: ogConfig.height, alt: ogConfig.title }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [ogImagePath],
   },
 };
 

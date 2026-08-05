@@ -117,11 +117,83 @@ export const campusLocation = {
   eyebrow: "Getting here",
   headline: "Getting to the Campus",
   campusName: "VIIV Campus",
-  /** Only the address the project already contains — do not invent street details. */
-  address: "Chennai, India",
+  /** Exact campus address. */
+  address: "SSPDL Alpha City IT Park, No 25, Rajiv Gandhi Salai, Navalur, Chennai, Tamil Nadu 600130",
   directionsLabel: "Get Directions",
   /** Public maps link for the campus. */
   directionsHref: "https://maps.app.goo.gl/Ve2uxQRjechAZJx98",
+  /** Google Maps embed for the exact campus pin (SSPDL Alpha City IT Park, Navalur). */
+  mapsEmbedSrc:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124477.8944918235!2d80.07088379276564!3d12.847526253965082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525a50a54bde0b%3A0x565856a9ccaf6b3!2sSSPDL%20ALPHA%20CITY%20IT%20PARK!5e0!3m2!1sen!2sin!4v1785970873057!5m2!1sen!2sin",
+  /** Point-to-point journey instructions from the main transport hubs. */
+  routes: [
+    {
+      origin: "Chennai Central Railway Station",
+      originAddress: "Periamet, Jutkapuram, Park Town, Chennai, Tamil Nadu 600003",
+      travelTime: "51 min",
+      distance: "31.8 km",
+      via: "Rajiv Gandhi IT Expy — fastest route now due to traffic conditions",
+      steps: [
+        "Head toward Chennai–Thiruttani–Renigunta Hwy / Grand Northern Trunk Rd / Wall Tax Rd (restricted usage road) — 3 sec (8 m).",
+        "Take General Hospital Rd to Fort St George Flyover Bridge / Muthuswamy Rd — 2 min (750 m).",
+        "Drive along Anna Salai / Chennai–Trichy Hwy and Gandhi Mandapam Rd — 25 min (10.3 km).",
+        "Follow Rajiv Gandhi IT Expy to Egattur — 40 min (20.0 km).",
+        "Drive to your destination in Navalur — 4 min (750 m).",
+      ],
+    },
+    {
+      origin: "Chennai International Airport",
+      originAddress: "Airport Rd, Meenambakkam, Chennai, Tamil Nadu 600027",
+      travelTime: "50 min",
+      distance: "26.6 km",
+      via: "Rajiv Gandhi IT Expy / Rajiv Gandhi Salai",
+      steps: [
+        "Head toward Airport Rd — 54 sec (350 m).",
+        "Continue on Chennai–Nagapattinam Hwy / Grand Southern Trunk Rd, then drive from Pallavaram–Thuraipakkam Rd, 200 Feet Radial Rd and Rajiv Gandhi IT Expy to Egattur — 50 min (26.6 km).",
+        "Drive to your destination in Navalur — 4 min (750 m).",
+      ],
+    },
+    {
+      origin: "Koyambedu Bus Terminus (CMBT)",
+      originAddress: "Koyambedu, Chennai, Tamil Nadu 600107",
+      travelTime: "53 min",
+      distance: "33.0 km",
+      via: "Rajiv Gandhi IT Expy — fastest route now due to traffic conditions",
+      steps: [
+        "Drive from Jawaharlal Nehru Salai, Chennai–Trichy Hwy, Sardar Patel Rd and Rajiv Gandhi IT Expy to Egattur — 1 hr 9 min (32.2 km).",
+        "Drive to your destination in Navalur — 4 min (750 m).",
+      ],
+    },
+    {
+      origin: "Kilambakkam Bus Terminus",
+      originAddress: "Kilambakkam New Bus Stand, Kilambakkam, Tamil Nadu 600048",
+      travelTime: "42 min",
+      distance: "28.3 km",
+      via: "Kelambakkam–Vandalur Rd and Rajiv Gandhi IT Expy — fastest route, usual traffic",
+      steps: [
+        "Head toward NH Service Rd, pass by Dosa Plaza (on the left) — 2 min (400 m).",
+        "Follow Kelambakkam–Vandalur Rd and Rajiv Gandhi IT Expy / Rajiv Gandhi Salai to Chennai — 44 min (27.2 km).",
+        "Drive to your destination in Navalur — 4 min (750 m).",
+      ],
+    },
+  ] as const,
+  navigation: {
+    eyebrow: "Finding your way",
+    headline: "Navigating to the Campus",
+    steps: [
+      "Save the campus pin on your map app before you set out.",
+      "Most first-time visitors arrive by cab or auto — the campus gate is directly on the main road.",
+      "Look for the VIIV signage at the entrance; our team will greet you at the gate.",
+      "If you get lost, call admissions and we'll guide you in.",
+    ],
+  },
+  booking: {
+    eyebrow: "Plan your visit",
+    headline: "First-time visitors must book ahead",
+    body: "To make sure a team member is ready to welcome you, all first-time visits to campus require an advance booking. Students and returning visitors can walk in during campus hours.",
+    ctaLabel: "Book a Campus Visit",
+    ctaHref: "/campus-life/book-a-tour",
+  },
 } as const;
 
 export const campusVisitFaq = {

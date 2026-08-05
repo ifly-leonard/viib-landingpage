@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 import { Menu, Phone, X } from "lucide-react";
 
@@ -14,15 +15,22 @@ import { admissionsConfig } from "@/lib/admissions.config";
 import { cn } from "@/lib/utils";
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  // Only the home page starts in transparent/white mode; other pages
+  // start in the default (scrolled) colors immediately.
+  const isHome = pathname === "/";
+  const [scrolled, setScrolled] = useState(!isHome);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    if (isHome) {
+      const onScroll = () => setScrolled(window.scrollY > 8);
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+      return () => window.removeEventListener("scroll", onScroll);
+    }
+    setScrolled(true);
+  }, [isHome]);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
