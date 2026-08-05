@@ -22,4 +22,6 @@ else
   echo "push: committed new OG images."
 fi
 
-git push "$@"
+# --no-verify: we already generated + committed; skip the pre-push hook so it
+# doesn't run again (avoids double generation and the inner-push race).
+git push --no-verify "$@"

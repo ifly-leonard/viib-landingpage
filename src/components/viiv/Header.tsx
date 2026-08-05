@@ -8,6 +8,7 @@ import { Menu, Phone, X } from "lucide-react";
 
 import { AnnouncementBar } from "@/components/viiv/AnnouncementBar";
 import { CtaButton } from "@/components/viiv/CtaButton";
+import { useLeadModal } from "@/components/viiv/LeadModalContext";
 import { MobileNav } from "@/components/viiv/MobileNav";
 import { NavMenu } from "@/components/viiv/NavMenu";
 import { siteMeta } from "@/content/homepage";
@@ -16,6 +17,7 @@ import { cn } from "@/lib/utils";
 
 export function Header() {
   const pathname = usePathname();
+  const { openLeadModal } = useLeadModal();
   // Only the home page starts in transparent/white mode; other pages
   // start in the default (scrolled) colors immediately.
   const isHome = pathname === "/";
@@ -84,6 +86,18 @@ export function Header() {
               <Phone className="h-4 w-4" />
               {admissionsConfig.admissionsPhone}
             </a>
+            <button
+              type="button"
+              onClick={openLeadModal}
+              className={cn(
+                "inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold transition-colors",
+                scrolled
+                  ? "text-[color:var(--vil-navy)] hover:text-[color:var(--vil-gold-dim)]"
+                  : "text-[color:var(--vil-ivory)] hover:text-[color:var(--vil-gold)]",
+              )}
+            >
+              Talk to us
+            </button>
             <CtaButton href="/admissions#apply" variant="navy" className="px-5 py-2">
               Apply Now
             </CtaButton>
@@ -139,6 +153,16 @@ export function Header() {
         </div>
         <MobileNav onNavigate={() => setOpen(false)} />
         <div className="mt-6 flex flex-col gap-3 border-t border-[color:var(--border)] pt-5">
+          <button
+            type="button"
+            onClick={() => {
+              setOpen(false);
+              openLeadModal();
+            }}
+            className="inline-flex w-full items-center justify-center rounded-full border border-[color:var(--vil-navy)]/20 px-5 py-3.5 text-sm font-semibold text-[color:var(--vil-navy)] transition-colors hover:bg-[color:var(--vil-navy)]/[0.04]"
+          >
+            Talk to us
+          </button>
           <CtaButton
             href="/admissions#apply"
             variant="navy"
