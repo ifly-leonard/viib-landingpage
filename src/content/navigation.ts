@@ -200,19 +200,19 @@ export const navItems: readonly NavItem[] = [
         {
           title: "How to apply",
           description: "No entrance exam — apply in minutes.",
-          href: "/admissions#apply",
+          href: "/admissions/how-to-apply",
           icon: "clipboard",
         },
         {
           title: "Eligibility",
           description: "12th pass and ready to build.",
-          href: "/admissions",
+          href: "/admissions/eligibility",
           icon: "badge",
         },
         {
           title: "Fees & scholarships",
           description: "₹8L all-in, scholarships available.",
-          href: "/admissions",
+          href: "/admissions/fees-and-scholarships",
           icon: "wallet",
           badge: "New",
         },

@@ -3,12 +3,13 @@
  * Generate versioned Open Graph images into `public/og/`.
  *
  * How it works:
- *  1. Boots the Next.js dev server on an ephemeral port (unless one is already
- *     running on NEXT_OG_DEV_PORT).
- *  2. Requests the `/og` route for every variant in `variants`.
- *  3. Writes the PNG to `public/og/<basename>-<stamp>.png` (versioned), or
+ *  1. If a Next.js dev server is already running (detected via the
+ *     `.next/dev/lock` file, or an explicit NEXT_OG_DEV_PORT), reuse it.
+ *  2. Otherwise boot a fresh dev server on a free port.
+ *  3. Request the `/og` route for every variant and save the PNGs to
+ *     `public/og/<basename>-<stamp>.png` (versioned), or
  *     `public/og/<basename>.png` when versioning is off.
- *  4. Prints the produced paths so a pre-push hook can `git add` them.
+ *  4. Print the produced paths so a pre-push hook can `git add` them.
  *
  * Env:
  *  - OG_BUILD_STAMP   Override the datetime stamp (or "off" to disable).
@@ -16,14 +17,12 @@
  */
 
 import { spawn } from "node:child_process";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { createServer } from "node:net";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-
-// Pick an ephemeral port unless one is supplied via env.
-const port = Number(process.env.NEXT_OG_DEV_PORT) || 3100 + Math.floor(Math.random() * 900);
 
 function defaultBuildStamp() {
   const now = new Date();
@@ -54,13 +53,42 @@ const variants = [
   {
     name: "default",
     params: {
-      title:
-        "Earn the degree. Build the venture. Graduate with proof.",
+      title: "Earn the degree. Build the venture. Graduate with proof.",
       credit: "VIIV — Varman Institute of Venture Building",
       ghost: "VIIV",
     },
   },
 ];
+
+/** Find a free TCP port by asking the OS for one. */
+function findFreePort() {
+  return new Promise((resolvePort, rejectPort) => {
+    const srv = createServer();
+    srv.unref();
+    srv.on("error", rejectPort);
+    srv.listen(0, "127.0.0.1", () => {
+      const address = srv.address();
+      const port = typeof address === "object" && address ? address.port : 0;
+      srv.close(() => resolvePort(port));
+    });
+  });
+}
+
+/**
+ * Read the Next.js dev-server lock file to find an already-running dev server.
+ * Returns the port, or null if no lock exists / it can't be parsed.
+ */
+async function findRunningDevServerPort() {
+  try {
+    const lock = JSON.parse(
+      await readFile(resolve(root, ".next/dev/lock"), "utf8"),
+    );
+    if (typeof lock?.port === "number" && lock.port > 0) return lock.port;
+  } catch {
+    // No lock file — no running dev server.
+  }
+  return null;
+}
 
 async function fetchPng(url) {
   const res = await fetch(url);
@@ -70,9 +98,9 @@ async function fetchPng(url) {
   return Buffer.from(await res.arrayBuffer());
 }
 
-function startDevServer() {
+function startDevServer(port) {
   const nextBin = resolve(root, "node_modules/.bin/next");
-  const child = spawn(nextBin, ["dev", "-p", String(port)], {
+  const child = spawn(nextBin, ["dev", "-p", String(port), "-H", "127.0.0.1"], {
     cwd: root,
     env: { ...process.env, NODE_ENV: "development" },
     stdio: ["ignore", "pipe", "pipe"],
@@ -82,7 +110,6 @@ function startDevServer() {
   child.stderr?.on("data", (d) => (wrapper.logs += d.toString()));
   child.on("error", (err) => {
     wrapper.logs += `\n[spawn error] ${err.message}`;
-    console.error(`[spawn error] ${err.message}`);
   });
   child.on("exit", (code, signal) => {
     wrapper.logs += `\n[child exited code=${code} signal=${signal}]`;
@@ -124,15 +151,24 @@ async function main() {
   const stamp = config.buildStamp;
   const versioned = config.versioned;
 
-  // Reuse an existing dev server if the port env points at one.
+  // 1. Prefer an explicit port, then a running dev server, then boot our own.
   let server = null;
   let baseUrl = "";
-  if (process.env.NEXT_OG_DEV_PORT) {
-    baseUrl = `http://localhost:${process.env.NEXT_OG_DEV_PORT}`;
+
+  const explicitPort = Number(process.env.NEXT_OG_DEV_PORT);
+  const runningPort =
+    Number.isInteger(explicitPort) && explicitPort > 0
+      ? explicitPort
+      : await findRunningDevServerPort();
+
+  if (runningPort) {
+    baseUrl = `http://127.0.0.1:${runningPort}`;
+    console.log(`Reusing running dev server at ${baseUrl}`);
   } else {
-    server = startDevServer();
+    const port = await findFreePort();
+    server = startDevServer(port);
     await waitForReady(server);
-    baseUrl = `http://localhost:${port}`;
+    baseUrl = `http://127.0.0.1:${port}`;
   }
 
   const produced = [];
@@ -152,8 +188,7 @@ async function main() {
   } finally {
     if (server) {
       server.child.kill("SIGTERM");
-      // Give the child a moment to flush, then surface any logs on failure.
-      await new Promise((r) => setTimeout(r, 500));
+      await new Promise((r) => setTimeout(r, 300));
       if (server.logs) console.error(`[dev server output]\n${server.logs}`);
     }
   }
