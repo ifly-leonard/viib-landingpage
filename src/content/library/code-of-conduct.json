@@ -1,0 +1,31 @@
+{
+  "slug": "code-of-conduct",
+  "title": "Code of Conduct",
+  "label": "Code of Conduct",
+  "author": "The VIIV Community Council",
+  "description": "The values and standards that keep our builder community safe and honest.",
+  "color": "#bb8806",
+  "textColor": "#1f3149",
+  "variant": "stripe",
+  "coverImage": "/cover/cover_3_hackathon.png",
+  "chapters": [
+    {
+      "slug": "respect-and-safety",
+      "title": "Respect and Safety",
+      "description": "A space where every builder can take risks.",
+      "body": "Every builder deserves a space where they can take risks. Harassment, discrimination, and intimidation have no place on campus.\n\nIf you see something that makes someone unsafe, say something. Reporting is a responsibility, not a betrayal. Every report is handled seriously, confidentially, and without retaliation."
+    },
+    {
+      "slug": "honesty-in-work",
+      "title": "Honesty in Work",
+      "description": "Credit others, report real numbers, build your own.",
+      "body": "Credit others for their ideas, report your real numbers, and never pass off someone else's build as your own.\n\nThe point of a portfolio is proof — and proof only counts if it is true. When in doubt about whether to credit someone, credit them."
+    },
+    {
+      "slug": "community-care",
+      "title": "Community Care",
+      "description": "The community is as strong as the builders who look out for one another.",
+      "body": "When you see a problem, speak up. The community is only as strong as the builders who look out for one another.\n\nCelebrate wins loudly and give feedback generously. A builder community that cares for its own will outlast any single project, cohort, or demo day."
+    }
+  ]
+}

@@ -183,7 +183,7 @@ export const navItems: readonly NavItem[] = [
           {
             title: "Book a tour",
             description: "Visit in person",
-            href: "/admissions#apply",
+            href: "/campus-life/book-a-tour",
             icon: "compass",
           },
         ],
@@ -219,7 +219,7 @@ export const navItems: readonly NavItem[] = [
         {
           title: "Book a visit",
           description: "Tour the Chennai campus.",
-          href: "/admissions#apply",
+          href: "/campus-life/book-a-tour",
           icon: "pin",
         },
       ],

@@ -212,7 +212,7 @@ function GridLayout({
           </div>
 
           <Link
-            href="/campus"
+            href="/library/student-handbook"
             className="group mt-3 flex items-center gap-3.5 rounded-xl border border-[color:var(--border)] bg-[color:var(--vil-surface)] p-3 transition-colors duration-200 hover:border-[color:var(--vil-gold)]/45"
           >
             <div className="w-[68px] shrink-0">

@@ -38,7 +38,7 @@ export const heroSlides: readonly HeroSlide[] = [
       "Venture studios, mentor reviews, demo days, and a founder community — a full-time offline environment where you ship work every week.",
     image: "/cover/cover_2_topview_sspdl.png",
     primary: { label: "See Campus Life", href: "/campus" },
-    secondary: { label: "Book a Visit", href: "/admissions#apply" },
+    secondary: { label: "Book a Visit", href: "/campus-life/book-a-tour" },
   },
   {
     id: "admissions",

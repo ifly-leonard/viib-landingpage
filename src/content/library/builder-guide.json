@@ -1,0 +1,31 @@
+{
+  "slug": "builder-guide",
+  "title": "Builder Guide",
+  "label": "Builder Guide",
+  "author": "The VIIV Venture Team",
+  "description": "The playbook for shipping ventures — from first sprint to demo day.",
+  "color": "#f7bd44",
+  "textColor": "#1f3149",
+  "variant": "simple",
+  "coverImage": "/cover/cover_2_topview_sspdl.png",
+  "chapters": [
+    {
+      "slug": "start-with-the-problem",
+      "title": "Start with the Problem",
+      "description": "Every venture begins with a problem worth solving.",
+      "body": "Every venture begins with a problem worth solving. Interview users before you write a line of code or design a logo.\n\nTalk to at least ten people who live with the problem every day. Ask what they do today, what they have tried, and what it costs them. The pattern will surface — and it will be different from your first guess.\n\nWrite the problem statement in one sentence. If you cannot, you have not understood it yet."
+    },
+    {
+      "slug": "ship-in-sprints",
+      "title": "Ship in Sprints",
+      "description": "One week, one slice, one metric.",
+      "body": "One week, one slice of the product, one metric. A shipped MVP beats a polished deck, every single time.\n\nDefine the smallest slice that tests your riskiest assumption, then build it with the tools you know. You will learn more from a scrappy prototype in the hands of real users than from months of planning.\n\nMeasure one number, and make it visible to the whole team."
+    },
+    {
+      "slug": "prove-it-at-demo-day",
+      "title": "Prove It at Demo Day",
+      "description": "Bring a live product, real numbers, and lessons learned.",
+      "body": "Demo day is where you show traction, not slides. Bring a live product, real numbers, and the lessons you learned shipping it.\n\nStructure your demo like a story: the problem, what you built, what happened when real people used it, and what you will do next. Confidence comes from evidence, not enthusiasm.\n\nEnd with the single question you need answered to keep going."
+    }
+  ]
+}

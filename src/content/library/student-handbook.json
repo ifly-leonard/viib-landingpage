@@ -1,0 +1,31 @@
+{
+  "slug": "student-handbook",
+  "title": "Student Handbook",
+  "label": "Student Handbook",
+  "author": "The VIIV Campus Team",
+  "description": "Everything you need to know about life, learning, and expectations on campus.",
+  "color": "#1f3149",
+  "textColor": "#1f3149",
+  "variant": "stripe",
+  "coverImage": "/cover/cover_1.png",
+  "chapters": [
+    {
+      "slug": "welcome-to-campus",
+      "title": "Welcome to Campus",
+      "description": "Your first weeks are about finding your bearings.",
+      "body": "Your first weeks are about finding your bearings — rooms, routines, and the people who will become your builders for the next three years.\n\nWalk the campus, learn the studio hours, and introduce yourself to at least one mentor in your first week. The sooner you settle in, the sooner the building starts.\n\nBring your questions, bring your ideas, and expect to be challenged. This is a place where being new is an advantage — you see the campus with fresh eyes, and that is exactly what we want."
+    },
+    {
+      "slug": "learning-rhythm",
+      "title": "Learning Rhythm",
+      "description": "Mornings for learning, afternoons for studio time.",
+      "body": "Mornings are for structured learning, afternoons for studio time. Expect weekly sprints, mentor reviews, and a demo day at the end of every cycle.\n\nEach cycle ends with a demo where you present what you shipped. The rhythm is deliberate: learn a little, build a little, show it, and start again."
+    },
+    {
+      "slug": "living-the-values",
+      "title": "Living the Values",
+      "description": "The standards that keep campus safe and honest.",
+      "body": "Show up on time, ship what you say you will, and treat every critique as fuel. This handbook sets the standards that keep campus safe and honest.\n\nRespect, honesty, and care are not posters on a wall — they are the daily decisions each builder makes. When in doubt, choose the action that keeps the community stronger."
+    }
+  ]
+}
