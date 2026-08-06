@@ -20,6 +20,11 @@ const admissionsLinks = [
   { href: "/admissions/fees-and-scholarships", label: "Fees & scholarships" },
 ] as const;
 
+const legalLinks = [
+  { href: "/terms-and-conditions", label: "Terms & Conditions" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
+] as const;
+
 export function Footer() {
   const { footerCta: cta } = useFooterCta();
   const year = new Date().getFullYear();
@@ -74,7 +79,7 @@ export function Footer() {
         </div>
 
         {/* Link columns */}
-        <div className="mt-16 grid gap-12 md:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
+        <div className="mt-16 grid gap-12 md:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr_1fr]">
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -97,6 +102,7 @@ export function Footer() {
 
           <FooterColumn title="Explore" links={exploreLinks} />
           <FooterColumn title="Admissions" links={admissionsLinks} />
+          <FooterColumn title="Legal" links={legalLinks} />
 
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--text-soft)]">

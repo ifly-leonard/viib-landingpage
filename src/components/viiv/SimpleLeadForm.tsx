@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ArrowRight, Loader2 } from "lucide-react";
 
 import { Input } from "@/components/ui/input";
@@ -94,7 +95,15 @@ export function SimpleLeadForm({
       </button>
 
       <p className="text-center text-[11px] leading-relaxed text-[color:var(--text-soft)]">
-        We&apos;ll email you the download link — no spam.
+        By filling out this form, I agree to the{" "}
+        <Link href="/terms-and-conditions" className="font-semibold underline underline-offset-2 hover:text-[color:var(--vil-navy)]">
+          Terms and Conditions
+        </Link>{" "}
+        and{" "}
+        <Link href="/privacy-policy" className="font-semibold underline underline-offset-2 hover:text-[color:var(--vil-navy)]">
+          Privacy Policy
+        </Link>{" "}
+        of VIIV India. We&apos;ll email you the download link — no spam.
       </p>
     </form>
   );

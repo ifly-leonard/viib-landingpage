@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import { ArrowLeft, ArrowRight, Loader2, RefreshCw } from "lucide-react";
 
@@ -228,7 +229,15 @@ export function LeadForm({
               </motion.div>
 
               <motion.p variants={formItem} className="text-center text-[11px] leading-relaxed text-[color:var(--text-soft)]">
-                By continuing, you agree to be contacted by VIIV about admissions.
+                By filling out this form, I agree to the{" "}
+                <Link href="/terms-and-conditions" className="font-semibold underline underline-offset-2 hover:text-[color:var(--vil-navy)]">
+                  Terms and Conditions
+                </Link>{" "}
+                and{" "}
+                <Link href="/privacy-policy" className="font-semibold underline underline-offset-2 hover:text-[color:var(--vil-navy)]">
+                  Privacy Policy
+                </Link>{" "}
+                of VIIV India and agree to be contacted about admissions.
               </motion.p>
             </motion.form>
           ) : (
@@ -278,6 +287,18 @@ export function LeadForm({
                   </>
                 )}
               </button>
+
+              <p className="text-center text-[11px] leading-relaxed text-[color:var(--text-soft)]">
+                By filling out this form, I agree to the{" "}
+                <Link href="/terms-and-conditions" className="font-semibold underline underline-offset-2 hover:text-[color:var(--vil-navy)]">
+                  Terms and Conditions
+                </Link>{" "}
+                and{" "}
+                <Link href="/privacy-policy" className="font-semibold underline underline-offset-2 hover:text-[color:var(--vil-navy)]">
+                  Privacy Policy
+                </Link>{" "}
+                of VIIV India.
+              </p>
 
               <div className="flex items-center justify-between text-xs">
                 <button
