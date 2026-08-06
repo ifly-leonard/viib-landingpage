@@ -23,9 +23,9 @@ export const heroSlides: readonly HeroSlide[] = [
     eyebrow: "Degree + Venture Builder",
     title: "Earn a recognized BBA while building real ventures.",
     subcopy:
-      "A 3-year, full-time venture college in Chennai. Earn an online BBA from Kalasalingam University while you build startups, brands, and products on campus.",
+      "A 3-year, full-time venture college in Chennai. Earn an online BBA while you build startups, brands, and products on campus.",
     image: "/cover/cover_1.png",
-    primary: { label: "Apply Now", href: "/admissions#apply" },
+    primary: { label: "Apply Now", href: "/admissions/how-to-apply" },
     secondary: { label: "Explore Program", href: "/program" },
   },
   {
@@ -49,7 +49,7 @@ export const heroSlides: readonly HeroSlide[] = [
     subcopy:
       "Admission is based on 12th-pass eligibility and a student-plus-parent interview. We look for seriousness, curiosity, and readiness to build.",
     image: "/cover/cover_3_hackathon.png",
-    primary: { label: "Start Application", href: "/admissions#apply" },
+    primary: { label: "Start Application", href: "/admissions/how-to-apply" },
     secondary: { label: "Talk to Admissions", href: "tel:+919629628389" },
   },
   {
@@ -62,6 +62,6 @@ export const heroSlides: readonly HeroSlide[] = [
       "Ventures, MVPs, campaigns, pitch decks, and mentor feedback — evidence that opens doors to placements, internships, or your own company.",
     image: "/cover/cover_4_classroom.png",
     primary: { label: "See Outcomes", href: "/program" },
-    secondary: { label: "Apply Now", href: "/admissions#apply" },
+    secondary: { label: "Apply Now", href: "/admissions/how-to-apply" },
   },
 ] as const;

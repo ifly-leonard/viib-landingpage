@@ -566,7 +566,7 @@ export default function UiGuideComponentsPage() {
               <AccordionItem value="a1">
                 <AccordionTrigger>Is this a degree program?</AccordionTrigger>
                 <AccordionContent className="text-[color:var(--text-muted)]">
-                  Yes — students earn an online BBA from Kalasalingam University while attending VIIV
+                  Yes — students earn an online BBA while attending VIIV
                   full-time in Chennai.
                 </AccordionContent>
               </AccordionItem>
@@ -719,7 +719,7 @@ export default function UiGuideComponentsPage() {
                       Online BBA, on the side
                     </h3>
                     <p className="mt-2 text-sm text-[color:var(--text-muted)]">
-                      Earn an accredited degree from Kalasalingam University while you build full-time.
+                      Earn an accredited online degree while you build full-time.
                     </p>
                   </div>
                 </div>
@@ -809,7 +809,7 @@ export default function UiGuideComponentsPage() {
                     </BreadcrumbItem>
                     <BreadcrumbSeparator className="text-[color:var(--vil-gold-dim)]">/</BreadcrumbSeparator>
                     <BreadcrumbItem>
-                      <BreadcrumbLink href="/admissions">Admissions</BreadcrumbLink>
+                      <BreadcrumbLink href="/admissions/how-to-apply">Admissions</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator className="text-[color:var(--vil-gold-dim)]">/</BreadcrumbSeparator>
                     <BreadcrumbItem>
@@ -1016,9 +1016,9 @@ export default function UiGuideComponentsPage() {
                   <Button variant="link">Hover me</Button>
                 </HoverCardTrigger>
                 <HoverCardContent>
-                  <p className="text-sm font-semibold">Kalasalingam University</p>
+                  <p className="text-sm font-semibold">Recognized University</p>
                   <p className="mt-1 text-sm text-[color:var(--text-muted)]">
-                    Accredited partner for the online BBA.
+                    University partner for the online BBA.
                   </p>
                 </HoverCardContent>
               </HoverCard>

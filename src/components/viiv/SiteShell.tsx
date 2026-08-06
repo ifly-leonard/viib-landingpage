@@ -4,6 +4,8 @@ import { Phone } from "lucide-react";
 import { Footer } from "@/components/viiv/Footer";
 import { FooterCtaProvider } from "@/components/viiv/FooterCtaContext";
 import { Header } from "@/components/viiv/Header";
+import { LeadMagnetModal } from "@/components/viiv/LeadMagnetModal";
+import { LeadMagnetProvider } from "@/components/viiv/LeadMagnetContext";
 import { LeadModal } from "@/components/viiv/LeadModal";
 import { LeadModalProvider } from "@/components/viiv/LeadModalContext";
 import { GridBackground } from "@/components/viiv/GridBackground";
@@ -12,14 +14,17 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <FooterCtaProvider>
       <LeadModalProvider>
-        <div className="relative min-h-screen overflow-x-clip bg-[color:var(--vil-ivory)] text-[color:var(--text-main)]">
-          <div className="relative z-10">
-            <Header />
-            <main>{children}</main>
-            <Footer />
+        <LeadMagnetProvider>
+          <div className="relative min-h-screen overflow-x-clip bg-[color:var(--vil-ivory)] text-[color:var(--text-main)]">
+            <div className="relative z-10">
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </div>
           </div>
-        </div>
-        <LeadModal />
+          <LeadModal />
+          <LeadMagnetModal />
+        </LeadMagnetProvider>
       </LeadModalProvider>
     </FooterCtaProvider>
   );
@@ -53,7 +58,7 @@ export function PageHero({
 
 export function ApplyButton({ className = "" }: { className?: string }) {
   return (
-    <Link href="/admissions#apply" className={`btn-primary ${className}`}>
+    <Link href="/admissions/how-to-apply" className={`btn-primary ${className}`}>
       Apply Now
     </Link>
   );

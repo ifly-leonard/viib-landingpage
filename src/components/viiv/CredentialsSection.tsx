@@ -33,7 +33,7 @@ function CertificateCard({ item }: { item: CredentialGalleryItem }) {
         <div className="flex items-start justify-between gap-4">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/partners/kalasalingam_university.png"
+            src="/brand/logo_main.png"
             alt=""
             className="h-9 w-auto max-w-[7rem] object-contain object-left"
           />
@@ -44,7 +44,7 @@ function CertificateCard({ item }: { item: CredentialGalleryItem }) {
 
         <div className="mt-8 text-center">
           <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[color:var(--vil-gold-dim)]">
-            Kalasalingam University
+            Recognized University
           </p>
           <h3 className="mt-4 font-display text-[clamp(1.1rem,2.4vw,1.45rem)] font-bold uppercase leading-[1.12] tracking-tight">
             {item.sampleTitle}
@@ -146,13 +146,6 @@ export function CredentialsSection() {
               src="/brand/logo_full.png"
               alt="VIIV"
               className="h-14 w-auto object-contain md:h-16"
-            />
-            <span className="text-lg font-semibold text-[color:var(--vil-navy)]/30">×</span>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/partners/kalasalingam_university.png"
-              alt="Kalasalingam University"
-              className="h-11 w-auto object-contain md:h-12"
             />
           </div>
         </Reveal>

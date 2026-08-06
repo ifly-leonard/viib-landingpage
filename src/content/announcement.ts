@@ -5,6 +5,6 @@ export const announcement = {
   cta: {
     label: "Apply Now",
     // Always check if this route is correct.
-    href: "/admissions#apply",
+    href: "/admissions/how-to-apply",
   },
 } as const;

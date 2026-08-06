@@ -45,13 +45,13 @@
     "@react-three/fiber": "^9.6.1",
     "@react-three/rapier": "^2.2.0",
     "@tabler/icons-react": "^3.44.0",
-    "@vuvandinh203/react-flipbook": "^1.0.2",
     "canvas-confetti": "^1.9.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
+    "flipbook-js": "^1.1.1",
     "gsap": "^3.15.0",
     "input-otp": "^1.4.2",
     "jspdf": "^4.2.1",
@@ -75,14 +75,14 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.3.2",
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "20.19.43",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.3.2",
     "typescript": "5.9.3"
   }
 }

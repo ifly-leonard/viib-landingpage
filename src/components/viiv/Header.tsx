@@ -7,7 +7,6 @@ import { motion } from "motion/react";
 import { Menu, Phone, X } from "lucide-react";
 
 import { AnnouncementBar } from "@/components/viiv/AnnouncementBar";
-import { CtaButton } from "@/components/viiv/CtaButton";
 import { useLeadModal } from "@/components/viiv/LeadModalContext";
 import { MobileNav } from "@/components/viiv/MobileNav";
 import { NavMenu } from "@/components/viiv/NavMenu";
@@ -90,17 +89,12 @@ export function Header() {
               type="button"
               onClick={openLeadModal}
               className={cn(
-                "inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold transition-colors",
-                scrolled
-                  ? "text-[color:var(--vil-navy)] hover:text-[color:var(--vil-gold-dim)]"
-                  : "text-[color:var(--vil-ivory)] hover:text-[color:var(--vil-gold)]",
+                "group relative inline-flex w-auto cursor-pointer items-center justify-center overflow-hidden rounded-full border px-5 py-2 text-center text-sm font-semibold transition-colors",
+                "border-transparent bg-[color:var(--vil-navy)] text-[color:var(--vil-ivory)] hover:bg-[color:var(--vil-navy)]/90",
               )}
             >
-              Talk to us
-            </button>
-            <CtaButton href="/admissions#apply" variant="navy" className="px-5 py-2">
               Apply Now
-            </CtaButton>
+            </button>
           </div>
 
           <button
@@ -159,18 +153,10 @@ export function Header() {
               setOpen(false);
               openLeadModal();
             }}
-            className="inline-flex w-full items-center justify-center rounded-full border border-[color:var(--vil-navy)]/20 px-5 py-3.5 text-sm font-semibold text-[color:var(--vil-navy)] transition-colors hover:bg-[color:var(--vil-navy)]/[0.04]"
-          >
-            Talk to us
-          </button>
-          <CtaButton
-            href="/admissions#apply"
-            variant="navy"
-            className="w-full px-5 py-3"
-            onClick={() => setOpen(false)}
+            className="inline-flex w-full items-center justify-center rounded-full bg-[color:var(--vil-navy)] px-5 py-3.5 text-sm font-bold text-[color:var(--vil-ivory)] transition-colors hover:bg-[color:var(--vil-navy)]/90"
           >
             Apply Now
-          </CtaButton>
+          </button>
           <a
             href={admissionsConfig.admissionsPhoneHref}
             className="inline-flex items-center justify-center gap-2 rounded-full border border-[color:var(--border)] px-5 py-3.5 text-sm font-medium text-[color:var(--vil-navy)]"

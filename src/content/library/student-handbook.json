@@ -7,25 +7,141 @@
   "color": "#1f3149",
   "textColor": "#1f3149",
   "variant": "stripe",
-  "coverImage": "/cover/cover_1.png",
+  "coverImage": "/cover/book-student-handbook.png",
+  "gate": {
+    "afterPage": 4,
+    "cta": "Download the full handbook"
+  },
   "chapters": [
     {
-      "slug": "welcome-to-campus",
-      "title": "Welcome to Campus",
-      "description": "Your first weeks are about finding your bearings.",
-      "body": "Your first weeks are about finding your bearings — rooms, routines, and the people who will become your builders for the next three years.\n\nWalk the campus, learn the studio hours, and introduce yourself to at least one mentor in your first week. The sooner you settle in, the sooner the building starts.\n\nBring your questions, bring your ideas, and expect to be challenged. This is a place where being new is an advantage — you see the campus with fresh eyes, and that is exactly what we want."
+      "slug": "welcome-to-viiv",
+      "title": "Welcome to VIIV",
+      "description": "Start with curiosity, courage, and a willingness to build.",
+      "body": "Welcome to a different kind of college experience. At VIIV, learning and building happen together. You will study ideas, test them in the real world, work with people who see problems differently, and leave each cycle with something you can show.\n\nYour first weeks are about finding your bearings—understanding the spaces, routines, tools, and people around you. Introduce yourself to your peers and mentors, ask questions early, and take time to understand how the campus works.\n\nYou are not expected to arrive with a startup idea or a perfect plan. You are expected to arrive ready to observe, participate, practise, and improve.",
+      "images": [
+        {
+          "src": "/photos/059A3259.jpg",
+          "alt": "The VIIV community gathered together on campus",
+          "caption": "A builder community grows through shared work, generous feedback, and participation.",
+          "afterParagraph": 1
+        }
+      ]
     },
     {
-      "slug": "learning-rhythm",
-      "title": "Learning Rhythm",
-      "description": "Mornings for learning, afternoons for studio time.",
-      "body": "Mornings are for structured learning, afternoons for studio time. Expect weekly sprints, mentor reviews, and a demo day at the end of every cycle.\n\nEach cycle ends with a demo where you present what you shipped. The rhythm is deliberate: learn a little, build a little, show it, and start again."
+      "slug": "finding-your-rhythm",
+      "title": "Finding Your Rhythm",
+      "description": "Learn, build, review, reflect, and begin again.",
+      "body": "Life at VIIV moves in cycles. Structured sessions introduce the concepts and tools you need; studio time gives you space to apply them; reviews help you understand what worked and what needs to change.\n\nPlan your week around outcomes rather than activity. At the beginning of each cycle, define what you intend to learn, build, test, or complete. Break the work into small commitments and make progress visible to your team.\n\nReflection is part of the rhythm. After every review or demonstration, record what you learned, what evidence changed your thinking, and what you will do next."
+    },
+    {
+      "slug": "learning-through-quests",
+      "title": "Learning Through Quests",
+      "description": "Every quest connects knowledge to a real challenge and a visible outcome.",
+      "body": "The VIIV curriculum is organised around quests. A quest combines foundational ideas, practical tools, a real-world challenge, mentor feedback, and a final piece of evidence.\n\nYou may be asked to identify business problems, interview customers, generate revenue, automate a process, build a prototype, launch a brand, or prepare an investor-ready venture package. The purpose is to demonstrate what you can do—not simply repeat what you have heard.\n\nTreat every quest as part of a larger journey. Keep your research, drafts, decisions, feedback, data, and final outputs organised because they will become part of your graduation portfolio."
+    },
+    {
+      "slug": "studio-practice",
+      "title": "Studio Practice",
+      "description": "Protect the time and environment required for focused building.",
+      "body": "Studio time is where ideas become interviews, prototypes, campaigns, systems, and ventures. Arrive with a clear objective, the materials you need, and a realistic definition of done.\n\nUse the studio actively. Sketch, write, prototype, rehearse, test, and ask for feedback. If you are stuck, reduce the scope of the task until you can produce something another person can see or try.\n\nLeave shared spaces ready for the next builder. Return equipment, clear work surfaces, name and store files properly, and report damaged or missing resources to the campus team.",
+      "images": [
+        {
+          "src": "/photos/059A3202.jpg",
+          "alt": "Participants working together around a table on campus",
+          "caption": "Studio time is active: make, test, discuss, and improve.",
+          "afterParagraph": 1
+        }
+      ]
+    },
+    {
+      "slug": "customer-discovery-in-the-field",
+      "title": "Customer Discovery",
+      "description": "Listen before you build and look for evidence before certainty.",
+      "body": "Strong ventures begin with a deep understanding of people and problems. Customer discovery may take you beyond campus to observe behaviour, conduct interviews, test assumptions, and understand what people do today.\n\nAsk open questions and avoid leading people toward the answer you want. Record what you heard accurately, protect personal information, and distinguish direct evidence from your interpretation.\n\nReturn to campus prepared to share patterns, contradictions, and unanswered questions. The goal is not to defend your first idea; it is to improve the quality of the problem you choose to solve."
+    },
+    {
+      "slug": "working-with-mentors",
+      "title": "Working With Mentors",
+      "description": "Bring context, evidence, and a clear question to every review.",
+      "body": "Mentor time is most valuable when you arrive prepared. Share the goal, what you tried, what happened, and the decision you now need to make. Bring the work itself whenever possible.\n\nFeedback is information, not a command. Listen carefully, ask clarifying questions, compare advice with customer evidence, and take responsibility for the final decision.\n\nClose the loop. At your next review, explain what you acted on, what you chose not to do, and what you learned as a result.",
+      "images": [
+        {
+          "src": "/photos/059A2764.jpg",
+          "alt": "A mentor leading a session for participants on campus",
+          "caption": "A strong review begins with evidence and ends with a clearer next decision.",
+          "afterParagraph": 1
+        }
+      ]
+    },
+    {
+      "slug": "teams-and-collaboration",
+      "title": "Teams and Collaboration",
+      "description": "Make ownership visible and disagreement productive.",
+      "body": "Good teams do not avoid disagreement; they learn how to use it. Discuss the work directly, challenge ideas without attacking people, and make space for quieter voices.\n\nAgree on roles, deadlines, decision owners, and the standard for completion before work begins. Write important decisions down so the team does not have to rely on memory.\n\nIf a commitment is at risk, communicate early. Ask for help, renegotiate scope, or redistribute work before silence becomes a team problem."
+    },
+    {
+      "slug": "using-ai-responsibly",
+      "title": "Using AI Responsibly",
+      "description": "Use AI to extend your ability without outsourcing your judgement.",
+      "body": "AI is part of the VIIV builder toolkit. Use it to research, explore alternatives, draft, prototype, analyse, automate, and accelerate repetitive work.\n\nYou remain responsible for every output. Verify facts, test generated code, check calculations, protect confidential information, and disclose meaningful AI assistance when a mentor or assignment requires it.\n\nDo not use AI to imitate understanding. Your portfolio should show the decisions you made, the evidence you gathered, and the work you can explain and defend.",
+      "images": [
+        {
+          "src": "/photos/059A3548.jpg",
+          "alt": "A participant receiving recognition after an AI coding workshop",
+          "caption": "AI capability matters most when it is paired with sound judgement and real application.",
+          "afterParagraph": 1
+        }
+      ]
+    },
+    {
+      "slug": "building-your-proof-portfolio",
+      "title": "Your Proof Portfolio",
+      "description": "Document the evidence behind your growth and your venture.",
+      "body": "Your portfolio is more than a collection of polished final files. It should show the journey from question to evidence, decision, action, result, and reflection.\n\nMaintain an organised record of customer research, prototypes, experiments, revenue or traction evidence, mentor feedback, operating documents, financial work, presentations, and leadership contributions.\n\nUpdate the portfolio throughout the program. Waiting until graduation makes it difficult to reconstruct the decisions and learning that give the work its meaning."
+    },
+    {
+      "slug": "showing-up-and-following-through",
+      "title": "Showing Up",
+      "description": "Reliability is a professional skill and a form of respect.",
+      "body": "Arrive on time and ready to participate in scheduled sessions, reviews, fieldwork, and team commitments. Your absence affects more than your own learning when other people depend on your contribution.\n\nIf you cannot attend or complete a commitment, inform the appropriate faculty member, mentor, or teammate as early as possible and follow the process shared with your cohort.\n\nConsistency builds trust. Keep your calendar current, plan around deadlines, and make commitments you can realistically honour."
     },
     {
       "slug": "living-the-values",
       "title": "Living the Values",
-      "description": "The standards that keep campus safe and honest.",
-      "body": "Show up on time, ship what you say you will, and treat every critique as fuel. This handbook sets the standards that keep campus safe and honest.\n\nRespect, honesty, and care are not posters on a wall — they are the daily decisions each builder makes. When in doubt, choose the action that keeps the community stronger."
+      "description": "Build a community where ambitious work and human dignity coexist.",
+      "body": "Respect, honesty, curiosity, and care are expressed through daily behaviour. Give credit, report real numbers, listen seriously, and treat every person on campus with dignity.\n\nCritique the work without diminishing the builder. Celebrate progress without hiding mistakes. Make it safe for people to ask questions, change their minds, and admit when something did not work.\n\nThe Code of Conduct provides the formal community standards. Read it, understand it, and ask the campus team whenever an expectation is unclear."
+    },
+    {
+      "slug": "wellbeing-and-support",
+      "title": "Wellbeing and Support",
+      "description": "Sustainable builders know when to pause, ask, and recover.",
+      "body": "Building can be exciting and demanding. Pay attention to sleep, movement, nutrition, focus, and the relationships that help you stay grounded. Constant exhaustion is not evidence of commitment.\n\nAsk for support early if academic pressure, team conflict, personal circumstances, or your wellbeing begins to affect your ability to participate. Speak with a trusted faculty member or the campus team so the right next step can be identified.\n\nIf you or someone else is in immediate danger, contact local emergency services and alert campus staff as soon as it is safe to do so."
+    },
+    {
+      "slug": "campus-safety-and-shared-spaces",
+      "title": "Campus Safety",
+      "description": "Care for the spaces, equipment, and people around you.",
+      "body": "Learn the safety guidance, access rules, and emergency information provided during orientation. Keep exits and walkways clear, use equipment only as instructed, and report hazards promptly.\n\nDo not share access credentials or bring visitors into restricted areas without approval. Respect privacy when taking photographs or recording other people.\n\nShared spaces work when everyone contributes. Keep noise appropriate to the activity, handle resources carefully, dispose of waste responsibly, and leave the campus better than you found it."
+    },
+    {
+      "slug": "reviews-showcases-and-demo-day",
+      "title": "Reviews and Demo Day",
+      "description": "Show the work, explain the evidence, and name the next move.",
+      "body": "Reviews are checkpoints, not performances of perfection. Present the problem, what you built or tested, what happened, what the evidence means, and what you will do next.\n\nUse live work and real numbers wherever possible. If something failed, explain the assumption, the result, and how your next experiment will change. Honest learning is more valuable than inflated progress.\n\nThe final Demo Day brings the journey together. Students present their venture, customer validation, business model, traction, financials, funding strategy, and long-term vision to a real audience.",
+      "images": [
+        {
+          "src": "/photos/059A3259.jpg",
+          "alt": "A large group gathered after a campus workshop and presentation",
+          "caption": "Every showcase is a chance to make progress visible and invite the next useful conversation.",
+          "afterParagraph": 2
+        }
+      ]
+    },
+    {
+      "slug": "your-three-year-journey",
+      "title": "Your Three-Year Journey",
+      "description": "Build yourself, build a business, and build an enterprise.",
+      "body": "Year 1 is about building yourself. You develop founder thinking, discover customer problems, practise communication and sales, work with AI, and identify an opportunity worth pursuing.\n\nYear 2 is about building a business. You design the model, build an MVP, launch the brand, acquire customers, generate revenue, and learn to operate the venture.\n\nYear 3 is about building an enterprise. You commit to a venture path, build a team and systems, prepare the financial and legal foundation, develop as a founder-leader, and graduate with evidence."
     }
   ]
 }

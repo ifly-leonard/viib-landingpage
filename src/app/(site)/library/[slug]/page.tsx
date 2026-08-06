@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 
-import { BookFlipbook } from "@/components/viiv/BookFlipbook";
+import { BookFlipbookClient } from "@/components/viiv/BookFlipbookClient";
 import { getBookBySlug, libraryBooks } from "@/content/library";
 
 export function generateStaticParams() {
@@ -44,7 +44,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 
         {/* Flipbook viewer */}
         <div className="mt-10">
-          <BookFlipbook book={book} />
+          <BookFlipbookClient book={book} />
         </div>
       </div>
     </div>

@@ -7,14 +7,14 @@ export const siteMeta = {
   parentOrgUrl: "https://varmaninnovationlabs.com",
   tagline: "Earn the BBA. Build the venture. Graduate with proof.",
   oneLiner:
-    "VIIV is a 3-year venture-building college in Chennai where students earn an online BBA from Kalasalingam University while building real businesses, brands, and products full-time on campus.",
+    "VIIV is a 3-year venture-building college in Chennai where students earn an online BBA while building real businesses, brands, and products full-time on campus.",
   location: "Chennai, India",
 } as const;
 
 export const navigation = [
   { href: "/program", label: "Program" },
   { href: "/campus", label: "Campus Life" },
-  { href: "/admissions", label: "Admissions" },
+  { href: "/admissions/how-to-apply", label: "Admissions" },
   { href: "/about", label: "About" },
 ] as const;
 
@@ -22,7 +22,7 @@ export const heroWords = ["earn.", "build.", "prove."] as const;
 
 export const outcomeStats = [
   { value: "3", label: "Years", detail: "Full-time venture-building college" },
-  { value: "BBA", label: "Degree", detail: "Online BBA from Kalasalingam University" },
+  { value: "BBA", label: "Degree", detail: "Recognized online BBA included" },
   { value: "₹8L", label: "All-in", detail: "Degree fee included for 3 years" },
   { value: "0", label: "Entrance exams", detail: "Selection by fit and interview" },
 ] as const;
@@ -72,7 +72,7 @@ export const heroContent = {
   eyebrow: admissionsConfig.eyebrow,
   headline: "Earn a Recognized BBA While Building Real Ventures.",
   subcopy:
-    "VIIV is a 3-year venture-building college in Chennai. Students earn an online BBA from Kalasalingam University while attending VIIV's full-time offline program where they build startups, creator brands, MVPs, campaigns, and business experiments.",
+    "VIIV is a 3-year venture-building college in Chennai. Students earn an online BBA while attending VIIV's full-time offline program where they build startups, creator brands, MVPs, campaigns, and business experiments.",
   supportLine:
     "No entrance exam. Admission is based on eligibility, ambition, and a student plus parent interview.",
   ctas: [
@@ -207,7 +207,7 @@ export const outcomesContent = {
   eyebrow: "Outcomes",
   headline: "Graduate with more than marks. Graduate with evidence.",
   items: [
-    "A recognized online BBA from Kalasalingam University",
+    "A recognized online BBA",
     "A venture and project portfolio",
     "Pitch decks, campaigns, MVPs, research, and business experiments",
     "Mentor feedback and review history",
@@ -219,7 +219,7 @@ export const faqItems = [
   {
     question: "Is this a degree program?",
     answer:
-      "Yes. Students earn an online BBA from Kalasalingam University while attending VIIV's full-time offline venture-building program in Chennai.",
+      "Yes. Students earn an online BBA while attending VIIV's full-time offline venture-building program in Chennai.",
   },
   {
     question: "Is VIIV online or offline?",

@@ -2,9 +2,9 @@ export const credentialsContent = {
   eyebrow: "Certificates & credentials",
   headline: "A recognized degree backed by institutional credibility.",
   subcopy:
-    "Earn an online BBA from Kalasalingam University while building ventures full-time at VIIV.",
+    "Earn an online BBA while building ventures full-time at VIIV.",
   partnership: {
-    title: "VIIV × Kalasalingam University",
+    title: "VIIV — a recognized degree pathway",
     description:
       "University legitimacy meets a full-time venture-building college in Chennai.",
   },
@@ -42,7 +42,7 @@ export const credentialGalleryItems = [
     title: "BBA degree certificate",
     category: "Degree",
     sampleTitle: "Bachelor of Business Administration",
-    sampleSubtitle: "Online Programme · Kalasalingam University",
+    sampleSubtitle: "Online Programme · Recognized University",
     badge: "Sample certificate",
     description:
       "Official degree certificate awarded on successful completion of the online BBA pathway.",
@@ -52,10 +52,10 @@ export const credentialGalleryItems = [
     title: "NAAC accreditation",
     category: "Accreditation",
     sampleTitle: "NAAC Accredited Institution",
-    sampleSubtitle: "Grade A · Kalasalingam University",
+    sampleSubtitle: "Grade A · Recognized University",
     badge: "Accreditation record",
     description:
-      "Kalasalingam University is NAAC A accredited — a benchmark for academic quality in India.",
+      "The degree is awarded through a NAAC A accredited institution — a benchmark for academic quality in India.",
   },
   {
     id: "university-recognition",

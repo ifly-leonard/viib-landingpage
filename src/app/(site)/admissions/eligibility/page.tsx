@@ -5,7 +5,7 @@ export default function EligibilityPage() {
     <ComingSoon
       title="Eligibility"
       description="12th pass and ready to build. Coming soon."
-      backHref="/admissions"
+      backHref="/admissions/how-to-apply"
       backLabel="Back to Admissions"
     />
   );

@@ -6,7 +6,7 @@ export const admissionsConfig = {
   feeTotal: "₹8L",
   feeNote: "total for 3 years, degree fee included",
   scholarshipMax: "₹1L",
-  applyUrl: "#apply",
+  applyUrl: "/admissions/how-to-apply",
   programNoteUrl: "#program-note",
   admissionsPhone: "+91 96296 28389",
   admissionsPhoneHref: "tel:+919629628389",

@@ -5,7 +5,7 @@ export default function FeesScholarshipsPage() {
     <ComingSoon
       title="Fees & Scholarships"
       description="₹8L all-in, scholarships available. Coming soon."
-      backHref="/admissions"
+      backHref="/admissions/how-to-apply"
       backLabel="Back to Admissions"
     />
   );

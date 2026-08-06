@@ -9,20 +9,12 @@ import { Reveal } from "@/components/viiv/motion";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
-const LOREM_SHORT =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.";
-
-const LOREM_LONG = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-];
-
 type BentoItem = {
   id: string;
   index: string;
   title: string;
   short: string;
+  details: readonly string[];
   image: string;
   className: string;
 };
@@ -32,7 +24,13 @@ const ITEMS: BentoItem[] = [
     id: "bento-1",
     index: "01",
     title: "Venture Studio",
-    short: LOREM_SHORT,
+    short:
+      "Turn real problems into tested products, paying customers, and venture-ready businesses.",
+    details: [
+      "The Venture Studio is where students apply what they learn to real business opportunities. They identify problems, validate demand, design business models, and build working products or services.",
+      "Every assignment moves the venture forward—from customer discovery and MVP development to branding, sales, operations, and growth.",
+      "By the final year, students focus on one venture and develop it into a structured, scalable, and investment-ready company.",
+    ],
     image: "/cover/cover_1.png",
     className: "col-span-1 row-span-1 lg:col-span-2 lg:row-span-2",
   },
@@ -40,7 +38,13 @@ const ITEMS: BentoItem[] = [
     id: "bento-2",
     index: "02",
     title: "Mentor Network",
-    short: LOREM_SHORT,
+    short:
+      "Build with guidance from founders, operators, investors, and industry practitioners.",
+    details: [
+      "Students regularly present their thinking, experiments, and venture progress to experienced practitioners.",
+      "Mentors help students challenge assumptions, improve decisions, overcome execution problems, and understand how businesses operate in the real world.",
+      "In Year 3, students receive more focused guidance based on their chosen industry and venture path.",
+    ],
     image: "/cover/cover_4_classroom.png",
     className: "col-span-1 row-span-1 lg:col-span-1 lg:row-span-1",
   },
@@ -48,7 +52,13 @@ const ITEMS: BentoItem[] = [
     id: "bento-3",
     index: "03",
     title: "Demo Days",
-    short: LOREM_SHORT,
+    short:
+      "Present a working venture, real traction, and a compelling founder vision.",
+    details: [
+      "Demo Day replaces the conventional final project with a live startup showcase.",
+      "Students present the problem, solution, customer validation, business model, traction, financials, funding strategy, and long-term vision behind their venture.",
+      "The audience may include founders, investors, incubators, accelerators, business leaders, alumni, and university partners.",
+    ],
     image: "/cover/cover_3_hackathon.png",
     className: "col-span-1 row-span-1 lg:col-span-1 lg:row-span-2",
   },
@@ -56,7 +66,13 @@ const ITEMS: BentoItem[] = [
     id: "bento-4",
     index: "04",
     title: "Founder Community",
-    short: LOREM_SHORT,
+    short:
+      "Learn alongside builders who challenge, support, and grow with one another.",
+    details: [
+      "Students build within a community shaped by experimentation, feedback, collaboration, and shared ambition.",
+      "They participate in founder circles, exchange ideas, review one another's work, and learn to lead teams through uncertainty.",
+      "Senior students also mentor incoming builders, conduct workshops, and contribute their experience back to the community.",
+    ],
     image: "/cover/cover_2_topview_sspdl.png",
     className: "col-span-1 row-span-1 lg:col-span-1 lg:row-span-1",
   },
@@ -64,7 +80,13 @@ const ITEMS: BentoItem[] = [
     id: "bento-5",
     index: "05",
     title: "Real Ventures",
-    short: LOREM_SHORT,
+    short:
+      "No hypothetical startups—build, launch, sell, and learn from the market.",
+    details: [
+      "Students do not spend three years working only on case studies or simulated businesses.",
+      "They speak with customers, build MVPs, launch brands, run sales experiments, acquire users, and create the systems required to operate a venture.",
+      "By Year 3, every assignment, mentor session, and assessment contributes to one focused venture.",
+    ],
     image: "/cover/cover_1.png",
     className: "col-span-1 row-span-1 lg:col-span-2 lg:row-span-2",
   },
@@ -72,7 +94,13 @@ const ITEMS: BentoItem[] = [
     id: "bento-6",
     index: "06",
     title: "Recognized Degree",
-    short: LOREM_SHORT,
+    short:
+      "Complete an online BBA alongside three years of practical venture building.",
+    details: [
+      "Students pursue a recognized online BBA through the partner university while completing VIIV's venture-building program.",
+      "The degree provides an academic foundation, while VIIV develops the practical ability to identify opportunities, build products, acquire customers, and lead ventures.",
+      "Students graduate with both an undergraduate qualification and a portfolio of demonstrated work.",
+    ],
     image: "/cover/cover_4_classroom.png",
     className: "col-span-1 row-span-1 lg:col-span-1 lg:row-span-2",
   },
@@ -80,7 +108,13 @@ const ITEMS: BentoItem[] = [
     id: "bento-7",
     index: "07",
     title: "Chennai Campus",
-    short: LOREM_SHORT,
+    short:
+      "A full-time environment designed for building, collaboration, and execution.",
+    details: [
+      "The Chennai campus brings students, mentors, teams, and venture-building activities together in one shared environment.",
+      "Students use their time on campus to collaborate, conduct reviews, build products, practise pitches, run experiments, and work through real execution challenges.",
+      "It is an active builder environment where progress is measured through what students create, test, and improve.",
+    ],
     image: "/cover/cover_2_topview_sspdl.png",
     className: "col-span-1 row-span-1 lg:col-span-1 lg:row-span-1",
   },
@@ -88,7 +122,13 @@ const ITEMS: BentoItem[] = [
     id: "bento-8",
     index: "08",
     title: "Career Outcomes",
-    short: LOREM_SHORT,
+    short:
+      "Graduate ready for entrepreneurship, startups, family business, or operator roles.",
+    details: [
+      "The program develops transferable capabilities in research, sales, communication, AI, product, marketing, finance, operations, and leadership.",
+      "Students graduate with evidence that may include a working product or service, customer validation, traction, financial models, pitch decks, and a leadership portfolio.",
+      "That body of work prepares them to build a company, enter a family business, join a startup, or pursue an operator role with practical confidence.",
+    ],
     image: "/cover/cover_3_hackathon.png",
     className: "col-span-1 row-span-1 lg:col-span-1 lg:row-span-1",
   },
@@ -283,7 +323,7 @@ function BentoModal({
                   {item.title}
                 </h3>
                 <div className="mt-6 space-y-4 text-base leading-relaxed text-[color:var(--vil-navy)]/80">
-                  {LOREM_LONG.map((p, i) => (
+                  {item.details.map((p, i) => (
                     <p key={i}>{p}</p>
                   ))}
                 </div>

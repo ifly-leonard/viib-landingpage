@@ -3,7 +3,7 @@ import { admissionsConfig } from "@/lib/admissions.config";
 export const mainNavigation = [
   { href: "/program", label: "Program" },
   { href: "/campus", label: "Campus Life" },
-  { href: "/admissions", label: "Admissions" },
+  { href: "/admissions/how-to-apply", label: "Admissions" },
   { href: "/about", label: "About" },
 ] as const;
 
@@ -88,42 +88,45 @@ export const navItems: readonly NavItem[] = [
       variant: "feature",
       links: [
         {
-          title: "Degree + Venture Builder",
-          description: "Earn a recognized BBA while building real ventures.",
-          href: "/program",
-          icon: "graduation",
+          title: "Year 1 — Build Yourself",
+          description:
+            "Develop founder thinking, customer understanding, sales, AI skills, and a professional presence.",
+          href: "/program/build-yourself",
+          icon: "compass",
           image: "/cover/cover_1.png",
         },
         {
-          title: "Creator + Founder Track",
-          description: "Build brands while building businesses.",
-          href: "/program",
-          icon: "sparkles",
-          badge: "New",
+          title: "Year 2 — Build a Business",
+          description:
+            "Build an MVP, launch the brand, acquire customers, and generate revenue.",
+          href: "/program/build-a-business",
+          icon: "flask",
           image: "/cover/cover_3_hackathon.png",
         },
         {
-          title: "Operator + Placement",
-          description: "Graduate job-ready or startup-ready.",
-          href: "/program",
-          icon: "briefcase",
+          title: "Year 3 — Build an Enterprise",
+          description:
+            "Build a team, create operating systems, and become investment-ready.",
+          href: "/program/build-an-enterprise",
+          icon: "building",
           image: "/cover/cover_2_topview_sspdl.png",
         },
         {
-          title: "The VIIV Method",
-          description: "Learn, build, review, graduate with proof.",
-          href: "/program",
-          icon: "workflow",
+          title: "Graduation & Demo Day",
+          description:
+            "Graduate with evidence and present a real venture to a live audience.",
+          href: "/program/graduation-and-demo-day",
+          icon: "presentation",
           image: "/cover/cover_4_classroom.png",
         },
       ],
       featured: {
-        eyebrow: "The program",
-        title: "One degree. Three builder lanes.",
-        description: "A 3-year, full-time venture college in Chennai.",
+        eyebrow: "The VIIV program",
+        title: "Three years. One transformation.",
+        description: "Build yourself. Build a business. Build an enterprise.",
         image: COVER,
         href: "/program",
-        cta: "Explore the program",
+        cta: "Explore the full program",
       },
     },
   },
@@ -176,7 +179,7 @@ export const navItems: readonly NavItem[] = [
         items: [
           {
             title: "Campus brochure",
-            description: "Download the PDF",
+            description: "Coming soon",
             href: "/campus-life/campus-brochure",
             icon: "file",
           },
@@ -193,7 +196,7 @@ export const navItems: readonly NavItem[] = [
   },
   {
     label: "Admissions",
-    href: "/admissions",
+    href: "/admissions/how-to-apply",
     menu: {
       variant: "list",
       links: [
@@ -226,7 +229,7 @@ export const navItems: readonly NavItem[] = [
       cta: {
         title: "The 2026 intake is open",
         description: "Limited seats · rolling interviews",
-        href: "/admissions#apply",
+        href: "/admissions/how-to-apply",
         label: "Apply now",
       },
     },

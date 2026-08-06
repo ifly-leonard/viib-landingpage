@@ -1,14 +1,15 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "motion/react";
 
 import { TextAnimate } from "@/components/ui/text-animate";
+import { useLeadModal } from "@/components/viiv/LeadModalContext";
 import { announcement } from "@/content/announcement";
 
 const TEXT_DURATION = 1.8;
 
 export function AnnouncementBar() {
+  const { openLeadModal } = useLeadModal();
   if (!announcement.enabled) return null;
 
   return (
@@ -39,12 +40,13 @@ export function AnnouncementBar() {
         transition={{ duration: 0.3, delay: TEXT_DURATION + 0.2, ease: [0.16, 1, 0.3, 1] }}
         className="shrink-0"
       >
-        <Link
-          href={announcement.cta.href}
-          className="inline-flex items-center rounded-full bg-[color:var(--vil-navy)] px-3.5 py-1 text-xs font-bold text-[color:var(--vil-ivory)] transition hover:bg-[color:var(--vil-navy)]/90"
+        <button
+          type="button"
+          onClick={openLeadModal}
+          className="inline-flex cursor-pointer items-center rounded-full bg-[color:var(--vil-navy)] px-3.5 py-1 text-xs font-bold text-[color:var(--vil-ivory)] transition hover:bg-[color:var(--vil-navy)]/90"
         >
           {announcement.cta.label}
-        </Link>
+        </button>
       </motion.div>
     </motion.div>
   );

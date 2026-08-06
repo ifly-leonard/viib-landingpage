@@ -8,6 +8,12 @@ export type LibraryBookChapter = {
   title: string;
   description: string;
   body: string;
+  images?: {
+    src: string;
+    alt: string;
+    caption?: string;
+    afterParagraph?: number;
+  }[];
 };
 
 export type LibraryBook = {
@@ -20,6 +26,13 @@ export type LibraryBook = {
   textColor?: string;
   variant?: "stripe" | "simple";
   coverImage: string;
+  /** Optional lead-gate: blur the flipbook after this many pages and offer a download. */
+  gate?: {
+    /** Number of readable pages (chapters) shown before the blur kicks in. */
+    afterPage?: number;
+    /** Button label on the blur overlay. */
+    cta?: string;
+  };
   chapters: LibraryBookChapter[];
 };
 

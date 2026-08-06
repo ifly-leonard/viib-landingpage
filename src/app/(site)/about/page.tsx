@@ -57,7 +57,7 @@ export default function AboutPage() {
       <SectionShell tone="gold" compact>
         <div className="grid gap-4 md:grid-cols-3">
           <StatCard value="3" label="Years" detail="Full-time venture college" />
-          <StatCard value="BBA" label="Included" detail="Kalasalingam University degree pathway" />
+          <StatCard value="BBA" label="Included" detail="Recognized online BBA degree pathway" />
           <StatCard value="Chennai" label="Campus" detail="Offline builder environment" dark />
         </div>
         <div className="mt-8 flex flex-wrap gap-3">

@@ -25,7 +25,7 @@ export function HeroBento() {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
-              href="/admissions#apply"
+              href="/admissions/how-to-apply"
               className="inline-flex items-center gap-2 rounded-full bg-[color:var(--vil-gold)] px-7 py-3.5 text-sm font-bold text-[color:var(--vil-navy)] transition hover:brightness-105"
             >
               Apply Now

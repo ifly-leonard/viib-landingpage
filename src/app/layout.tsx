@@ -4,9 +4,10 @@ import Script from "next/script";
 import { AnalyticsScripts } from "@/components/viiv/AnalyticsScripts";
 import { siteMeta } from "@/content/homepage";
 import { latestOgImagePath, ogConfig } from "@/lib/og.config";
+import { recaptchaConfig } from "@/lib/recaptcha.config";
 
 import "../styles.css";
-import "./page-flip.css";
+import "flipbook-js/style.css";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
@@ -56,6 +57,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <Script
             id="meta-pixel"
             src="https://connect.facebook.net/en_US/fbevents.js"
+            strategy="afterInteractive"
+          />
+        ) : null}
+        {recaptchaConfig.enabled ? (
+          <Script
+            id="recaptcha"
+            src="https://www.google.com/recaptcha/api.js"
             strategy="afterInteractive"
           />
         ) : null}

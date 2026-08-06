@@ -15,9 +15,9 @@ const exploreLinks = [
 ] as const;
 
 const admissionsLinks = [
-  { href: "/admissions", label: "How to apply" },
-  { href: "/admissions", label: "Eligibility" },
-  { href: "/admissions", label: "Fees & scholarships" },
+  { href: "/admissions/how-to-apply", label: "How to apply" },
+  { href: "/admissions/eligibility", label: "Eligibility" },
+  { href: "/admissions/fees-and-scholarships", label: "Fees & scholarships" },
 ] as const;
 
 export function Footer() {
@@ -110,7 +110,7 @@ export function Footer() {
               {footerContent.phone}
             </a>
             <p className="mt-5 max-w-[16rem] text-xs leading-relaxed text-[color:var(--text-soft)]">
-              Online BBA awarded by Kalasalingam University.
+              Recognized online BBA degree pathway.
             </p>
           </div>
         </div>

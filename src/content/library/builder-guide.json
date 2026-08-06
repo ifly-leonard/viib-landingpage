@@ -7,7 +7,7 @@
   "color": "#f7bd44",
   "textColor": "#1f3149",
   "variant": "simple",
-  "coverImage": "/cover/cover_2_topview_sspdl.png",
+  "coverImage": "/cover/book-builder-guide.png",
   "chapters": [
     {
       "slug": "start-with-the-problem",
