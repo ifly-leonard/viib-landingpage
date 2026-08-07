@@ -1,4 +1,4 @@
-- Library: Books - JSON driven content for the handbooks. Lead magnet. 
+-   Library: Books - JSON driven content for the handbooks. Lead magnet. 
 - ✅ Google Analytics 4 / Meta Pixel pages config. For each page. ChatGPT the best way to do this. 
 
 - ✅ Lead form: Name, Email, Whatsapp OTP, 
