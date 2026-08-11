@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Arjun Mehta",
+    "company": "Sequoia Capital",
+    "title": "Partner",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/sequoia.png"
+  },
+  {
+    "name": "Priya Nair",
+    "company": "Razorpay",
+    "title": "VP of Product",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/razorpay.png"
+  },
+  {
+    "name": "Karthik Rao",
+    "company": "Freshworks",
+    "title": "Head of GTM",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/freshworks.png"
+  },
+  {
+    "name": "Meera Shah",
+    "company": "Zerodha",
+    "title": "Finance Director",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/zerodha.png"
+  },
+  {
+    "name": "Rohan Das",
+    "company": "Swiggy",
+    "title": "VP of Operations",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/swiggy.png"
+  },
+  {
+    "name": "Ananya Iyer",
+    "company": "Salesforce",
+    "title": "Enterprise Sales Lead",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/salesforce.png"
+  },
+  {
+    "name": "Vikram Singh",
+    "company": "Ogilvy",
+    "title": "Creative Director",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/ogilvy.png"
+  },
+  {
+    "name": "Divya Menon",
+    "company": "Khaitan & Co",
+    "title": "Partner, Startup Practice",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/khaitan.svg"
+  },
+  {
+    "name": "Nikhil Verma",
+    "company": "Deloitte",
+    "title": "Senior Manager, Strategy",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/deloitte.png"
+  },
+  {
+    "name": "Sneha Pillai",
+    "company": "Flipkart",
+    "title": "Head of Consumer Research",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/flipkart.png"
+  },
+  {
+    "name": "Aditya Bose",
+    "company": "Zoho",
+    "title": "Product Lead, New Initiatives",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/zoho.png"
+  },
+  {
+    "name": "Lakshmi Reddy",
+    "company": "CRED",
+    "title": "Growth Lead",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/cred.png"
+  },
+  {
+    "name": "Harish Kumar",
+    "company": "PhonePe",
+    "title": "Director of Talent",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/phonepe.png"
+  },
+  {
+    "name": "Ishita Malhotra",
+    "company": "Accel",
+    "title": "Principal",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/accel.png"
+  },
+  {
+    "name": "Suresh Patel",
+    "company": "Dunzo",
+    "title": "COO",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/dunzo.svg"
+  },
+  {
+    "name": "Kavya Srinivasan",
+    "company": "Meesho",
+    "title": "Monetization Lead",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/meesho.png"
+  },
+  {
+    "name": "Manoj Gupta",
+    "company": "Paytm",
+    "title": "Head of Alliances",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/paytm.png"
+  },
+  {
+    "name": "Ritu Agarwal",
+    "company": "Blume Ventures",
+    "title": "Investment Partner",
+    "linkedin": "https://www.linkedin.com/in/example",
+    "photo_url": "/photos/mentor_avatar_1.png",
+    "company_logo_url": "/companies/blume.png"
+  }
+]

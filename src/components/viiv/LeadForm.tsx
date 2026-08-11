@@ -10,6 +10,7 @@ import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp
 import { Label } from "@/components/ui/label";
 import { RecaptchaWidget } from "@/components/viiv/RecaptchaWidget";
 import { generateSalt, requestOtp, verifyOtp } from "@/lib/otpWebhook";
+import { createLead } from "@/lib/leadApi";
 import { cn } from "@/lib/utils";
 import { recaptchaConfig } from "@/lib/recaptcha.config";
 
@@ -40,6 +41,7 @@ export function LeadForm({
   const [verifying, setVerifying] = useState(false);
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [submittingLead, setSubmittingLead] = useState(false);
 
   const handleSubmitDetails = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -77,6 +79,7 @@ export function LeadForm({
     e.preventDefault();
     setError(null);
     if (otp.length !== OTP_LENGTH) return setError("Enter the complete OTP.");
+    if (submittingLead) return; // Prevent duplicate submissions.
     setVerifying(true);
     try {
       const res = await verifyOtp({
@@ -86,7 +89,19 @@ export function LeadForm({
         otp,
       });
       if (res.ok) {
-        onSuccess({ name: name.trim(), phone: `+91 ${phone.replace(/\D/g, "")}` });
+        setSubmittingLead(true);
+        const leadRes = await createLead({
+          name: name.trim(),
+          phone: `+91 ${phone.replace(/\D/g, "")}`,
+          email: email.trim(),
+          source: "VIIV website lead form",
+        });
+        if (leadRes.ok) {
+          onSuccess({ name: name.trim(), phone: `+91 ${phone.replace(/\D/g, "")}` });
+        } else {
+          setError(leadRes.error ?? "We couldn't submit your application. Please try again.");
+        }
+        setSubmittingLead(false);
       } else {
         setError(res.error ?? "That OTP didn't match. Try again.");
       }
@@ -269,16 +284,16 @@ export function LeadForm({
 
               <button
                 type="submit"
-                disabled={verifying || otp.length !== OTP_LENGTH}
+                disabled={verifying || submittingLead || otp.length !== OTP_LENGTH}
                 className={cn(
                   "flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition",
                   "bg-[color:var(--vil-navy)] text-[color:var(--vil-ivory)] hover:bg-[color:var(--vil-navy)]/90 disabled:opacity-60",
                 )}
               >
-                {verifying ? (
+                {verifying || submittingLead ? (
                   <>
                     <Loader2 className="h-4 w-4 animate-spin" />
-                    Verifying…
+                    {submittingLead ? "Submitting…" : "Verifying…"}
                   </>
                 ) : (
                   <>

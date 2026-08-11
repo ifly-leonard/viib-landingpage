@@ -6,6 +6,7 @@ import { ArrowRight, Loader2 } from "lucide-react";
 
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { createLead } from "@/lib/leadApi";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -30,12 +31,20 @@ export function SimpleLeadForm({
     setError(null);
     if (!name.trim()) return setError("Please tell us your name.");
     if (!EMAIL_RE.test(email.trim())) return setError("Enter a valid email address.");
+    if (sending) return; // Prevent duplicate submissions.
 
     setSending(true);
     try {
-      // TODO: hook up to a lead endpoint / CRM when available.
-      await new Promise((r) => setTimeout(r, 600));
-      onSuccess({ name: name.trim(), email: email.trim() });
+      const res = await createLead({
+        name: name.trim(),
+        email: email.trim(),
+        source: "VIIV gated download",
+      });
+      if (res.ok) {
+        onSuccess({ name: name.trim(), email: email.trim() });
+      } else {
+        setError(res.error ?? "We couldn't submit your details. Please try again.");
+      }
     } finally {
       setSending(false);
     }

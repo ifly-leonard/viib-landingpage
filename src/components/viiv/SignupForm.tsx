@@ -7,6 +7,7 @@ import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { createLead } from "@/lib/leadApi";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_RE = /^[6-9]\d{9}$/;
@@ -46,12 +47,21 @@ export function SignupForm({
       const digits = phone.replace(/\D/g, "");
       if (!PHONE_RE.test(digits)) return setError("Enter a valid 10-digit Indian mobile number.");
     }
+    if (sending) return; // Prevent duplicate submissions.
 
     setSending(true);
     try {
-      // TODO: hook up to a lead endpoint / CRM when available.
-      await new Promise((r) => setTimeout(r, 600));
-      setDone(true);
+      const res = await createLead({
+        name: name.trim(),
+        phone: askPhone ? `+91 ${phone.replace(/\D/g, "")}` : undefined,
+        email: email.trim(),
+        source: "VIIV event signup",
+      });
+      if (res.ok) {
+        setDone(true);
+      } else {
+        setError(res.error ?? "We couldn't submit your registration. Please try again.");
+      }
     } finally {
       setSending(false);
     }

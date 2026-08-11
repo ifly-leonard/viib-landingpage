@@ -46,7 +46,7 @@ export function Header() {
         <AnnouncementBar />
         <header
           className={cn(
-            "relative transition-all duration-300",
+            "relative transition-all duration-300 p-3",
             scrolled
               ? "bg-[color:var(--vil-ivory)]/85 backdrop-blur-xl"
               : "backdrop-blur-2xl",
@@ -66,7 +66,7 @@ export function Header() {
             <img
               src={scrolled ? "/brand/logo_main.png" : "/brand/logo_main_white.png"}
               alt={siteMeta.name}
-              className="h-16 w-auto shrink-0 transition-opacity md:h-16"
+              className="h-24 w-auto shrink-0 transition-opacity"
             />            
           </Link>
 

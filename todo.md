@@ -11,3 +11,7 @@
 -- During webinar, OTP guarded brochure link, get marked as P1 lead. 
 - Payment collections page; Razorpay best, if not IFSC details. 
 - Bootcamp Page
+
+- Eligibility: 12th pass (or equivilant), passout (this year / last year), 
+- Fee: 8,00,000 (8 Lakhs) - Discount. 2.5L * 3 years, 50k admission.
+- Remove: Navbar > Menu > Remove "Year 1, Year 2, Year 3" 
