@@ -1,8 +1,8 @@
 export const credentialsContent = {
   eyebrow: "Certificates & credentials",
-  headline: "A recognized degree backed by institutional credibility.",
+  headline: "A UGC-recognized degree, provided by Kalasalingam University.",
   subcopy:
-    "Earn an online BBA while building ventures full-time at VIIV.",
+    "The online BBA is awarded by Kalasalingam Academy of Research and Education — a deemed-to-be university under Section 3 of the UGC Act, 1956, accredited by NAAC with an A++ grade. Earn it while building ventures full-time at VIIV.",
   partnership: {
     title: "VIIV — a recognized degree pathway",
     description:
@@ -15,19 +15,19 @@ export const credentialsContent = {
 
 export const degreeAdvantages = [
   {
-    title: "Employer-ready credential",
+    title: "UGC-recognized university",
     description:
-      "A recognized BBA signals academic completion to recruiters, banks, and corporate HR teams.",
+      "Kalasalingam Academy of Research and Education is a deemed-to-be university under Section 3 of the UGC Act, 1956.",
+  },
+  {
+    title: "NAAC A++ accredited",
+    description:
+      "The institution holds an A++ accreditation from NAAC — a top benchmark for academic quality in India.",
   },
   {
     title: "Higher studies optionality",
     description:
       "Keep MBA, professional certifications, and global programs open with a formal undergraduate degree.",
-  },
-  {
-    title: "Family confidence",
-    description:
-      "Parents get the assurance of a UGC-recognized university — students still build ventures every week.",
   },
   {
     title: "Proof alongside portfolio",
@@ -42,20 +42,20 @@ export const credentialGalleryItems = [
     title: "BBA degree certificate",
     category: "Degree",
     sampleTitle: "Bachelor of Business Administration",
-    sampleSubtitle: "Online Programme · Recognized University",
+    sampleSubtitle: "Online Programme · Kalasalingam University",
     badge: "Sample certificate",
     description:
-      "Official degree certificate awarded on successful completion of the online BBA pathway.",
+      "Official degree certificate awarded on successful completion of the online BBA pathway from Kalasalingam University.",
   },
   {
     id: "naac-accreditation",
     title: "NAAC accreditation",
     category: "Accreditation",
-    sampleTitle: "NAAC Accredited Institution",
-    sampleSubtitle: "Grade A · Recognized University",
+    sampleTitle: "NAAC A++ Accredited Institution",
+    sampleSubtitle: "Kalasalingam Academy of Research and Education",
     badge: "Accreditation record",
     description:
-      "The degree is awarded through a NAAC A accredited institution — a benchmark for academic quality in India.",
+      "The degree is awarded through Kalasalingam University — NAAC A++ accredited, a benchmark for academic quality in India.",
   },
   {
     id: "university-recognition",
@@ -65,7 +65,7 @@ export const credentialGalleryItems = [
     sampleSubtitle: "Under Section 3 of the UGC Act, 1956",
     badge: "Recognition record",
     description:
-      "Credentials from a UGC-recognized institution that families and employers can verify.",
+      "Credentials from Kalasalingam University — a UGC-recognized institution that families and employers can verify.",
   },
 ] as const;
 

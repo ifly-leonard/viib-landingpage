@@ -1,8 +1,8 @@
 /** Campus tour booking settings — update here, not in UI components. */
 export const tourConfig = {
   /** Cal.com booking link, e.g. "yourhandle/campus-tour". */
-  calLink: "leonardselvaraja/a-quick-meeting",
-  calUrl: "https://cal.com/leonardselvaraja/a-quick-meeting",
+  calLink: "viivindia/campus-tour",
+  calUrl: "https://cal.com/viivindia/campus-tour",
   eyebrow: "Campus Life · Book a tour",
   title: "Book a tour",
   description:

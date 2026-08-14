@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Check, GraduationCap, Layers3, Rocket, Sparkles } from "lucide-react";
+import { ArrowRight, Check, GraduationCap } from "lucide-react";
 
 import { Reveal } from "@/components/viiv/motion";
+import { JourneyMap } from "@/components/viiv/JourneyMap";
 import { SectionShell } from "@/components/viiv/SectionShell";
 import { ApplyButton } from "@/components/viiv/SiteShell";
-import { graduationPortfolio, programYears, ventureStudios } from "@/content/program";
-
-const journeyIcons = [Sparkles, Rocket, Layers3];
+import { demoDay, graduateWith, programPaths } from "@/content/programPaths";
 
 export default function ProgramPage() {
   return (
@@ -48,33 +47,76 @@ export default function ProgramPage() {
         </div>
       </section>
 
-      <SectionShell id="journey" tone="light">
+      <SectionShell tone="light">
         <Reveal>
-          <p className="viiv-kicker">The VIIV transformation</p>
-          <h2 className="viiv-section-title mt-4 max-w-4xl">Three years. One connected journey.</h2>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[color:var(--text-muted)]">Each year changes the scale of the challenge—from developing the individual, to launching a business, to building an enterprise.</p>
+          <p className="viiv-kicker">The roadmap</p>
+          <h2 className="viiv-section-title mt-4 max-w-3xl">The 3-Year Journey at a Glance</h2>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[color:var(--text-muted)]">Scroll through the path — each year takes you from foundations to venture to launch.</p>
         </Reveal>
+        <div className="mt-16 md:mt-20">
+          <JourneyMap />
+        </div>
+      </SectionShell>
 
-        <div className="mt-12 space-y-5">
-          {programYears.map((year, index) => {
-            const Icon = journeyIcons[index];
-            return (
-              <Reveal key={year.slug} delay={index * 0.06}>
-                <Link href={`/program/${year.slug}`} className="group grid overflow-hidden rounded-[2rem] border border-[color:var(--border)] bg-white shadow-[0_20px_60px_-45px_rgba(31,49,73,0.65)] transition hover:-translate-y-1 hover:border-[color:var(--vil-gold)] lg:grid-cols-[0.78fr_1.22fr]">
-                  <div className="relative min-h-[18rem] overflow-hidden">
-                    <Image src={year.images[0]} alt={`${year.title} at VIIV`} fill className="object-cover transition duration-700 group-hover:scale-105" sizes="(max-width: 1024px) 100vw, 40vw" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" />
-                    <div className="absolute bottom-5 left-5 flex h-14 w-14 items-center justify-center rounded-full bg-[color:var(--vil-gold)] text-[color:var(--vil-navy)]"><Icon className="h-6 w-6" /></div>
-                  </div>
-                  <div className="flex flex-col justify-between p-7 md:p-10">
-                    <div>
-                      <div className="flex items-center justify-between gap-4"><p className="text-xs font-bold uppercase tracking-[0.2em] text-[color:var(--vil-gold-dim)]">Year {year.year}</p><span className="flex h-10 w-10 items-center justify-center rounded-full bg-[color:var(--vil-navy)] text-[color:var(--vil-gold)] transition-transform group-hover:translate-x-1"><ArrowRight className="h-4 w-4" /></span></div>
-                      <h3 className="mt-5 text-4xl font-bold tracking-tight text-[color:var(--vil-navy)] md:text-5xl">{year.title}</h3>
-                      <p className="mt-4 max-w-xl text-lg leading-relaxed text-[color:var(--text-muted)]">{year.headline}</p>
+      <SectionShell id="journey" tone="light">
+        <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <Reveal>
+            <p className="viiv-kicker">Choose your path</p>
+            <h2 className="viiv-section-title mt-4">Choose Your Path. Go All In.</h2>
+            <p className="mt-5 text-lg leading-relaxed text-[color:var(--text-muted)]">
+              By Year 3, VIIV students have different strengths, different interests and different goals — so the program stops being one-size-fits-all. You&apos;ll choose the path that fits you and spend the year going deep, with structured mentorship and an incubation environment behind you.
+            </p>
+            <p className="mt-5 text-base leading-relaxed text-[color:var(--text-muted)]">
+              Choosing a path in Year 3 doesn&apos;t mean the other doors close. Many VIIV students carry pieces of all three into life after graduation — a founder with a personal brand, a creator who freelances, a working professional who keeps building side projects.
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="grid gap-4">
+              {programPaths.map((path) => {
+                const Icon = path.icon;
+                return (
+                  <article key={path.id} className="group flex items-start gap-4 rounded-2xl border border-[color:var(--border)] bg-white p-5 transition hover:border-[color:var(--vil-gold)]/60 hover:shadow-[0_18px_50px_-30px_rgba(31,49,73,0.5)]">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[color:var(--vil-gold)]/15 text-[color:var(--vil-gold-dim)]"><Icon className="h-6 w-6" /></span>
+                    <div className="min-w-0">
+                      <p className="text-sm font-bold uppercase tracking-[0.14em] text-[color:var(--vil-navy)]">{path.title}</p>
+                      <p className="mt-0.5 text-sm text-[color:var(--text-muted)]">{path.subtitle}</p>
+                      <p className="mt-1.5 text-xs font-semibold text-[color:var(--vil-gold-dim)]">{path.highlight}</p>
                     </div>
-                    <div className="mt-8 flex flex-wrap gap-2">{year.quests.map((quest) => <span key={quest.number} className="rounded-full bg-[color:var(--vil-surface-muted)] px-3 py-2 text-xs font-semibold text-[color:var(--vil-navy)]">{quest.title}</span>)}</div>
+                  </article>
+                );
+              })}
+            </div>
+          </Reveal>
+        </div>
+      </SectionShell>
+
+      <SectionShell tone="light">
+        <div className="grid gap-6 lg:grid-cols-3">
+          {programPaths.map((path, index) => {
+            const Icon = path.icon;
+            return (
+              <Reveal key={path.id} delay={index * 0.07}>
+                <article className="flex h-full flex-col rounded-[2rem] border border-[color:var(--border)] bg-white p-7 transition hover:-translate-y-1 hover:border-[color:var(--vil-gold)]/60 md:p-8">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[color:var(--vil-gold)]/15 text-[color:var(--vil-gold-dim)]"><Icon className="h-7 w-7" /></span>
+                  <p className="mt-7 text-xs font-bold uppercase tracking-[0.18em] text-[color:var(--vil-gold-dim)]">Path 0{index + 1}</p>
+                  <h3 className="mt-2 text-2xl font-bold tracking-tight text-[color:var(--vil-navy)]">{path.title}</h3>
+                  <p className="mt-1 text-sm font-semibold text-[color:var(--vil-gold-dim)]">{path.subtitle}</p>
+
+                  <p className="mt-6 text-xs font-bold uppercase tracking-[0.16em] text-[color:var(--text-soft)]">{path.experienceTitle}</p>
+                  <ul className="mt-3 space-y-2.5">
+                    {path.experience.map((item) => (
+                      <li key={item} className="flex items-start gap-2.5 text-sm leading-relaxed text-[color:var(--text-muted)]">
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--vil-gold-dim)]" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="mt-6 border-t border-[color:var(--border)] pt-5">
+                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-[color:var(--vil-gold-dim)]">{path.endTitle}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-[color:var(--vil-navy)]">{path.end}</p>
                   </div>
-                </Link>
+                </article>
               </Reveal>
             );
           })}
@@ -82,20 +124,14 @@ export default function ProgramPage() {
       </SectionShell>
 
       <SectionShell tone="dark">
-        <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+        <div className="mx-auto max-w-4xl text-center">
           <Reveal>
-            <p className="viiv-kicker text-[color:var(--vil-gold)]">Year 3 venture paths</p>
-            <h2 className="viiv-section-title mt-4 max-w-2xl text-white">One founder. One vision. One company.</h2>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/65">Students choose an industry direction, then organise every assignment, mentor conversation, and assessment around building that venture.</p>
-            <Link href="/program/build-an-enterprise" className="btn-primary mt-8 !bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)]">Explore Year 3 <ArrowRight className="h-4 w-4" /></Link>
+            <GraduationCap className="mx-auto h-12 w-12 text-[color:var(--vil-gold)]" />
+            <p className="viiv-kicker mt-8 text-[color:var(--vil-gold)]">{demoDay.eyebrow}</p>
+            <h2 className="mt-4 text-5xl font-bold tracking-tight text-white md:text-7xl">{demoDay.title}</h2>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/70">{demoDay.body}</p>
+            <Link href="/program/graduation-and-demo-day" className="btn-primary mt-9 !bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)]">See Graduation & Demo Day <ArrowRight className="h-4 w-4" /></Link>
           </Reveal>
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
-            {ventureStudios.map((studio, index) => (
-              <Reveal key={studio} delay={index * 0.035}>
-                <div className="flex min-h-28 items-end rounded-2xl border border-white/10 bg-white/7 p-4 font-semibold text-white/85 transition hover:border-[color:var(--vil-gold)] hover:bg-white/10">{studio}</div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </SectionShell>
 
@@ -103,15 +139,18 @@ export default function ProgramPage() {
         <div className="grid gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:items-center">
           <Reveal>
             <GraduationCap className="h-10 w-10 text-[color:var(--vil-navy)]" />
-            <p className="viiv-kicker mt-8">Graduate with proof</p>
-            <h2 className="mt-4 text-4xl font-bold leading-tight tracking-tight md:text-6xl">A body of work the world can inspect.</h2>
-            <p className="mt-6 text-lg leading-relaxed text-[color:var(--vil-navy)]/70">Students do not graduate on marks alone. They present the evidence behind a real venture and the founder they have become.</p>
+            <p className="viiv-kicker mt-8">{graduateWith.eyebrow}</p>
+            <h2 className="mt-4 text-4xl font-bold leading-tight tracking-tight md:text-6xl">{graduateWith.title}</h2>
+            <p className="mt-6 text-lg leading-relaxed text-[color:var(--vil-navy)]/70">A UGC-recognised BBA degree, three years of real work, and a path you chose — all of it presented with the evidence behind it.</p>
             <Link href="/program/graduation-and-demo-day" className="btn-primary mt-8">See Graduation & Demo Day <ArrowRight className="h-4 w-4" /></Link>
           </Reveal>
           <div className="grid gap-3 sm:grid-cols-2">
-            {graduationPortfolio.map((item, index) => (
+            {graduateWith.points.map((item, index) => (
               <Reveal key={item} delay={index * 0.035}>
-                <div className="flex h-full items-center gap-3 rounded-2xl bg-[color:var(--vil-ivory)] p-4 font-semibold text-[color:var(--vil-navy)] shadow-sm"><Check className="h-4 w-4 shrink-0 text-[color:var(--vil-gold-dim)]" />{item}</div>
+                <div className="flex h-full items-start gap-3 rounded-2xl bg-[color:var(--vil-ivory)] p-4 font-semibold text-[color:var(--vil-navy)] shadow-sm">
+                  <Check className="h-4 w-4 shrink-0 text-[color:var(--vil-gold-dim)]" />
+                  <span className="text-sm leading-relaxed">{item}</span>
+                </div>
               </Reveal>
             ))}
           </div>
