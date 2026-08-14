@@ -38,7 +38,7 @@ export function EnvisionedBySection() {
               <div className="h-56 w-56 overflow-hidden rounded-full border-4 border-white bg-white shadow-[0_24px_60px_-24px_rgba(31,49,73,0.4)] md:h-64 md:w-64">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/founder/arunmozhivarman.jpeg"
+                  src="/photos/mentors/arunmozhivarman_circle.png"
                   alt="Arunmozhivarman Ramachandran"
                   className="h-full w-full object-cover"
                 />
@@ -81,7 +81,7 @@ export function EnvisionedBySection() {
               <div className="space-y-6 text-base leading-[1.8] text-[color:var(--text-muted)] md:text-lg">
                 <p>
                   Arunmozhivarman Ramachandran spent over 12 years building and
-                  leading teams at NxtWave, Practo, WheelsEye, and Toppr —
+                  leading teams at Practo, WheelsEye, Toppr and NxtWave
                   scaling sales teams of 200+ professionals, forging multi-crore
                   strategic partnerships, and helping 1,000+ healthcare
                   providers adopt digital solutions. He completed his Executive

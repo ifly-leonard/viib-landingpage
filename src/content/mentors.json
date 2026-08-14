@@ -16,6 +16,14 @@
     "company_logo_url": "/companies/exotel.webp"
   },
   {
+    "name": "Leonard Selvaraja",
+    "company": "icrewsystems",
+    "title": "Director of Engineering",
+    "linkedin": "",
+    "photo_url": "/photos/mentors/leonard-selvaraja.png",
+    "company_logo_url": "/companies/icrewsystems.webp"
+  },
+  {
     "name": "Chenthil Kumar",
     "company": "Microsoft",
     "title": "Senior Software Engineer",
@@ -56,6 +64,14 @@
     "company_logo_url": "/companies/tagged.webp"
   },
   {
+    "name": "Hameed Rahamathullah",
+    "company": "SayAboutUs",
+    "title": "Director of Engineering",
+    "linkedin": "",
+    "photo_url": "/photos/mentors/hameed-rahamathullah.png",
+    "company_logo_url": "/companies/sayaboutus.webp"
+},
+  {
     "name": "Rammohan Sangatala",
     "company": "Unilever",
     "title": "Portfolio Lead",
@@ -86,23 +102,7 @@
     "linkedin": "https://www.linkedin.com/in/subramanya-nikhil-prathi-47035789/",
     "photo_url": "/photos/mentors/subramanya-nikhil-prathi.png",
     "company_logo_url": "/companies/blinkit.webp"
-  },
-  {
-    "name": "Leonard Selvaraja",
-    "company": "icrewsystems",
-    "title": "Director of Engineering",
-    "linkedin": "",
-    "photo_url": "/photos/mentors/leonard-selvaraja.png",
-    "company_logo_url": "/companies/icrewsystems.webp"
-  },
-  {
-    "name": "Hameed Rahamathullah",
-    "company": "SayAboutUs",
-    "title": "Director of Engineering",
-    "linkedin": "",
-    "photo_url": "/photos/mentors/hameed-rahamathullah.png",
-    "company_logo_url": "/companies/sayaboutus.webp"
-  },
+  }, 
   {
     "name": "Hari Kumaran",
     "company": "SayAboutUs",
