@@ -10,6 +10,7 @@ import { AnnouncementBar } from "@/components/viiv/AnnouncementBar";
 import { useLeadModal } from "@/components/viiv/LeadModalContext";
 import { MobileNav } from "@/components/viiv/MobileNav";
 import { NavMenu } from "@/components/viiv/NavMenu";
+import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { siteMeta } from "@/content/homepage";
 import { admissionsConfig } from "@/lib/admissions.config";
 import { cn } from "@/lib/utils";
@@ -73,8 +74,7 @@ export function Header() {
           <NavMenu light={!scrolled} />
 
           <div className="hidden items-center gap-1 lg:flex">
-            <a
-              href={admissionsConfig.admissionsPhoneHref}
+            <PhoneLink
               className={cn(
                 "inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-medium transition-colors",
                 scrolled
@@ -84,7 +84,7 @@ export function Header() {
             >
               <Phone className="h-4 w-4" />
               {admissionsConfig.admissionsPhone}
-            </a>
+            </PhoneLink>
             <button
               type="button"
               onClick={openLeadModal}
@@ -157,13 +157,10 @@ export function Header() {
           >
             Apply Now
           </button>
-          <a
-            href={admissionsConfig.admissionsPhoneHref}
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-[color:var(--border)] px-5 py-3.5 text-sm font-medium text-[color:var(--vil-navy)]"
-          >
+          <PhoneLink className="inline-flex items-center justify-center gap-2 rounded-full border border-[color:var(--border)] px-5 py-3.5 text-sm font-medium text-[color:var(--vil-navy)]">
             <Phone className="h-4 w-4" />
             {admissionsConfig.admissionsPhone}
-          </a>
+          </PhoneLink>
         </div>
       </div>
     </>

@@ -18,7 +18,7 @@ export function CampusVisitHero() {
       <div
         aria-hidden
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url(/photos/059A2764.jpg)" }}
+        style={{ backgroundImage: "url(/photos/early-campus/lecture_lab.png)" }}
       />
 
       {/* Readability scrims */}

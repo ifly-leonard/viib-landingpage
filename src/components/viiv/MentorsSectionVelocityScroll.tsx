@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   ScrollVelocityContainer,
   ScrollVelocityRow,
@@ -18,44 +19,7 @@ type Mentor = {
 };
 
 const MENTORS: Mentor[] = mentorsData;
-
-const CARD_GRAIN_MASK =
-  "linear-gradient(to bottom, transparent 0%, transparent 24%, rgba(0,0,0,0.22) 48%, rgba(0,0,0,0.72) 72%, #000 100%)";
-
-function MentorCardAtmosphere() {
-  return (
-    <>
-      <span
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[color:var(--vil-navy)]"
-      />
-      <span
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 95% 58% at 50% 78%, color-mix(in srgb, var(--vil-ivory) 11%, transparent), transparent 72%)",
-        }}
-      />
-      <span
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage:
-            "radial-gradient(color-mix(in srgb, var(--vil-ivory) 28%, transparent) 0.6px, transparent 0.9px)",
-          backgroundSize: "3px 3px",
-          mixBlendMode: "soft-light",
-          opacity: 0.34,
-          WebkitMaskImage: CARD_GRAIN_MASK,
-          maskImage: CARD_GRAIN_MASK,
-        }}
-      />
-    </>
-  );
-}
-
-const PORTRAIT_GRAIN_MASK =
-  "linear-gradient(to top, transparent 0%, transparent 30%, rgba(0,0,0,0.2) 52%, rgba(0,0,0,0.65) 74%, #000 100%)";
+const CARD_BG = "#282629";
 
 function MentorCardPortrait({ mentor }: { mentor: Mentor }) {
   return (
@@ -74,28 +38,39 @@ function MentorCardPortrait({ mentor }: { mentor: Mentor }) {
             "linear-gradient(to top, #000 0%, #000 72%, rgba(0,0,0,0.55) 86%, transparent 100%)",
         }}
       />
-      <span
-        aria-hidden
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "radial-gradient(color-mix(in srgb, var(--vil-ivory) 38%, transparent) 0.55px, transparent 0.85px)",
-          backgroundSize: "2.5px 2.5px",
-          mixBlendMode: "soft-light",
-          opacity: 0.36,
-          WebkitMaskImage: PORTRAIT_GRAIN_MASK,
-          maskImage: PORTRAIT_GRAIN_MASK,
-        }}
-      />
+    </div>
+  );
+}
+
+function MentorCompanyMark({ mentor }: { mentor: Mentor }) {
+  const [logoFailed, setLogoFailed] = useState(false);
+  const showLogo = Boolean(mentor.company_logo_url) && !logoFailed;
+
+  return (
+    <div className="mt-2 flex min-w-0 items-center gap-2">
+      {showLogo ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={mentor.company_logo_url}
+          alt=""
+          aria-hidden
+          onError={() => setLogoFailed(true)}
+          className="h-6 w-6 shrink-0 object-contain opacity-95 drop-shadow-[0_1px_6px_rgba(0,0,0,0.35)]"
+        />
+      ) : null}
+      <p className="min-w-0 truncate text-xs font-semibold tracking-wide text-[color:var(--vil-ivory)]/80">
+        {mentor.company}
+      </p>
     </div>
   );
 }
 
 function MentorCard({ mentor }: { mentor: Mentor }) {
   return (
-    <div className="group relative mx-2 flex h-[22rem] w-[15rem] shrink-0 select-none flex-col overflow-hidden bg-[color:var(--vil-navy)] p-5 text-left text-[color:var(--vil-ivory)] shadow-[0_18px_40px_-24px_rgba(31,49,73,0.55)]">
-      <MentorCardAtmosphere />
-
+    <div
+      className="group relative mx-2 rounded-2xl flex h-[22rem] w-[15rem] shrink-0 select-none flex-col overflow-hidden p-5 text-left text-[color:var(--vil-ivory)] shadow-[0_18px_40px_-24px_rgba(40,38,41,0.55)]"
+      style={{ backgroundColor: CARD_BG }}
+    >
       {/* shine sweep on hover */}
       <span className="pointer-events-none absolute inset-0 z-[1] -translate-x-full bg-gradient-to-r from-transparent via-white/18 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
 
@@ -108,6 +83,14 @@ function MentorCard({ mentor }: { mentor: Mentor }) {
 
       <MentorCardPortrait mentor={mentor} />
 
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-[4] h-40"
+        style={{
+          background: `linear-gradient(to top, ${CARD_BG} 0%, ${CARD_BG}cc 38%, ${CARD_BG}66 68%, transparent 100%)`,
+        }}
+      />
+
       <div className="relative z-[5] mt-auto flex items-end justify-between gap-3 pr-11">
         <div className="min-w-0">
           <p className="truncate text-lg font-bold tracking-tight text-[color:var(--vil-ivory)]">
@@ -116,12 +99,7 @@ function MentorCard({ mentor }: { mentor: Mentor }) {
           <p className="mt-0.5 truncate text-xs font-medium text-[color:var(--vil-ivory)]/70">
             {mentor.title}
           </p>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={mentor.company_logo_url}
-            alt={mentor.company}
-            className="mt-2 h-6 w-auto max-w-[7.5rem] object-contain object-left opacity-95 drop-shadow-[0_1px_6px_rgba(0,0,0,0.35)]"
-          />
+          <MentorCompanyMark mentor={mentor} />
         </div>
       </div>
     </div>

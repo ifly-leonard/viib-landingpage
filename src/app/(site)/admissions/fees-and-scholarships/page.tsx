@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { GridBackground } from "@/components/viiv/GridBackground";
 import { HowToApplyButton } from "@/components/viiv/HowToApplyButton";
+import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { SectionShell } from "@/components/viiv/SectionShell";
 import { admissionsConfig } from "@/lib/admissions.config";
 
@@ -238,13 +239,10 @@ export default function FeesScholarshipsPage() {
               label="Start Your Application"
               className="!bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)] hover:!brightness-105"
             />
-            <a
-              href={admissionsConfig.admissionsPhoneHref}
-              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-ivory)]/25 px-6 py-3 text-sm font-semibold text-[color:var(--vil-ivory)] transition hover:bg-[color:var(--vil-ivory)]/10"
-            >
+            <PhoneLink className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-ivory)]/25 px-6 py-3 text-sm font-semibold text-[color:var(--vil-ivory)] transition hover:bg-[color:var(--vil-ivory)]/10">
               <Phone className="h-4 w-4" />
               Prefer to talk? {admissionsConfig.admissionsPhone}
-            </a>
+            </PhoneLink>
           </div>
         </div>
       </SectionShell>

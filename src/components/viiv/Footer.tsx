@@ -5,6 +5,7 @@ import Link from "next/link";
 import { GlyphMatrix } from "@/components/ui/glyph-matrix";
 import { CtaButton } from "@/components/viiv/CtaButton";
 import { useFooterCta } from "@/components/viiv/FooterCtaContext";
+import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { footerContent, siteMeta } from "@/content/homepage";
 import { admissionsConfig } from "@/lib/admissions.config";
 
@@ -67,12 +68,9 @@ export function Footer() {
                 {cta ? cta.buttonLabel : "Apply Now"}
               </CtaButton>
               {!cta ? (
-                <a
-                  href={footerContent.phoneHref}
-                  className="text-sm font-semibold text-[color:var(--vil-navy)] transition-colors hover:text-[color:var(--vil-gold-dim)]"
-                >
+                <PhoneLink className="text-sm font-semibold text-[color:var(--vil-navy)] transition-colors hover:text-[color:var(--vil-gold-dim)]">
                   {footerContent.phone}
-                </a>
+                </PhoneLink>
               ) : null}
             </div>
           </div>
@@ -101,12 +99,9 @@ export function Footer() {
               Visit
             </p>
             <p className="mt-5 text-sm text-[color:var(--text-muted)]">{footerContent.address}</p>
-            <a
-              href={footerContent.phoneHref}
-              className="mt-2 inline-block text-sm font-semibold text-[color:var(--vil-gold-dim)] transition-colors hover:text-[color:var(--vil-navy)]"
-            >
+            <PhoneLink className="mt-2 inline-block text-sm font-semibold text-[color:var(--vil-gold-dim)] transition-colors hover:text-[color:var(--vil-navy)]">
               {footerContent.phone}
-            </a>
+            </PhoneLink>
             <p className="mt-5 max-w-[16rem] text-xs leading-relaxed text-[color:var(--text-soft)]">
               Recognized online BBA degree pathway.
             </p>

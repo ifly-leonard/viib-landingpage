@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { ArrowUpRight, Phone, X } from "lucide-react";
 
+import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { admissionsConfig } from "@/lib/admissions.config";
 import { cn } from "@/lib/utils";
 
@@ -111,13 +112,10 @@ export function WhatsappFab() {
               </div>
 
               {/* Phone fallback */}
-              <a
-                href={admissionsConfig.admissionsPhoneHref}
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-[color:var(--border)] bg-white px-4 py-2 text-xs font-semibold text-[color:var(--vil-navy)] transition hover:border-[color:var(--vil-gold)]/60"
-              >
+              <PhoneLink className="inline-flex items-center justify-center gap-2 rounded-full border border-[color:var(--border)] bg-white px-4 py-2 text-xs font-semibold text-[color:var(--vil-navy)] transition hover:border-[color:var(--vil-gold)]/60">
                 <Phone className="h-3.5 w-3.5 text-[color:var(--vil-gold-dim)]" />
                 Call {admissionsConfig.admissionsPhone}
-              </a>
+              </PhoneLink>
             </div>
 
             {/* Input */}

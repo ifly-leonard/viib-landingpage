@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Phone } from "lucide-react";
 
+import { CallbackDialog } from "@/components/viiv/CallbackDialog";
+import { CallbackProvider } from "@/components/viiv/CallbackContext";
 import { Footer } from "@/components/viiv/Footer";
 import { FooterCtaProvider } from "@/components/viiv/FooterCtaContext";
 import { Header } from "@/components/viiv/Header";
@@ -8,26 +10,30 @@ import { LeadMagnetModal } from "@/components/viiv/LeadMagnetModal";
 import { LeadMagnetProvider } from "@/components/viiv/LeadMagnetContext";
 import { LeadModal } from "@/components/viiv/LeadModal";
 import { LeadModalProvider } from "@/components/viiv/LeadModalContext";
+import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { GridBackground } from "@/components/viiv/GridBackground";
 import { WhatsappFab } from "@/components/viiv/WhatsappFab";
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <FooterCtaProvider>
-      <LeadModalProvider>
-        <LeadMagnetProvider>
-          <div className="relative min-h-screen overflow-x-clip bg-[color:var(--vil-ivory)] text-[color:var(--text-main)]">
-            <div className="relative z-10">
-              <Header />
-              <main>{children}</main>
-              <Footer />
+      <CallbackProvider>
+        <LeadModalProvider>
+          <LeadMagnetProvider>
+            <div className="relative min-h-screen overflow-x-clip bg-[color:var(--vil-ivory)] text-[color:var(--text-main)]">
+              <div className="relative z-10">
+                <Header />
+                <main>{children}</main>
+                <Footer />
+              </div>
             </div>
-          </div>
-          <LeadModal />
-          <LeadMagnetModal />
-          <WhatsappFab />
-        </LeadMagnetProvider>
-      </LeadModalProvider>
+            <LeadModal />
+            <LeadMagnetModal />
+            <CallbackDialog />
+            <WhatsappFab />
+          </LeadMagnetProvider>
+        </LeadModalProvider>
+      </CallbackProvider>
     </FooterCtaProvider>
   );
 }
@@ -68,9 +74,9 @@ export function ApplyButton({ className = "" }: { className?: string }) {
 
 export function CallButton({ className = "" }: { className?: string }) {
   return (
-    <a href="tel:+918925991788" className={`btn-secondary ${className}`}>
+    <PhoneLink className={`btn-secondary ${className}`}>
       <Phone className="h-4 w-4" />
       Call Admissions
-    </a>
+    </PhoneLink>
   );
 }

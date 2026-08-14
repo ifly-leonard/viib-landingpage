@@ -17,7 +17,7 @@ export function ParentsWelcomeSection() {
         <div className="relative overflow-hidden rounded-[1.75rem] border border-[color:var(--vil-gold)]/20">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/photos/059A2764.jpg"
+            src="/photos/early-campus/lecture_lab.png"
             alt="Students and families on the VIIV campus"
             className="h-full w-full object-cover"
             loading="lazy"

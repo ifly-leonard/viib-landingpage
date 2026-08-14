@@ -1,6 +1,7 @@
 import { ArrowUpRight, Phone } from "lucide-react";
 
 import { Reveal } from "@/components/viiv/motion";
+import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { SectionHeading } from "@/components/viiv/SectionHeading";
 import { admissionsConfig } from "@/lib/admissions.config";
 import { admissionsContent } from "@/content/homepage";
@@ -44,10 +45,10 @@ export function AdmissionsCallout() {
                   Apply Now
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
-                <a href={admissionsConfig.admissionsPhoneHref} className="btn-secondary">
+                <PhoneLink className="btn-secondary">
                   <Phone className="h-4 w-4" />
                   Talk to Admissions
-                </a>
+                </PhoneLink>
               </div>
             </aside>
           </Reveal>

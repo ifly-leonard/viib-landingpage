@@ -6,7 +6,7 @@ import { Reveal } from "@/components/viiv/motion";
 import { JourneyMap } from "@/components/viiv/JourneyMap";
 import { SectionShell } from "@/components/viiv/SectionShell";
 import { ApplyButton } from "@/components/viiv/SiteShell";
-import { demoDay, graduateWith, programPaths } from "@/content/programPaths";
+import { graduateWith, programPaths } from "@/content/programPaths";
 
 export default function ProgramPage() {
   return (
@@ -22,7 +22,7 @@ export default function ProgramPage() {
                 Learn. Build. Launch. Scale.
               </h1>
               <p className="mt-8 max-w-2xl text-lg leading-relaxed text-white/72 md:text-xl">
-                A three-year venture-building journey completed alongside an online BBA—designed to move students from problem-solvers to business builders to founder-leaders.
+                A three-year, challenge-based venture-building journey at VIIV, pursued alongside a UGC-recognised Online BBA—designed to transform students from learners into builders, builders into entrepreneurs, and entrepreneurs into future-ready leaders.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <ApplyButton className="!bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)]" />
@@ -32,9 +32,9 @@ export default function ProgramPage() {
 
             <Reveal delay={0.12}>
               <div className="grid h-[29rem] grid-cols-7 grid-rows-6 gap-3 md:h-[36rem]">
-                <div className="relative col-span-4 row-span-6 overflow-hidden rounded-[2rem]"><Image src="/photos/059A2764.jpg" alt="A live founder learning session at VIIV" fill priority className="object-cover" sizes="(max-width: 1024px) 58vw, 34vw" /></div>
-                <div className="relative col-span-3 row-span-3 overflow-hidden rounded-[2rem]"><Image src="/photos/059A3202.jpg" alt="Builders collaborating on campus" fill className="object-cover" sizes="(max-width: 1024px) 42vw, 26vw" /></div>
-                <div className="relative col-span-3 row-span-3 overflow-hidden rounded-[2rem]"><Image src="/photos/059A3259.jpg" alt="The VIIV builder community" fill className="object-cover" sizes="(max-width: 1024px) 42vw, 26vw" /></div>
+                <div className="relative col-span-4 row-span-6 overflow-hidden rounded-[2rem]"><Image src="/photos/early-campus/lecture_lab.png" alt="A live founder learning session at VIIV" fill priority className="object-cover" sizes="(max-width: 1024px) 58vw, 34vw" /></div>
+                <div className="relative col-span-3 row-span-3 overflow-hidden rounded-[2rem]"><Image src="/photos/early-campus/hackathon.png" alt="Builders collaborating on campus" fill className="object-cover" sizes="(max-width: 1024px) 42vw, 26vw" /></div>
+                <div className="relative col-span-3 row-span-3 overflow-hidden rounded-[2rem]"><Image src="/photos/early-campus/branding_session_lecture_lab.png" alt="The VIIV builder community" fill className="object-cover" sizes="(max-width: 1024px) 42vw, 26vw" /></div>
               </div>
             </Reveal>
           </div>
@@ -123,6 +123,70 @@ export default function ProgramPage() {
         </div>
       </SectionShell>
 
+      <SectionShell tone="light">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] lg:gap-16">
+          <Reveal delay={0.1}>
+            <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+              <div className="h-56 w-56 overflow-hidden rounded-full border-4 border-white bg-white shadow-[0_24px_60px_-24px_rgba(31,49,73,0.4)] md:h-64 md:w-64">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/founder/khushbu-ranjan.png"
+                  alt="Khushbu Ranjan"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <p className="mt-5 text-sm font-semibold text-[color:var(--vil-navy)]">
+                Khushbu Ranjan
+              </p>
+              <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-[color:var(--text-soft)]">
+                Head of Placements
+              </p>
+
+              <p className="mt-4 text-sm font-medium text-[color:var(--text-muted)]">
+                8+ Years of Corporate Hiring &amp; Talent Acquisition Experience
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.14}>
+            <div className="max-w-2xl">
+              <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[color:var(--text-soft)]">
+                <span className="h-px w-8 bg-[color:var(--vil-gold)]" />
+                Hear from our Head of Placements
+              </p>
+              <div className="mt-8 space-y-6 text-base leading-[1.8] text-[color:var(--text-muted)] md:text-lg">
+                <p>
+                  Having spent 8+ years in corporate hiring and talent acquisition, I have interviewed, evaluated, and worked with professionals across different roles and organisations. One thing is clear — <strong className="font-semibold text-[color:var(--vil-navy)]">employers hire for capability, not credentials alone.</strong>
+                </p>
+                <p>
+                  The strongest candidates are those who can demonstrate what they know through projects, internships, problem-solving ability, communication, initiative, and measurable work.
+                </p>
+                <p>
+                  This is the career advantage we want every VIIV student to develop.
+                </p>
+                <p>
+                  From the early stages of the program, students begin creating a professional portfolio and proof of work that reflects their abilities. They gain exposure to internships, startup environments, industry mentors, hiring professionals, career pathways, interview preparation, and opportunities across our growing network.
+                </p>
+                <p>
+                  Our focus is not limited to securing a student&apos;s first job after graduation. We want them to develop the career confidence, professional network, and practical experience required to navigate opportunities throughout their working lives.
+                </p>
+                <p>
+                  Whether they pursue high-growth startups, Founder&apos;s Office roles, sales, growth, product, operations, AI-led roles, creator careers, or entrepreneurship, our placement ecosystem will help them identify and pursue the right path.
+                </p>
+                <p>
+                  At VIIV, career support continues beyond graduation through our mentor and industry network.
+                </p>
+                <p className="text-[color:var(--vil-navy)]">
+                  Your first opportunity is only the beginning.
+                </p>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </SectionShell>
+
+      {/* Demo Day section — temporarily hidden. Restore when ready.
       <SectionShell tone="dark">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
@@ -134,6 +198,7 @@ export default function ProgramPage() {
           </Reveal>
         </div>
       </SectionShell>
+      */}
 
       <SectionShell tone="gold" showGrid>
         <div className="grid gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:items-center">

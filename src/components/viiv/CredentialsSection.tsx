@@ -22,34 +22,50 @@ export function CredentialsSection() {
         </Reveal>
 
         <Reveal delay={0.08}>
-          <div className="mt-10 grid items-center gap-8 rounded-[2rem] border border-[color:var(--border)] bg-white p-8 shadow-[0_24px_70px_-45px_rgba(31,49,73,0.5)] md:grid-cols-[1fr_auto_1fr] md:gap-12 md:p-10">
-            {/* VIIV */}
-            <div className="flex items-center justify-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/brand/logo_full.png"
-                alt="VIIV"
-                className="h-52 w-auto object-contain md:h-60"
-              />
+          <div className="mt-10 overflow-hidden rounded-[2rem] border border-[color:var(--border)] bg-white shadow-[0_24px_70px_-45px_rgba(31,49,73,0.5)]">
+            <div className="flex flex-col items-center gap-8 p-8 text-center md:grid md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-12 md:p-10">
+              {/* VIIV */}
+              <div className="flex w-full items-center justify-center">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/brand/logo_full.png"
+                  alt="VIIV"
+                  className="h-24 w-auto object-contain md:h-60"
+                />
+              </div>
+
+              {/* Divider */}
+              <div className="flex items-center justify-center gap-3 text-[color:var(--text-soft)]">
+                <span className="hidden h-px w-10 bg-[color:var(--border)] md:block" />
+                <span className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.18em]">
+                  in partnership with
+                </span>
+                <span className="hidden h-px w-10 bg-[color:var(--border)] md:block" />
+              </div>
+
+              {/* Kalasalingam */}
+              <div className="flex w-full items-center justify-center">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/partners/kalasalingam_university.png"
+                  alt="Kalasalingam University"
+                  className="h-24 w-auto max-w-[300px] object-contain md:h-auto md:w-full md:max-w-[360px]"
+                />
+              </div>
             </div>
 
-            {/* Divider */}
-            <div className="flex items-center gap-3 text-[color:var(--text-soft)]">
-              <span className="hidden h-px w-10 bg-[color:var(--border)] md:block" />
-              <span className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.18em]">
-                in partnership with
-              </span>
-              <span className="hidden h-px w-10 bg-[color:var(--border)] md:block" />
-            </div>
-
-            {/* Kalasalingam */}
-            <div className="flex items-center justify-center">
+            {/* Chancellor partnership photo */}
+            <div className="flex flex-col items-center border-t border-[color:var(--border)] px-8 py-10">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/partners/kalasalingam_university.png"
-                alt="Kalasalingam University"
-                className="h-auto w-full max-w-[300px] object-contain md:max-w-[360px]"
+                src="/partners/kalasalingam_university_chancellor.png"
+                alt="Dr. S. Sashi Anand and Mr. Arunmozhivarman at the VIIV–Kalasalingam partnership"
+                className="h-auto w-full max-w-[26rem] rounded-2xl object-contain"
               />
+              <p className="mt-5 max-w-md text-center text-sm leading-relaxed text-[color:var(--text-muted)]">
+                <span className="font-semibold text-[color:var(--vil-navy)]">Dr. S. Sashi Anand</span>, Vice President, Kalasalingam University and{" "}
+                <span className="font-semibold text-[color:var(--vil-navy)]">Mr. Arunmozhivarman</span>, Founder, VIIV India
+              </p>
             </div>
           </div>
         </Reveal>

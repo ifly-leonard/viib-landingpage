@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { GridBackground } from "@/components/viiv/GridBackground";
 import { HowToApplyButton } from "@/components/viiv/HowToApplyButton";
+import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { SectionShell } from "@/components/viiv/SectionShell";
 import { admissionsConfig } from "@/lib/admissions.config";
 
@@ -75,13 +76,10 @@ export default function EligibilityPage() {
 
           <p className="viiv-kicker text-[color:var(--vil-gold)]">Eligibility</p>
           <h1 className="mt-5 max-w-3xl font-display text-[clamp(2rem,5.2vw,3.75rem)] font-semibold leading-[1.05] tracking-[-0.04em] text-[color:var(--vil-ivory)]">
-            Just passed 12th? You qualify.
+            Class 12 Complete? Step Into the World of Startups &amp; AI.
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[color:var(--vil-ivory)]/80 md:text-lg">
-            VIIV is built for the freshest builders — students who have just
-            finished Class 12 and are ready to start building real ventures
-            instead of waiting for a degree to finish first. No entrance exam.
-            No cut-offs. No rank pressure.
+            VIIV is designed for ambitious students fresh out of Class 12 who want to start building from Day One. Learn by solving real challenges, developing industry-relevant skills, and building ventures alongside your degree journey. No entrance exam. No cut-offs. No rank pressure.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -204,13 +202,10 @@ export default function EligibilityPage() {
               label="Start Your Application"
               className="!bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)] hover:!brightness-105"
             />
-            <a
-              href={admissionsConfig.admissionsPhoneHref}
-              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-ivory)]/25 px-6 py-3 text-sm font-semibold text-[color:var(--vil-ivory)] transition hover:bg-[color:var(--vil-ivory)]/10"
-            >
+            <PhoneLink className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-ivory)]/25 px-6 py-3 text-sm font-semibold text-[color:var(--vil-ivory)] transition hover:bg-[color:var(--vil-ivory)]/10">
               <Phone className="h-4 w-4" />
               Prefer to talk? {admissionsConfig.admissionsPhone}
-            </a>
+            </PhoneLink>
           </div>
         </div>
       </SectionShell>

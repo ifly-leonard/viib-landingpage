@@ -33,12 +33,12 @@ export const accommodationsCopy = [
 
 /** Placeholder gallery — replace src with real accommodation photos. */
 export const accommodationPhotos: readonly GalleryPhoto[] = [
-  { src: "/photos/059A2611.jpg", alt: "A shared study and living space", label: "Common room", orientation: "wide" },
-  { src: "/photos/059A2764.jpg", alt: "A comfortable private room", label: "Private rooms", orientation: "tall" },
-  { src: "/photos/059A2992.jpg", alt: "Students relaxing together after class", label: "Down time", orientation: "square" },
-  { src: "/photos/059A3153.jpg", alt: "A furnished shared room", label: "Shared rooms", orientation: "wide" },
-  { src: "/photos/059A3202.jpg", alt: "A study corner with desk and lamp", label: "Study corners", orientation: "tall" },
-  { src: "/photos/059A3257.jpg", alt: "The residence community in the evening", label: "Evenings at the residence", orientation: "wide" },
-  { src: "/photos/059A3295.jpg", alt: "A dining and mess area", label: "Mess & dining", orientation: "square" },
-  { src: "/photos/059A3548.jpg", alt: "A recreation area in the residence", label: "Recreation", orientation: "wide" },
+  { src: "/photos/early-campus/lecture_ai_day.png", alt: "A shared study and living space", label: "Common room", orientation: "wide" },
+  { src: "/photos/early-campus/lecture_lab.png", alt: "A comfortable private room", label: "Private rooms", orientation: "tall" },
+  { src: "/photos/early-campus/kumarraja_sir_interacting.png", alt: "Students relaxing together after class", label: "Down time", orientation: "square" },
+  { src: "/photos/early-campus/lecture_ai_day.png", alt: "A furnished shared room", label: "Shared rooms", orientation: "wide" },
+  { src: "/photos/early-campus/hackathon.png", alt: "A study corner with desk and lamp", label: "Study corners", orientation: "tall" },
+  { src: "/photos/early-campus/hackathon.png", alt: "The residence community in the evening", label: "Evenings at the residence", orientation: "tall" },
+  { src: "/photos/early-campus/cafeteria_hackathon.png", alt: "A dining and mess area", label: "Mess & dining", orientation: "wide" },
+  { src: "/photos/early-campus/cafeteria_hackathon.png", alt: "A recreation area in the residence", label: "Recreation", orientation: "wide" },
 ] as const;

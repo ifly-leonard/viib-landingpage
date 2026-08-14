@@ -9,7 +9,7 @@ import { accommodationPhotos, accommodationsCopy, accommodationsIntro } from "@/
 export default function AccommodationsPage() {
   return (
     <>
-      <CampusEditorialHero eyebrow={accommodationsIntro.eyebrow} title={accommodationsIntro.title} description={accommodationsIntro.description} image="/photos/059A3259.jpg" cta={{ label: "Book a campus visit", href: "/campus-life/book-a-tour" }} />
+      <CampusEditorialHero eyebrow={accommodationsIntro.eyebrow} title={accommodationsIntro.title} description={accommodationsIntro.description} image="/photos/early-campus/branding_session_lecture_lab.png" cta={{ label: "Book a campus visit", href: "/campus-life/book-a-tour" }} />
 
       <SectionShell tone="light">
         <div className="mx-auto max-w-3xl">

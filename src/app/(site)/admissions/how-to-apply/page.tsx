@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { GridBackground } from "@/components/viiv/GridBackground";
 import { HowToApplyButton } from "@/components/viiv/HowToApplyButton";
+import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { SectionShell } from "@/components/viiv/SectionShell";
 import { howToApplyCta, howToApplyEligibility, howToApplyFaq, howToApplyHero, howToApplySteps, howToApplyTimeline } from "@/content/howToApply";
 
@@ -250,13 +251,10 @@ export default function HowToApplyPage() {
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <HowToApplyButton label={howToApplyCta.buttonLabel} className="!bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)] hover:!brightness-105" />
-            <a
-              href={howToApplyCta.phoneHref}
-              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-ivory)]/25 px-6 py-3 text-sm font-semibold text-[color:var(--vil-ivory)] transition hover:bg-[color:var(--vil-ivory)]/10"
-            >
+            <PhoneLink className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-ivory)]/25 px-6 py-3 text-sm font-semibold text-[color:var(--vil-ivory)] transition hover:bg-[color:var(--vil-ivory)]/10">
               <Phone className="h-4 w-4" />
               {howToApplyCta.supportLine}
-            </a>
+            </PhoneLink>
           </div>
         </div>
       </SectionShell>

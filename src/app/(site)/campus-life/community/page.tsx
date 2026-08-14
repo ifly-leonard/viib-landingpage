@@ -31,7 +31,7 @@ const journey = [
 export default function CommunityPage() {
   return (
     <>
-      <CampusEditorialHero eyebrow="The VIIV Mentor Network" title="Learn from those who've been there. Build with those who've done it." description="At VIIV, learning goes beyond classrooms. Students gain access to a growing network of 100+ mentors from IITs, IIMs, leading startups, global technology companies such as Microsoft, and the wider entrepreneurial ecosystem." image="/photos/059A3259.jpg" cta={{ label: "Meet the mentors", href: "#mentors" }} />
+      <CampusEditorialHero eyebrow="The VIIV Mentor Network" title="Learn from those who've been there. Build with those who've done it." description="At VIIV, learning goes beyond classrooms. Students gain access to a growing network of 100+ mentors from IITs, IIMs, leading startups, global technology companies such as Microsoft, and the wider entrepreneurial ecosystem." image="/photos/early-campus/branding_session_lecture_lab.png" cta={{ label: "Meet the mentors", href: "#mentors" }} />
 
       {/* By the numbers */}
       <SectionShell tone="dark" compact>

@@ -93,13 +93,13 @@ const ITEMS: BentoItem[] = [
   {
     id: "bento-6",
     index: "06",
-    title: "Recognized Degree",
+    title: "Recognized Online BBA Degree",
     short:
-      "Complete an online BBA alongside three years of practical venture building.",
+      "Pursue a recognized Online BBA from Kalasalingam Academy of Research and Education (KARE) alongside three years of practical venture building.",
     details: [
-      "Students pursue a recognized online BBA through the partner university while completing VIIV's venture-building program.",
-      "The degree provides an academic foundation, while VIIV develops the practical ability to identify opportunities, build products, acquire customers, and lead ventures.",
-      "Students graduate with both an undergraduate qualification and a portfolio of demonstrated work.",
+      "Alongside VIIV's three-year venture-building journey, students pursue a recognized Online BBA from Kalasalingam Academy of Research and Education (KARE), combining academic learning with real-world business building.",
+      "While the BBA provides a strong foundation in business and management, VIIV transforms learning into action through Challenge-Based Learning, venture projects, internships, AI tools, customer discovery, sales, marketing, and startup building.",
+      "By graduation, students leave with more than a degree — an undergraduate qualification, a portfolio of demonstrated work, industry exposure, and the experience of building and launching ventures of their own.",
     ],
     image: "/cover/cover_4_classroom.png",
     className: "col-span-1 row-span-1 lg:col-span-1 lg:row-span-2",

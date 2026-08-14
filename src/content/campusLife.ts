@@ -1,16 +1,44 @@
 export const campusPhotos = [
-  { src: "/photos/059A2611.jpg", alt: "A collaborative learning session at VIIV", label: "Learning together", orientation: "tall" },
-  { src: "/photos/059A2728.jpg", alt: "A speaker sharing practical insight on campus", label: "Founder sessions", orientation: "wide" },
-  { src: "/photos/059A2764.jpg", alt: "A live workshop with students at VIIV", label: "Workshops", orientation: "tall" },
-  { src: "/photos/059A2992.jpg", alt: "Students participating in a campus activity", label: "Builder energy", orientation: "square" },
-  { src: "/photos/059A3153.jpg", alt: "A participant presenting work to the room", label: "Show the work", orientation: "wide" },
-  { src: "/photos/059A3167.jpg", alt: "Participants in conversation during a session", label: "Peer exchange", orientation: "square" },
-  { src: "/photos/059A3202.jpg", alt: "Builders working together around a table", label: "Studio time", orientation: "tall" },
-  { src: "/photos/059A3257.jpg", alt: "The VIIV community during a live event", label: "Community", orientation: "wide" },
-  { src: "/photos/059A3259.jpg", alt: "A group photograph of the VIIV community", label: "Together at VIIV", orientation: "wide" },
-  { src: "/photos/059A3295.jpg", alt: "A campus event in progress", label: "Campus moments", orientation: "tall" },
-  { src: "/photos/059A3364.jpg", alt: "A practical learning activity on campus", label: "Build in public", orientation: "square" },
-  { src: "/photos/059A3548.jpg", alt: "A participant receiving a certificate after a workshop", label: "Milestones", orientation: "wide" },
+  { src: "/photos/early-campus/lecture_ai_day.png", alt: "A collaborative learning session at VIIV", label: "Learning together", orientation: "wide" },
+  { src: "/photos/early-campus/lecture_lab.png", alt: "A speaker sharing practical insight on campus", label: "Founder sessions", orientation: "tall" },
+  { src: "/photos/early-campus/lecture_lab.png", alt: "A live workshop with students at VIIV", label: "Workshops", orientation: "tall" },
+  { src: "/photos/early-campus/kumarraja_sir_interacting.png", alt: "Students participating in a campus activity", label: "Builder energy", orientation: "square" },
+  { src: "/photos/early-campus/lecture_ai_day.png", alt: "A participant presenting work to the room", label: "Show the work", orientation: "wide" },
+  { src: "/photos/early-campus/aarti_maam_interacting.png", alt: "Participants in conversation during a session", label: "Peer exchange", orientation: "tall" },
+  { src: "/photos/early-campus/hackathon.png", alt: "Builders working together around a table", label: "Studio time", orientation: "tall" },
+  { src: "/photos/early-campus/hackathon.png", alt: "The VIIV community during a live event", label: "Community", orientation: "tall" },
+  { src: "/photos/early-campus/branding_session_lecture_lab.png", alt: "A group photograph of the VIIV community", label: "Together at VIIV", orientation: "tall" },
+  { src: "/photos/early-campus/cafeteria_hackathon.png", alt: "A campus event in progress", label: "Campus moments", orientation: "wide" },
+  { src: "/photos/early-campus/aarti_maam_interacting.png", alt: "A practical learning activity on campus", label: "Build in public", orientation: "tall" },
+  { src: "/photos/early-campus/cafeteria_hackathon.png", alt: "A participant receiving a certificate after a workshop", label: "Milestones", orientation: "wide" },
+] as const;
+
+export const eveningSpots = [
+  { category: "Malls & Hangouts", name: "The Marina Mall", proximity: "~1.0 km", bestFor: "Multi-cuisine food court, arcade games, and retail therapy." },
+  { category: "Malls & Hangouts", name: "Vivira Mall", proximity: "~1.0 km", bestFor: "Quick post-class bites, lifestyle stores, and rooftop sports." },
+  { category: "Cinemas", name: "INOX (The Marina Mall)", proximity: "~1.0 km", bestFor: "Bigpix screens, recliners, and evening blockbuster premieres." },
+  { category: "Cinemas", name: "AGS Cinemas (Vivira Mall)", proximity: "~1.0 km", bestFor: "Student-friendly ticket pricing and Dolby Atmos sound." },
+  { category: "Trampoline & Gaming", name: "Dugout Trampoline Park", proximity: "~1.0 km", bestFor: "Dodgeball zones, foam pits, and blowing off steam with friends." },
+  { category: "Beach & Coastal", name: "Kovalam Beach (Covelong)", proximity: "~6.7 km", bestFor: "Golden-hour sea breezes, surf culture, and coastal sunset cafes." },
+  { category: "Water Sports", name: "Muttukadu Boat House", proximity: "~4.5 km", bestFor: "Speedboats, water scooters, and backwater chilling." },
+  { category: "Rooftop Sports", name: "Hotfut SPR Sports", proximity: "~1.0 km", bestFor: "Floodlit rooftop 5-a-side football & box cricket under the stars." },
+  { category: "Badminton / Shuttle", name: "Balaji Badminton Academy", proximity: "~700 m", bestFor: "Indoor synthetic courts open 24/7 for fast-paced rally games." },
+  { category: "Badminton / Shuttle", name: "Badminton Tribes", proximity: "~800 m", bestFor: "Non-marking court rentals on Thalambur Rd for midnight matches." },
+  { category: "Cricket & Football Turf", name: "Turbo Turf (OMR Food Street)", proximity: "~850 m", bestFor: "Box cricket under floodlights paired with late-night food runs." },
+  { category: "Multi-Sport Turf", name: "Turfhit / Turfhit Prime", proximity: "~650 m", bestFor: "All-weather turf for team sports and student tournaments." },
+  { category: "Swimming", name: "OMR Health Studio Pool", proximity: "~1.2 km", bestFor: "Clean, well-maintained pool for evening swim laps and relaxation." },
+  { category: "Tennis", name: "Competitive Edge Tennis Academy", proximity: "~750 m", bestFor: "Coached tennis courts for evening practice and friendly matches." },
+] as const;
+
+export const lifeAtViivPhotos = [
+  { src: "/photos/life-at-viiv/accomodation_bedroom.png", alt: "A comfortable student accommodation bedroom", label: "Accommodation bedroom", orientation: "wide" },
+  { src: "/photos/life-at-viiv/accomodation_workspace.png", alt: "A student workspace in the accommodation", label: "Accommodation workspace", orientation: "wide" },
+  { src: "/photos/life-at-viiv/dance_studio.png", alt: "The campus dance studio", label: "Dance studio", orientation: "wide" },
+  { src: "/photos/life-at-viiv/dance_studio_with_people.png", alt: "Students in the dance studio", label: "Dance studio in action", orientation: "wide" },
+  { src: "/photos/life-at-viiv/football_turf.png", alt: "The football turf near campus", label: "Football turf", orientation: "wide" },
+  { src: "/photos/life-at-viiv/shuttle_court.png", alt: "The shuttle court", label: "Shuttle court", orientation: "wide" },
+  { src: "/photos/life-at-viiv/shuttle_court_side_profile.png", alt: "A side view of the shuttle court", label: "Shuttle court side", orientation: "wide" },
+  { src: "/photos/life-at-viiv/sports_awards.png", alt: "Sports awards won by VIIV students", label: "Sports awards", orientation: "wide" },
 ] as const;
 
 export const campusRhythm = [
@@ -21,10 +49,10 @@ export const campusRhythm = [
 ] as const;
 
 export const communityLayers = [
-  { title: "Builders", copy: "Students who share the ambition to make, test, sell, and improve—not simply complete assignments.", image: "/photos/059A3202.jpg" },
-  { title: "Mentors", copy: "Founders, operators, marketers, investors, and specialists who help students ask better questions and make stronger decisions.", image: "/photos/059A2764.jpg" },
-  { title: "Founder Circles", copy: "Small groups for honest progress reviews, shared accountability, peer feedback, and learning through one another's ventures.", image: "/photos/059A3167.jpg" },
-  { title: "The Wider Ecosystem", copy: "Incubators, accelerators, business leaders, alumni, and university partners brought into reviews, workshops, and Demo Day.", image: "/photos/059A3259.jpg" },
+  { title: "Builders", copy: "Students who share the ambition to make, test, sell, and improve—not simply complete assignments.", image: "/photos/early-campus/hackathon.png" },
+  { title: "Mentors", copy: "Founders, operators, marketers, investors, and specialists who help students ask better questions and make stronger decisions.", image: "/photos/early-campus/lecture_lab.png" },
+  { title: "Founder Circles", copy: "Small groups for honest progress reviews, shared accountability, peer feedback, and learning through one another's ventures.", image: "/photos/early-campus/aarti_maam_interacting.png" },
+  { title: "The Wider Ecosystem", copy: "Incubators, accelerators, business leaders, alumni, and university partners brought into reviews, workshops, and Demo Day.", image: "/photos/early-campus/branding_session_lecture_lab.png" },
 ] as const;
 
 export const ventureStudioDetails = [

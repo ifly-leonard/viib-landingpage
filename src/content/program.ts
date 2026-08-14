@@ -38,7 +38,7 @@ export const programYears: readonly ProgramPageData[] = [
       "Before building a company, students build the judgement, communication, discipline, and practical confidence needed to operate like a founder.",
     goal: "Move from curiosity to a validated opportunity worth pursuing.",
     accent: "#f7bd44",
-    images: ["/photos/059A2764.jpg", "/photos/059A3202.jpg", "/photos/059A3548.jpg"],
+    images: ["/photos/early-campus/lecture_lab.png", "/photos/early-campus/hackathon.png", "/photos/early-campus/cafeteria_hackathon.png"],
     stats: [
       { value: "50", label: "Business problems discovered" },
       { value: "100", label: "Customer conversations" },
@@ -105,7 +105,7 @@ export const programYears: readonly ProgramPageData[] = [
       "Students move from discovery to execution—designing the model, building the product, launching the brand, acquiring customers, and learning to operate.",
     goal: "Launch a real startup and produce evidence of demand through customers or revenue.",
     accent: "#b6c7e6",
-    images: ["/photos/059A3153.jpg", "/photos/059A3364.jpg", "/photos/059A2992.jpg"],
+    images: ["/photos/early-campus/lecture_ai_day.png", "/photos/early-campus/aarti_maam_interacting.png", "/photos/early-campus/kumarraja_sir_interacting.png"],
     stats: [
       { value: "1", label: "Working MVP" },
       { value: "1", label: "Market-facing brand" },
@@ -172,7 +172,7 @@ export const programYears: readonly ProgramPageData[] = [
       "Every student chooses a venture path. From that point, assignments, mentor sessions, projects, and reviews revolve around one vision and one company.",
     goal: "Build a systematic, investment-ready venture with a team, operating rhythm, and long-term direction.",
     accent: "#f7bd44",
-    images: ["/photos/059A3259.jpg", "/photos/059A2728.jpg", "/photos/059A3295.jpg"],
+    images: ["/photos/early-campus/branding_session_lecture_lab.png", "/photos/early-campus/lecture_lab.png", "/photos/early-campus/cafeteria_hackathon.png"],
     stats: [
       { value: "1", label: "Focused venture path" },
       { value: "3", label: "Founder studios" },
