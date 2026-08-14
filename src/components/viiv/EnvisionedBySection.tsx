@@ -48,7 +48,7 @@ export function EnvisionedBySection() {
                 Arunmozhivarman Ramachandran
               </p>
               <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-[color:var(--text-soft)]">
-                Founder
+                Founder, VIIV — Varman Institute of Innovation and Venture Building
               </p>
 
               <div className="mt-4 inline-flex items-center gap-2.5 rounded-full border border-[color:var(--border)] bg-white px-2.5 py-1.5">
@@ -62,16 +62,16 @@ export function EnvisionedBySection() {
                 </span>
                 <span className="flex flex-col items-start text-left leading-tight">
                   <span className="text-xs font-semibold text-[color:var(--vil-navy)]">
-                    IIM Kozhikode
+                    IIM Kozhikode Alumnus
                   </span>
                   <span className="text-[10px] font-medium text-[color:var(--text-soft)]">
-                    Strategic Management 2019-20
+                    12+ Years of Startup Experience
                   </span>
                 </span>
               </div>
 
               <p className="mt-4 text-sm font-medium text-[color:var(--text-muted)]">
-                12+ years of startup experience
+                Ex-Practo · Ex-Toppr · Ex-WheelsEye · Ex-NxtWave
               </p>
             </div>
           </Reveal>
@@ -80,30 +80,67 @@ export function EnvisionedBySection() {
             <div className="max-w-2xl">
               <div className="space-y-6 text-base leading-[1.8] text-[color:var(--text-muted)] md:text-lg">
                 <p>
-                  Arunmozhivarman Ramachandran spent over 12 years building and
-                  leading teams at Practo, WheelsEye, Toppr and NxtWave
-                  scaling sales teams of 200+ professionals, forging multi-crore
-                  strategic partnerships, and helping 1,000+ healthcare
-                  providers adopt digital solutions. He completed his Executive
-                  Programme in{" "}
+                  Arunmozhivarman Ramachandran brings{" "}
                   <strong className="font-semibold text-[color:var(--vil-navy)]">
-                    Strategic Management at IIM Kozhikode
+                    12+ years of experience
+                  </strong>{" "}
+                  across high-growth startups, including{" "}
+                  <strong className="font-semibold text-[color:var(--vil-navy)]">
+                    Practo, Toppr, WheelsEye, and NxtWave
                   </strong>
-                  , sharpening the ability to pair business strategy with
-                  market-level execution.
+                  , where he built and led large sales teams, scaled new markets, forged strategic partnerships, and drove business growth at scale.
                 </p>
                 <p>
-                  Working inside multiple unicorn startups, he saw what most
-                  classrooms still miss — that technology, strong execution, and
-                  the right business model can transform industries. He also saw
-                  the gap: graduates arriving with degrees, but not the
-                  demonstrated ability to build, sell, and lead.
+                  Over the course of his career, he has built and managed teams of{" "}
+                  <strong className="font-semibold text-[color:var(--vil-navy)]">
+                    200+ professionals
+                  </strong>
+                  , contributed to{" "}
+                  <strong className="font-semibold text-[color:var(--vil-navy)]">
+                    multi-crore business and institutional partnerships
+                  </strong>
+                  , and helped{" "}
+                  <strong className="font-semibold text-[color:var(--vil-navy)]">
+                    1,000+ healthcare providers
+                  </strong>{" "}
+                  adopt digital solutions during his time at Practo. His journey across multiple high-growth and unicorn startups gave him first-hand experience in how technology, execution, sales, leadership, and strong business models can transform industries.
+                </p>
+                <p>
+                  He holds a{" "}
+                  <strong className="font-semibold text-[color:var(--vil-navy)]">
+                    Bachelor of Engineering in Electronics and Communication Engineering (ECE)
+                  </strong>{" "}
+                  and a{" "}
+                  <strong className="font-semibold text-[color:var(--vil-navy)]">
+                    PGPM from ICFAI Business School (IBS), Bangalore
+                  </strong>
+                  . He further completed the{" "}
+                  <strong className="font-semibold text-[color:var(--vil-navy)]">
+                    Executive Programme in Strategic Management at IIM Kozhikode
+                  </strong>
+                  , strengthening his ability to connect long-term business strategy with real-world market execution.
+                </p>
+                <p>
+                  Throughout his journey, Arunmozhivarman observed a persistent gap between education and execution: many young graduates enter the workforce with degrees, but without enough opportunities to demonstrate that they can{" "}
+                  <strong className="font-semibold text-[color:var(--vil-navy)]">
+                    identify problems, build solutions, understand customers, sell, lead teams, and create value.
+                  </strong>
                 </p>
                 <p className="text-[color:var(--vil-navy)]">
-                  VIIV is his answer — a venture-building institute where
-                  students learn by building real businesses, so the workforce
-                  of tomorrow graduates with evidence of what they can do, not
-                  just certificates.
+                  VIIV was created to bridge that gap.
+                </p>
+                <p>
+                  At VIIV, students don&apos;t wait until graduation to start building. They learn through{" "}
+                  <strong className="font-semibold text-[color:var(--vil-navy)]">
+                    challenge-based learning, real-world projects, venture building, mentorship, and hands-on execution
+                  </strong>{" "}
+                  — developing the skills, portfolio, and entrepreneurial mindset needed for the AI-driven economy.
+                </p>
+                <p>
+                  His vision for VIIV is simple: help young people graduate not only with a degree, but with{" "}
+                  <strong className="font-semibold text-[color:var(--vil-navy)]">
+                    evidence of what they can build, lead, and create.
+                  </strong>
                 </p>
               </div>
             </div>

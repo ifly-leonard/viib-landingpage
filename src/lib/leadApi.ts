@@ -25,6 +25,7 @@ export async function createLead(payload: {
   email: string;
   source?: string;
   description?: string;
+  tags?: readonly string[];
 }): Promise<LeadResult> {
   try {
     const res = await fetch("/api/lead", {

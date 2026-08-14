@@ -15,6 +15,7 @@ export const ZOHO_FIELD_MAP = {
   email: "Email",
   source: "Lead_Source",
   description: "Description",
+  tags: "Tag", // Comma-separated tag names; creates the tags if they don't exist
 } as const;
 
 /** Split a full name into first + last (last is required by Zoho CRM). */
@@ -85,6 +86,7 @@ export type ZohoLeadInput = {
   email: string;
   source?: string;
   description?: string;
+  tags?: readonly string[];
 };
 
 /** Create a lead in Zoho CRM. Returns the created record id. */
@@ -102,6 +104,7 @@ export async function createZohoLead(input: ZohoLeadInput): Promise<{
   };
   if (input.source) lead[ZOHO_FIELD_MAP.source] = input.source;
   if (input.description) lead[ZOHO_FIELD_MAP.description] = input.description;
+  if (input.tags?.length) lead[ZOHO_FIELD_MAP.tags] = input.tags.join(", ");
   Object.assign(lead, CUSTOM_ZOHO_FIELDS);
 
   const res = await fetch(`${ZOHO_API_DOMAIN}/crm/v8/Leads`, {

@@ -53,6 +53,7 @@ export function CallbackDialog() {
         email: email.trim(),
         source: "VIIV request callback",
         description: "Requested a callback from the website.",
+        tags: ["callback_form_landingpage"],
       });
       if (res.ok) {
         setSubmitted(true);
@@ -83,7 +84,12 @@ export function CallbackDialog() {
         }
       }}
     >
-      <DialogContent className="max-w-md rounded-2xl border-[color:var(--border)] bg-[color:var(--vil-ivory)] p-0 text-[color:var(--text-main)]">
+      <DialogContent
+        className="max-w-md rounded-2xl border-[color:var(--border)] bg-[color:var(--vil-ivory)] p-0 text-[color:var(--text-main)]"
+        onPointerDownOutside={(e) => e.preventDefault()}
+        onInteractOutside={(e) => e.preventDefault()}
+        onEscapeKeyDown={(e) => e.preventDefault()}
+      >
         {submitted ? (
           <div className="flex flex-col items-center px-8 py-14 text-center">
             <span className="flex h-16 w-16 items-center justify-center rounded-full bg-[color:var(--vil-gold)]/20 text-[color:var(--vil-gold-dim)]">

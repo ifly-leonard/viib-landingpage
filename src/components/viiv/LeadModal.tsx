@@ -92,7 +92,12 @@ export function LeadModal() {
 
   return (
     <Dialog open={open} onOpenChange={(o) => (o ? undefined : closeLeadModal())}>
-      <DialogContent className="max-h-[min(90vh,52rem)] w-[calc(100vw-1.5rem)] max-w-4xl gap-0 overflow-hidden rounded-2xl border-[color:var(--border)] bg-[color:var(--vil-ivory)] p-0 sm:w-[min(92vw,56rem)] sm:rounded-3xl">
+      <DialogContent
+        className="max-h-[min(90vh,52rem)] w-[calc(100vw-1.5rem)] max-w-4xl gap-0 overflow-hidden rounded-2xl border-[color:var(--border)] bg-[color:var(--vil-ivory)] p-0 sm:w-[min(92vw,56rem)] sm:rounded-3xl"
+        onPointerDownOutside={(e) => e.preventDefault()}
+        onInteractOutside={(e) => e.preventDefault()}
+        onEscapeKeyDown={(e) => e.preventDefault()}
+      >
         <AnimatePresence mode="wait">
           {submittedLead ? (
             /* ---- Success: the navy panel slides over the whole modal ---- */

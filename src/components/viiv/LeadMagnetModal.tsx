@@ -27,7 +27,12 @@ export function LeadMagnetModal() {
 
   return (
     <Dialog open={open} onOpenChange={(o) => (o ? undefined : (setSubmitted(null), closeLeadMagnet()))}>
-      <DialogContent className="max-h-[min(90vh,40rem)] w-[calc(100vw-1.5rem)] max-w-md gap-0 overflow-hidden rounded-2xl border-[color:var(--border)] bg-[color:var(--vil-ivory)] p-0 sm:rounded-3xl">
+      <DialogContent
+        className="max-h-[min(90vh,40rem)] w-[calc(100vw-1.5rem)] max-w-md gap-0 overflow-hidden rounded-2xl border-[color:var(--border)] bg-[color:var(--vil-ivory)] p-0 sm:rounded-3xl"
+        onPointerDownOutside={(e) => e.preventDefault()}
+        onInteractOutside={(e) => e.preventDefault()}
+        onEscapeKeyDown={(e) => e.preventDefault()}
+      >
         <AnimatePresence mode="wait">
           {submitted ? (
             <motion.div

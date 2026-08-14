@@ -37,6 +37,12 @@ export async function POST(request: Request) {
   const email = sanitizeString(body.email, 120);
   const source = sanitizeString(body.source, 120);
   const description = sanitizeString(body.description, 2000);
+  const tags = Array.isArray(body.tags)
+    ? body.tags
+        .map((tag) => sanitizeString(tag, 100))
+        .filter(Boolean)
+        .slice(0, 10)
+    : undefined;
 
   // Required-field validation mirrors the client-side checks.
   if (!NAME_RE.test(name)) {
@@ -59,7 +65,7 @@ export async function POST(request: Request) {
   }
 
   try {
-    const { id } = await createZohoLead({ name, phone, email, source, description });
+    const { id } = await createZohoLead({ name, phone, email, source, description, tags });
     return NextResponse.json({
       success: true,
       message: "Lead created successfully",
