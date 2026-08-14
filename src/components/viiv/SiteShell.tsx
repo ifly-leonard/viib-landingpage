@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Phone } from "lucide-react";
 
+import WhatsappFAB from "lovely-whatsapp-fab";
+
 import { Footer } from "@/components/viiv/Footer";
 import { FooterCtaProvider } from "@/components/viiv/FooterCtaContext";
 import { Header } from "@/components/viiv/Header";
@@ -9,6 +11,7 @@ import { LeadMagnetProvider } from "@/components/viiv/LeadMagnetContext";
 import { LeadModal } from "@/components/viiv/LeadModal";
 import { LeadModalProvider } from "@/components/viiv/LeadModalContext";
 import { GridBackground } from "@/components/viiv/GridBackground";
+import { admissionsConfig } from "@/lib/admissions.config";
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
@@ -24,6 +27,12 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           </div>
           <LeadModal />
           <LeadMagnetModal />
+          <span className="whatsapp-fab-float fixed bottom-5 right-5 z-[60] sm:bottom-6 sm:right-6">
+            <WhatsappFAB
+              phoneNumber="+919629628389"
+              message="Hi VIIV! I'd like to know more about the program."
+            />
+          </span>
         </LeadMagnetProvider>
       </LeadModalProvider>
     </FooterCtaProvider>

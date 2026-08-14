@@ -182,11 +182,21 @@ export function SignupForm({
 
           <p className="text-center text-[11px] leading-relaxed text-[color:var(--text-soft)]">
             By filling out this form, I agree to the{" "}
-            <Link href="/terms-and-conditions" className="font-semibold underline underline-offset-2 hover:text-[color:var(--vil-navy)]">
+            <Link
+              href="/terms-and-conditions"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold underline underline-offset-2 hover:text-[color:var(--vil-navy)]"
+            >
               Terms and Conditions
             </Link>{" "}
             and{" "}
-            <Link href="/privacy-policy" className="font-semibold underline underline-offset-2 hover:text-[color:var(--vil-navy)]">
+            <Link
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold underline underline-offset-2 hover:text-[color:var(--vil-navy)]"
+            >
               Privacy Policy
             </Link>{" "}
             of VIIV India. We&apos;ll reach out with the details — no spam.

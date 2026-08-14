@@ -15,8 +15,8 @@ export function HeroBento() {
           </span>
 
           <h1 className="mt-6 text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.04] tracking-tight">
-            Earn a recognized BBA while building{" "}
-            <span className="text-[color:var(--vil-gold)]">real ventures</span>.
+            Build Your Startup While You Earn a{" "}
+            <span className="text-[color:var(--vil-gold)]">UGC-Recognised Degree</span>.
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[color:var(--vil-ivory)]/75">

@@ -21,7 +21,7 @@ export const heroSlides: readonly HeroSlide[] = [
     icon: "degree",
     navLabel: "The degree",
     eyebrow: "Degree + Venture Builder",
-    title: "Earn a recognized BBA while building real ventures.",
+    title: "Build Your Startup While You Earn a UGC-Recognised Degree",
     subcopy:
       "A 3-year, full-time venture college in Chennai. Earn an online BBA while you build startups, brands, and products on campus.",
     image: "/cover/cover_1.png",
@@ -33,9 +33,9 @@ export const heroSlides: readonly HeroSlide[] = [
     icon: "campus",
     navLabel: "The campus",
     eyebrow: "Full-time · Chennai",
-    title: "A campus built for builders, not lecture halls.",
+    title: "A Campus Built for Builders, Not Just Classrooms",
     subcopy:
-      "Venture studios, mentor reviews, demo days, and a founder community — a full-time offline environment where you ship work every week.",
+      "VIIV is a full-time, offline learning environment designed around building, experimenting, and creating. From Venture Studios and Build Sprints to mentor reviews, Demo Days, and a thriving founder community — you'll turn ideas into real outcomes, week after week.",
     image: "/cover/cover_2_topview_sspdl.png",
     primary: { label: "See Campus Life", href: "/campus" },
     secondary: { label: "Book a Visit", href: "/campus-life/book-a-tour" },
@@ -45,9 +45,9 @@ export const heroSlides: readonly HeroSlide[] = [
     icon: "admissions",
     navLabel: "Admissions",
     eyebrow: "No entrance exam",
-    title: "Selection by ambition, not by rank.",
+    title: "Your Ambition Matters More Than Your Rank",
     subcopy:
-      "Admission is based on 12th-pass eligibility and a student-plus-parent interview. We look for seriousness, curiosity, and readiness to build.",
+      "Admission is open to 12th-pass students through a student-parent interaction. We look for curiosity, initiative, seriousness, and willingness to build.",
     image: "/cover/cover_3_hackathon.png",
     primary: { label: "Start Application", href: "/admissions/how-to-apply" },
     secondary: { label: "Talk to Admissions", href: "tel:+919629628389" },

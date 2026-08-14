@@ -161,11 +161,11 @@ export function StatusQuoSection() {
 
         <Reveal delay={0.05}>
           <h2 className="mt-8 max-w-4xl text-balance text-[clamp(2rem,5vw,4rem)] font-semibold leading-[1.08] tracking-tight text-[color:var(--vil-navy)]">
-            Most college courses are not enough for{" "}
+            Tomorrow&apos;s careers need more than what{" "}
             <span className="underline decoration-[color:var(--vil-gold)] decoration-4 underline-offset-[6px]">
-              today
-            </span>
-            , let alone <span className="text-[color:var(--vil-gold)]">tomorrow.</span>
+              classrooms
+            </span>{" "}
+            teach <span className="text-[color:var(--vil-gold)]">today</span>.
           </h2>
         </Reveal>
 

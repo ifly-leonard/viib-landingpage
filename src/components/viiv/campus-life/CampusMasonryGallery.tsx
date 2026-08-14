@@ -7,7 +7,14 @@ import { X, ZoomIn } from "lucide-react";
 
 import { campusPhotos } from "@/content/campusLife";
 
-export function CampusMasonryGallery() {
+export type GalleryPhoto = {
+  src: string;
+  alt: string;
+  label: string;
+  orientation: "tall" | "wide" | "square";
+};
+
+export function CampusMasonryGallery({ photos = campusPhotos }: { photos?: readonly GalleryPhoto[] }) {
   const [open, setOpen] = useState<number | null>(null);
 
   useEffect(() => {
@@ -25,7 +32,7 @@ export function CampusMasonryGallery() {
   return (
     <>
       <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
-        {campusPhotos.map((photo, index) => (
+        {photos.map((photo, index) => (
           <motion.button
             key={photo.src}
             type="button"
@@ -51,8 +58,8 @@ export function CampusMasonryGallery() {
           <motion.div className="fixed inset-0 z-[120] flex items-center justify-center bg-[color:var(--vil-navy)]/92 p-4 backdrop-blur-md" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setOpen(null)}>
             <button type="button" aria-label="Close image" onClick={() => setOpen(null)} className="absolute right-5 top-5 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[color:var(--vil-navy)]"><X className="h-5 w-5" /></button>
             <motion.div initial={{ scale: 0.96, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.96, opacity: 0 }} className="relative h-[82vh] w-full max-w-6xl" onClick={(event) => event.stopPropagation()}>
-              <Image src={campusPhotos[open].src} alt={campusPhotos[open].alt} fill priority className="object-contain" sizes="100vw" />
-              <p className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-black/50 px-4 py-2 text-sm text-white backdrop-blur-sm">{campusPhotos[open].label}</p>
+              <Image src={photos[open].src} alt={photos[open].alt} fill priority className="object-contain" sizes="100vw" />
+              <p className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-black/50 px-4 py-2 text-sm text-white backdrop-blur-sm">{photos[open].label}</p>
             </motion.div>
           </motion.div>
         ) : null}

@@ -149,12 +149,6 @@ export const navItems: readonly NavItem[] = [
           icon: "flask",
         },
         {
-          title: "Demo Days",
-          description: "Ship, pitch, get feedback.",
-          href: "/campus-life/demo-days",
-          icon: "presentation",
-        },
-        {
           title: "Gallery",
           description: "Builder moments, documented.",
           href: "/campus-life/gallery",
@@ -162,7 +156,19 @@ export const navItems: readonly NavItem[] = [
           badge: "New",
         },
         {
-          title: "Community",
+          title: "Accommodations",
+          description: "Comfortable stays near campus.",
+          href: "/campus-life/accommodations",
+          icon: "building",
+        },
+        // {
+        //   title: "Demo Days",
+        //   description: "Ship, pitch, get feedback.",
+        //   href: "/campus-life/demo-days",
+        //   icon: "presentation",
+        // },
+        {
+          title: "The VIIV Mentor Network",
           description: "Founders, mentors, peers.",
           href: "/campus-life/community",
           icon: "users",

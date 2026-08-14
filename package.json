@@ -56,6 +56,7 @@
     "input-otp": "^1.4.2",
     "jspdf": "^4.2.1",
     "jszip": "^3.10.1",
+    "lovely-whatsapp-fab": "^1.0.11",
     "lucide-react": "^0.575.0",
     "meshline": "^3.3.1",
     "motion": "^12.42.2",
