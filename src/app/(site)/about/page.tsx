@@ -4,13 +4,6 @@ import { ApplyButton } from "@/components/viiv/SiteShell";
 import { SectionShell } from "@/components/viiv/SectionShell";
 import { Reveal } from "@/components/viiv/motion";
 
-const MISSION_POINTS = [
-  "Builders",
-  "Innovators",
-  "Entrepreneurs",
-  "Wealth creators",
-] as const;
-
 const PHASES = [
   { icon: Flame, label: "Ignite", copy: "Start early. Experiment. Learn by doing." },
   { icon: Rocket, label: "Build", copy: "Create companies, products, and real ventures." },
@@ -90,24 +83,15 @@ export default function AboutPage() {
         <Reveal>
           <p className="viiv-kicker text-[color:var(--vil-gold)]">Our mission</p>
           <h2 className="viiv-section-title mt-4 text-white">
-            Develop a generation of builders, innovators, entrepreneurs and wealth creators.
+            Build India&apos;s next generation of founders, innovators, leaders and wealth creators.
           </h2>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/70">
-            People who can create companies, generate employment and accelerate innovation across sectors — contributing to India&apos;s journey towards becoming a global innovation and economic powerhouse.
+            VIIV exists to transform young people from students into builders — equipping them with the mindset, skills, technology, mentorship and real-world experience to build ventures, create jobs and solve meaningful problems.
+          </p>
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-white/70">
+            Our mission is to develop a generation that does not just seek opportunities, but creates them — building companies and innovations that contribute to India&apos;s growth as a global innovation and economic powerhouse.
           </p>
         </Reveal>
-        <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {MISSION_POINTS.map((point, index) => (
-            <Reveal key={point} delay={index * 0.06}>
-              <article className="h-full rounded-[2rem] border border-white/10 bg-white/7 p-6">
-                <p className="font-display text-3xl font-extrabold text-[color:var(--vil-gold-dim)]">
-                  {String(index + 1).padStart(2, "0")}
-                </p>
-                <p className="mt-3 text-xl font-bold text-white">{point}</p>
-              </article>
-            </Reveal>
-          ))}
-        </div>
       </SectionShell>
 
       {/* IGNITE. BUILD. LAUNCH. */}

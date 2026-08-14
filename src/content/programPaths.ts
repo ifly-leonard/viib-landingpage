@@ -76,7 +76,7 @@ export const demoDay = {
 /** What you graduate with — a body of proof. */
 export const graduateWith = {
   eyebrow: "What will you graduate with?",
-  title: "Not just a degree. A body of proof.",
+  title: "Earn the Degree. Build Something Real. Become Future-Ready.",
   points: [
     "A UGC recognized undergraduate degree — an online BBA from Kalasalingam University, earned alongside the VIIV experience.",
     "Three years of documented real-world work — MVPs, campaigns, projects and pitches, not just assignments.",

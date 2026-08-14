@@ -61,7 +61,7 @@ export type GridMenu = {
     heading: string;
     items: readonly { title: string; description: string; href: string; icon: NavIcon; badge?: string }[];
   };
-  footer: { label: string; href: string };
+  footer?: { label: string; href: string };
 };
 
 export type ListMenu = {
@@ -143,19 +143,6 @@ export const navItems: readonly NavItem[] = [
           icon: "building",
         },
         {
-          title: "Studios & Labs",
-          description: "Where MVPs get built.",
-          href: "/campus-life/studios-and-labs",
-          icon: "flask",
-        },
-        {
-          title: "Gallery",
-          description: "Builder moments, documented.",
-          href: "/campus-life/gallery",
-          icon: "images",
-          badge: "New",
-        },
-        {
           title: "Accommodations",
           description: "Comfortable stays near campus.",
           href: "/campus-life/accommodations",
@@ -185,7 +172,6 @@ export const navItems: readonly NavItem[] = [
         // Temporarily hidden — restore items to show the Resources panel again.
         items: [],
       },
-      footer: { label: "Not sure where to start? Talk to us", href: admissionsConfig.admissionsPhoneHref },
     },
   },
   {

@@ -1,20 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, MessageSquare, Music, Presentation, Trophy, Users, Wrench } from "lucide-react";
+import { ArrowRight, Music, Trophy } from "lucide-react";
 
 import { CampusEditorialHero } from "@/components/viiv/campus-life/CampusEditorialHero";
 import { CampusMasonryGallery } from "@/components/viiv/campus-life/CampusMasonryGallery";
 import { EveningSpotsOrbit } from "@/components/viiv/EveningSpotsOrbit";
 import { Reveal } from "@/components/viiv/motion";
 import { SectionShell } from "@/components/viiv/SectionShell";
-import { campusRhythm, lifeAtViivPhotos } from "@/content/campusLife";
-
-const icons = [MessageSquare, Wrench, Users, Presentation];
+import { lifeAtViivPhotos } from "@/content/campusLife";
 
 export default function LifeAtViivPage() {
   return (
     <>
-      <CampusEditorialHero eyebrow="Life at VIIV" title="College, in builder mode." description="A full-time campus rhythm shaped by questions, studio work, customer conversations, mentor feedback, and the energy of making something real." image="/photos/early-campus/branding_session_lecture_lab.png" cta={{ label: "Book a campus visit", href: "/campus-life/book-a-tour" }} />
+      <CampusEditorialHero eyebrow="Life at VIIV" title="Campus Life, in Builder Mode." description="A vibrant campus experience where venture building meets sports, creativity and wellness — helping students build, compete, express, collaborate and thrive." image="/photos/early-campus/branding_session_lecture_lab.png" cta={{ label: "Book a campus visit", href: "/campus-life/book-a-tour" }} />
 
       {/* Sports, Dance & Wellness */}
       <SectionShell tone="light">
@@ -39,7 +37,7 @@ export default function LifeAtViivPage() {
                 <div className="flex h-48 items-center justify-center overflow-hidden bg-[color:var(--vil-navy)] sm:h-56">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/photos/life-at-viiv/football_turf.png"
+                    src="/photos/life-at-viiv/shuttle_court_side_profile.png"
                     alt="Sports at VIIV"
                     className="h-full w-full object-cover opacity-80"
                   />
@@ -109,11 +107,6 @@ export default function LifeAtViivPage() {
           <Reveal><p className="viiv-kicker">The everyday experience</p><h2 className="viiv-section-title mt-4">Not every day looks the same. Every day moves the work forward.</h2><p className="mt-6 text-lg leading-relaxed text-[color:var(--text-muted)]">Students move between structured learning, focused studio time, field research, peer collaboration, and live reviews. The campus is designed to make progress visible and participation unavoidable.</p></Reveal>
           <Reveal delay={0.08}><div className="grid h-[32rem] grid-cols-5 grid-rows-5 gap-3"><div className="relative col-span-3 row-span-5 overflow-hidden rounded-[2rem]"><Image src="/photos/early-campus/hackathon.png" alt="Builders collaborating during studio time" fill className="object-cover" sizes="35vw" /></div><div className="relative col-span-2 row-span-3 overflow-hidden rounded-[2rem]"><Image src="/photos/early-campus/lecture_lab.png" alt="A live learning session" fill className="object-cover" sizes="25vw" /></div><div className="relative col-span-2 row-span-2 overflow-hidden rounded-[2rem]"><Image src="/photos/early-campus/cafeteria_hackathon.png" alt="A learner celebrating a milestone" fill className="object-cover" sizes="25vw" /></div></div></Reveal>
         </div>
-      </SectionShell>
-
-      <SectionShell tone="dark">
-        <Reveal><p className="viiv-kicker text-[color:var(--vil-gold)]">A builder cycle</p><h2 className="viiv-section-title mt-4 text-white">Learn a little. Build a little. Show it. Begin again.</h2></Reveal>
-        <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">{campusRhythm.map((item, index) => { const Icon = icons[index]; return <Reveal key={item.time} delay={index * 0.06}><article className="h-full rounded-[2rem] border border-white/10 bg-white/7 p-6"><div className="flex h-11 w-11 items-center justify-center rounded-full bg-[color:var(--vil-gold)] text-[color:var(--vil-navy)]"><Icon className="h-5 w-5" /></div><p className="mt-8 text-xs font-bold uppercase tracking-[0.18em] text-[color:var(--vil-gold)]">{item.time}</p><h3 className="mt-3 text-2xl font-bold">{item.title}</h3><p className="mt-4 leading-relaxed text-white/60">{item.copy}</p></article></Reveal>; })}</div>
       </SectionShell>
 
       {/* Life around campus */}

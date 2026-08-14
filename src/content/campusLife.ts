@@ -3,13 +3,10 @@ export const campusPhotos = [
   { src: "/photos/early-campus/lecture_lab.png", alt: "A speaker sharing practical insight on campus", label: "Founder sessions", orientation: "tall" },
   { src: "/photos/early-campus/lecture_lab.png", alt: "A live workshop with students at VIIV", label: "Workshops", orientation: "tall" },
   { src: "/photos/early-campus/kumarraja_sir_interacting.png", alt: "Students participating in a campus activity", label: "Builder energy", orientation: "square" },
-  { src: "/photos/early-campus/lecture_ai_day.png", alt: "A participant presenting work to the room", label: "Show the work", orientation: "wide" },
   { src: "/photos/early-campus/aarti_maam_interacting.png", alt: "Participants in conversation during a session", label: "Peer exchange", orientation: "tall" },
-  { src: "/photos/early-campus/hackathon.png", alt: "Builders working together around a table", label: "Studio time", orientation: "tall" },
   { src: "/photos/early-campus/hackathon.png", alt: "The VIIV community during a live event", label: "Community", orientation: "tall" },
   { src: "/photos/early-campus/branding_session_lecture_lab.png", alt: "A group photograph of the VIIV community", label: "Together at VIIV", orientation: "tall" },
   { src: "/photos/early-campus/cafeteria_hackathon.png", alt: "A campus event in progress", label: "Campus moments", orientation: "wide" },
-  { src: "/photos/early-campus/aarti_maam_interacting.png", alt: "A practical learning activity on campus", label: "Build in public", orientation: "tall" },
   { src: "/photos/early-campus/cafeteria_hackathon.png", alt: "A participant receiving a certificate after a workshop", label: "Milestones", orientation: "wide" },
 ] as const;
 

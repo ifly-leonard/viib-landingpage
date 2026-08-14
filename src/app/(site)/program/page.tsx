@@ -202,7 +202,6 @@ export default function ProgramPage() {
             <p className="viiv-kicker mt-8">{graduateWith.eyebrow}</p>
             <h2 className="mt-4 text-4xl font-bold leading-tight tracking-tight md:text-6xl">{graduateWith.title}</h2>
             <p className="mt-6 text-lg leading-relaxed text-[color:var(--vil-navy)]/70">A UGC-recognised BBA degree, three years of real work, and a path you chose — all of it presented with the evidence behind it.</p>
-            <Link href="/program/graduation-and-demo-day" className="btn-primary mt-8">See Graduation & Demo Day <ArrowRight className="h-4 w-4" /></Link>
           </Reveal>
           <div className="grid gap-3 sm:grid-cols-2">
             {graduateWith.points.map((item, index) => (

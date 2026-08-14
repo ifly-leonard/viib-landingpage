@@ -9,10 +9,13 @@ import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { footerContent, siteMeta } from "@/content/homepage";
 import { admissionsConfig } from "@/lib/admissions.config";
 
-const exploreLinks = [
-  { href: "/program", label: "The Program" },
-  { href: "/campus-life/life-at-viiv", label: "Campus Life" },
-  { href: "/about", label: "About VIIV" },
+const campusLinks = [
+  { href: "/campus-life/life-at-viiv", label: "Life at VIIV" },
+  { href: "/campus-life/accommodations", label: "Accommodations" },
+  { href: "/campus-life/community", label: "The VIIV Mentor Network" },
+  { href: "/campus-life/gallery", label: "Gallery" },
+  { href: "/campus-life/location", label: "Location" },
+  { href: "/campus-life/book-a-tour", label: "Book a Tour" },
 ] as const;
 
 const admissionsLinks = [
@@ -24,6 +27,7 @@ const admissionsLinks = [
 const legalLinks = [
   { href: "/terms-and-conditions", label: "Terms & Conditions" },
   { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/llms.txt", label: "llms.txt" },
 ] as const;
 
 export function Footer() {
@@ -47,7 +51,7 @@ export function Footer() {
             <div className="max-w-xl">
               <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[color:var(--vil-gold-dim)]">
                 <span className="h-px w-8 bg-[color:var(--vil-gold)]" />
-                {cta ? cta.eyebrow : `${admissionsConfig.batchLabel} · admissions open`}
+                {cta ? cta.eyebrow : "2026 intake · admissions open · limited seats"}
               </p>
               <h2 className="mt-5 text-[clamp(1.9rem,3.6vw,2.9rem)] font-bold leading-[1.08] tracking-tight text-[color:var(--vil-navy)]">
                 {cta ? cta.headline : (
@@ -59,7 +63,11 @@ export function Footer() {
                 )}
               </h2>
               <p className="mt-4 max-w-md text-sm leading-relaxed text-[color:var(--text-muted)]">
-                {cta ? cta.description : siteMeta.oneLiner}
+                {cta ? cta.description : (
+                  <>
+                    Pursue a UGC-recognised Online BBA alongside VIIV&apos;s full-time, on-campus UG Certificate Program in Startup Mastery &amp; AI Venture Building in Chennai. Learn by building real products, brands and ventures through AI, mentorship and real-world challenges.
+                  </>
+                )}
               </p>
             </div>
 
@@ -77,35 +85,10 @@ export function Footer() {
         </div>
 
         {/* Link columns */}
-        <div className="mt-16 grid gap-12 md:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr_1fr]">
-          <div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/brand/logo_full.png"
-              alt={siteMeta.name}
-              className="h-44 w-auto"
-            />
-            <p className="mt-0 max-w-xs text-sm leading-relaxed text-[color:var(--text-muted)]">
-              {siteMeta.fullName}. {siteMeta.tagline}
-            </p>
-          </div>
-
-          <FooterColumn title="Explore" links={exploreLinks} />
+        <div className="mt-16 grid grid-cols-2 gap-10 md:grid-cols-3">
+          <FooterColumn title="Campus Life" links={campusLinks} />
           <FooterColumn title="Admissions" links={admissionsLinks} />
           <FooterColumn title="Legal" links={legalLinks} />
-
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--text-soft)]">
-              Visit
-            </p>
-            <p className="mt-5 text-sm text-[color:var(--text-muted)]">{footerContent.address}</p>
-            <PhoneLink className="mt-2 inline-block text-sm font-semibold text-[color:var(--vil-gold-dim)] transition-colors hover:text-[color:var(--vil-navy)]">
-              {footerContent.phone}
-            </PhoneLink>
-            <p className="mt-5 max-w-[16rem] text-xs leading-relaxed text-[color:var(--text-soft)]">
-              Recognized online BBA degree pathway.
-            </p>
-          </div>
         </div>
       </div>
 

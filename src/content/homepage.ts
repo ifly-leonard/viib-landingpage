@@ -237,6 +237,11 @@ export const faqItems = [
       `The total programme fee is ${admissionsConfig.feeTotal} — all-in for 3 years, degree fee included, with no hidden charges. It breaks down as a ₹50,000 one-time admission fee plus ₹2,50,000 tuition per year. Scholarships of up to 50% are available, decided case by case at the admissions interview — there is no fixed formula or merit score, so just ask and we'll talk it through openly with you and your family.`,
   },
   {
+    question: "Is the UGC-recognised Online BBA included in the VIIV program fee?",
+    answer:
+      "Yes. The Online BBA degree fee is included in the overall VIIV program fee — there is no separate degree fee to pay. Unlike programs where the degree is charged separately, VIIV offers a transparent, integrated fee structure for the complete learning journey.",
+  },
+  {
     question: "Who can apply, and is there an entrance exam?",
     answer:
       "No entrance exam, no cut-offs, no rank pressure. If you have passed or are appearing for Class 12 in any stream — Science, Commerce, or Arts — you can apply. Recent school leavers (passed out this year or last year) are exactly who VIIV is built for. Recognised equivalent qualifications like IB, IGCSE, CBSE, State Boards, and NIOS are all accepted.",
@@ -244,7 +249,7 @@ export const faqItems = [
   {
     question: "How does the application process work?",
     answer:
-      "It's simple and free — there is no application fee. Fill a 5-minute form with your name, phone, and email; the career guidance team calls you within 48 hours; you share documents and check eligibility; you attend a relaxed student-plus-parent interview; and on selection, your seat is blocked. Most applicants move from form to a confirmed seat within a few weeks.",
+      "It's simple and free — there is no application fee. Fill a 5-minute form with your name, phone, and email; the VIIV admissions team calls you within 48 hours; you share documents and check eligibility; you attend a relaxed student-plus-parent interview; and on selection, your seat is blocked. Most applicants move from form to a confirmed seat within a few weeks.",
   },
   {
     question: "Where is the campus, and can we visit before applying?",
@@ -265,6 +270,11 @@ export const faqItems = [
     question: "What does a student graduate with?",
     answer:
       "More than a degree — a body of proof. Students graduate with a UGC-recognised online BBA from Kalasalingam University, three years of documented real-world work (MVPs, campaigns, projects, pitches), a launched venture or placement-ready portfolio depending on the Year 3 path they choose, real internship and industry-project experience, a public personal brand built from Year 1, working fluency in AI tools, a Demo Day pitch presented to founders and investors, and a network of mentors and peers built over three years.",
+  },
+  {
+    question: "What does \"Lifetime Placement Support\" at VIIV mean?",
+    answer:
+      "VIIV's career support doesn't end when you graduate. Students receive ongoing access to career guidance, interview preparation, job opportunities, industry connections and the VIIV professional network throughout their careers. Whether you're looking for your first job, planning a career switch, or exploring new opportunities years after graduation, VIIV will continue to support your career journey. Lifetime placement support means continued career and placement assistance; it does not guarantee employment or a specific salary.",
   },
 ] as const;
 

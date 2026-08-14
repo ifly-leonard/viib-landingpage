@@ -194,7 +194,7 @@ export default function EligibilityPage() {
             Your Eligibility Is One Call Away
           </h2>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-[color:var(--vil-ivory)]/75">
-            Fill the form and our career guidance team will confirm your
+            Fill the form and our VIIV admissions team will confirm your
             eligibility and answer every question — within 48 hours.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

@@ -238,13 +238,15 @@ function GridLayout({
         ) : null}
       </div>
 
-      <Link
-        href={menu.footer.href}
-        className="group flex items-center justify-center gap-1.5 border-t border-[color:var(--border)] bg-[color:var(--vil-ivory)]/50 px-5 py-3 text-sm font-semibold text-[color:var(--vil-navy)] transition-colors duration-200 hover:bg-[color:var(--vil-ivory)]"
-      >
-        {menu.footer.label}
-        <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
-      </Link>
+      {menu.footer ? (
+        <Link
+          href={menu.footer.href}
+          className="group flex items-center justify-center gap-1.5 border-t border-[color:var(--border)] bg-[color:var(--vil-ivory)]/50 px-5 py-3 text-sm font-semibold text-[color:var(--vil-navy)] transition-colors duration-200 hover:bg-[color:var(--vil-ivory)]"
+        >
+          {menu.footer.label}
+          <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+        </Link>
+      ) : null}
     </div>
   );
 }

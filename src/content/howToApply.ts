@@ -23,10 +23,10 @@ export const howToApplySteps = {
       duration: "5 minutes",
       body: "Share your name, phone number, and email. That's all you need to begin — there is no application fee and no entrance exam to prepare for.",
       detail:
-        "After you submit, our career guidance team receives your application and calls you within 48 hours.",
+        "After you submit, our VIIV admissions team receives your application and calls you within 48 hours.",
     },
     {
-      title: "Talk to the career guidance team",
+      title: "Talk to the VIIV admissions team",
       duration: "Within 48 hours",
       body: "Our team reaches out to understand your goals, answer your questions, and explain the programme, the campus, and what full-time venture building actually looks like day to day.",
       detail:
@@ -65,7 +65,7 @@ export const howToApplyTimeline = {
     {
       label: "Day 0",
       title: "Application received",
-      body: "Your form lands with our career guidance team the moment you submit.",
+      body: "Your form lands with our VIIV admissions team the moment you submit.",
     },
     {
       label: "Within 48 hours",
@@ -143,7 +143,7 @@ export const howToApplyFaq = {
     {
       question: "What if I'm not sure about my eligibility?",
       answer:
-        "Fill the form anyway — our career guidance team will confirm your eligibility on your call within 48 hours.",
+        "Fill the form anyway — our VIIV admissions team will confirm your eligibility on your call within 48 hours.",
     },
     {
       question: "What happens after I'm selected?",
@@ -156,7 +156,7 @@ export const howToApplyFaq = {
 export const howToApplyCta = {
   eyebrow: "Ready to begin?",
   headline: "Start Your Application Today",
-  body: "Fill the form and our career guidance team will call you within 48 hours. No fee, no exam — just a conversation to see if VIIV is the right fit for you.",
+  body: "Fill the form and our VIIV admissions team will call you within 48 hours. No fee, no exam — just a conversation to see if VIIV is the right fit for you.",
   buttonLabel: "Start Your Application",
   supportLine: "Prefer to talk first? Call us at " + admissionsConfig.admissionsPhone + ".",
   phoneHref: admissionsConfig.admissionsPhoneHref,
