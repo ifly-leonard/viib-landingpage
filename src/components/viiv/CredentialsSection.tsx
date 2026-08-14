@@ -21,35 +21,36 @@ export function CredentialsSection() {
           </p>
         </Reveal>
 
-        {/* University banner */}
         <Reveal delay={0.08}>
-          <div className="mt-10 overflow-hidden rounded-[2rem] border border-[color:var(--border)] bg-white shadow-[0_24px_70px_-45px_rgba(31,49,73,0.5)]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/partners/kalasalingam_university.png"
-              alt="Kalasalingam Academy of Research and Education — deemed-to-be university under Section 3 of the UGC Act, 1956, NAAC A++ accredited"
-              className="h-auto w-full object-contain"
-            />
-          </div>
-        </Reveal>
+          <div className="mt-10 grid items-center gap-8 rounded-[2rem] border border-[color:var(--border)] bg-white p-8 shadow-[0_24px_70px_-45px_rgba(31,49,73,0.5)] md:grid-cols-[1fr_auto_1fr] md:gap-12 md:p-10">
+            {/* VIIV */}
+            <div className="flex items-center justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand/logo_full.png"
+                alt="VIIV"
+                className="h-52 w-auto object-contain md:h-60"
+              />
+            </div>
 
-        <Reveal delay={0.1}>
-          <div className="mt-8 flex flex-wrap items-center gap-4 md:gap-5">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/brand/logo_full.png"
-              alt="VIIV"
-              className="h-14 w-auto object-contain md:h-16"
-            />
-            <span className="text-sm font-semibold text-[color:var(--text-muted)]">
-              in partnership with
-            </span>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/partners/kalasalingam_university.png"
-              alt="Kalasalingam University"
-              className="h-14 w-auto object-contain md:h-16"
-            />
+            {/* Divider */}
+            <div className="flex items-center gap-3 text-[color:var(--text-soft)]">
+              <span className="hidden h-px w-10 bg-[color:var(--border)] md:block" />
+              <span className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.18em]">
+                in partnership with
+              </span>
+              <span className="hidden h-px w-10 bg-[color:var(--border)] md:block" />
+            </div>
+
+            {/* Kalasalingam */}
+            <div className="flex items-center justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/partners/kalasalingam_university.png"
+                alt="Kalasalingam University"
+                className="h-auto w-full max-w-[300px] object-contain md:max-w-[360px]"
+              />
+            </div>
           </div>
         </Reveal>
 

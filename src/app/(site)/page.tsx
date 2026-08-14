@@ -2,10 +2,9 @@ import { BentoSection } from "@/components/viiv/BentoSection";
 import { CredentialsSection } from "@/components/viiv/CredentialsSection";
 import { EnvisionedBySection } from "@/components/viiv/EnvisionedBySection";
 import { FAQSection } from "@/components/viiv/FAQSection";
-import { ForStudentsSection } from "@/components/viiv/ForStudentsSection";
+// ForStudentsSection temporarily hidden — restore below when ready.
 import { HeroCover } from "@/components/viiv/HeroCover";
 import { ImmersiveTransition } from "@/components/viiv/ImmersiveTransition";
-import { MentorsSection } from "@/components/viiv/MentorsSection";
 import { MentorsSectionVelocityScroll } from "@/components/viiv/MentorsSectionVelocityScroll";
 import { StatusQuoSection } from "@/components/viiv/StatusQuoSection";
 
@@ -20,7 +19,7 @@ export default function HomePage() {
       <EnvisionedBySection />
       <MentorsSectionVelocityScroll />
       <CredentialsSection />
-      <ForStudentsSection />
+      {/* <ForStudentsSection /> */}
       <FAQSection />
     </>
   );

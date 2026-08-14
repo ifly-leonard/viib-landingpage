@@ -19,7 +19,6 @@ const stats = [
   { value: "100+", label: "Industry mentors" },
   { value: "IIT & IIM", label: "Alumni in the network" },
   { value: "Microsoft", label: "& global tech companies" },
-  { value: "Every stage", label: "Of the student journey" },
 ];
 
 const journey = [
@@ -36,7 +35,7 @@ export default function CommunityPage() {
 
       {/* By the numbers */}
       <SectionShell tone="dark" compact>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-3">
           {stats.map((stat, index) => (
             <Reveal key={stat.label} delay={index * 0.06}>
               <div className="rounded-[1.5rem] border border-white/10 bg-white/7 px-6 py-7 text-center">
