@@ -12,7 +12,7 @@ export function CampusEditorialHero({ eyebrow, title, description, image, cta }:
       <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--vil-navy)] via-transparent to-[color:var(--vil-navy)]/30" />
       <div className="viiv-container relative z-10 flex min-h-[36rem] items-end pb-20 md:pb-24">
         <Reveal>
-          <Link href="/campus" className="inline-flex items-center gap-2 text-sm font-semibold text-white/60 transition hover:text-[color:var(--vil-gold)]"><ArrowLeft className="h-4 w-4" /> Campus Life</Link>
+          <Link href="/campus-life/life-at-viiv" className="inline-flex items-center gap-2 text-sm font-semibold text-white/60 transition hover:text-[color:var(--vil-gold)]"><ArrowLeft className="h-4 w-4" /> Campus Life</Link>
           <p className="mt-10 text-xs font-bold uppercase tracking-[0.23em] text-[color:var(--vil-gold)]">{eyebrow}</p>
           <h1 className="mt-5 max-w-5xl text-balance text-[clamp(3.4rem,8vw,7.4rem)] font-bold leading-[0.9] tracking-[-0.06em]">{title}</h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/75 md:text-xl">{description}</p>

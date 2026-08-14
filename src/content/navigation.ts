@@ -2,7 +2,7 @@ import { admissionsConfig } from "@/lib/admissions.config";
 
 export const mainNavigation = [
   { href: "/program", label: "Program" },
-  { href: "/campus", label: "Campus Life" },
+  { href: "/campus-life/life-at-viiv", label: "Campus Life" },
   { href: "/admissions/how-to-apply", label: "Admissions" },
   { href: "/about", label: "About" },
 ] as const;
@@ -132,7 +132,7 @@ export const navItems: readonly NavItem[] = [
   },
   {
     label: "Campus Life",
-    href: "/campus",
+    href: "/campus-life/life-at-viiv",
     menu: {
       variant: "grid",
       links: [

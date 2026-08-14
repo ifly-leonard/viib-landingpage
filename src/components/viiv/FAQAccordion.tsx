@@ -12,7 +12,7 @@ export function FAQAccordion() {
   return (
     <div>
       <p className="viiv-kicker">FAQ</p>
-      <h2 className="viiv-section-title mt-4">Questions families ask before applying.</h2>
+      <h2 className="viiv-section-title mt-4">Your VIIV Questions, Answered (FAQ)</h2>
       <Accordion type="single" collapsible className="mt-8 rounded-[1.5rem] border border-[color:var(--border)] bg-white px-6">
         {faqItems.map((item) => (
           <AccordionItem key={item.question} value={item.question}>

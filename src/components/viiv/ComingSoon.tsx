@@ -6,7 +6,7 @@ import { siteMeta } from "@/content/homepage";
 export function ComingSoon({
   title,
   description,
-  backHref = "/campus",
+  backHref = "/campus-life/life-at-viiv",
   backLabel = "Back to Campus Life",
 }: {
   title: string;

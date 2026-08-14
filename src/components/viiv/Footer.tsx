@@ -11,7 +11,7 @@ import { admissionsConfig } from "@/lib/admissions.config";
 
 const exploreLinks = [
   { href: "/program", label: "The Program" },
-  { href: "/campus", label: "Campus Life" },
+  { href: "/campus-life/life-at-viiv", label: "Campus Life" },
   { href: "/about", label: "About VIIV" },
 ] as const;
 

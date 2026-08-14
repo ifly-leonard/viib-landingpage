@@ -13,7 +13,7 @@ export const siteMeta = {
 
 export const navigation = [
   { href: "/program", label: "Program" },
-  { href: "/campus", label: "Campus Life" },
+  { href: "/campus-life/life-at-viiv", label: "Campus Life" },
   { href: "/admissions/how-to-apply", label: "Admissions" },
   { href: "/about", label: "About" },
 ] as const;
@@ -219,26 +219,52 @@ export const faqItems = [
   {
     question: "Is this a degree program?",
     answer:
-      "Yes. Students earn an online BBA while attending VIIV's full-time offline venture-building program in Chennai.",
+      "Yes. Students pursue a valid UGC-recognised Online BBA degree through Kalasalingam Academy of Research and Education (KARE) alongside VIIV's full-time, on-campus UG Certificate Program in Startup Mastery & AI Venture Building in Chennai. This pathway enables students to earn a recognised BBA degree while gaining hands-on experience in building startups, products, brands, and real-world ventures at VIIV.",
   },
   {
-    question: "Is VIIV online or offline?",
+    question: "Who is the degree from, and is it valid?",
     answer:
-      "The BBA is online. The VIIV venture-building experience is full-time and offline in Chennai.",
+      "The BBA is awarded by Kalasalingam Academy of Research and Education (KARE) — a deemed-to-be university under Section 3 of the UGC Act, 1956, accredited by NAAC with an A++ grade. It is a recognised undergraduate degree that families and employers can verify, and it keeps higher-studies options open — from MBAs and professional certifications to global programs.",
   },
   {
-    question: "Is there an entrance exam?",
+    question: "What does a typical week look like at VIIV?",
     answer:
-      "No. Admission is based on 12th pass eligibility, student plus parent interview, ambition, and fit.",
+      "VIIV runs on a Learn → Build → Review → Reflect cycle. Students move between structured learning, focused studio time, field research, customer conversations, mentor reviews, and live presentations. The BBA coursework is online, while the venture-building experience is full-time and on campus in Chennai — so every week ends with real work shipped, not just lectures attended.",
   },
   {
-    question: "What will students build?",
+    question: "What is the fee, and are scholarships available?",
     answer:
-      "Ventures, MVPs, campaigns, pitch decks, content systems, research projects, sales experiments, and portfolio assets.",
+      `The total programme fee is ${admissionsConfig.feeTotal} — all-in for 3 years, degree fee included, with no hidden charges. It breaks down as a ₹50,000 one-time admission fee plus ₹2,50,000 tuition per year. Scholarships of up to 50% are available, decided case by case at the admissions interview — there is no fixed formula or merit score, so just ask and we'll talk it through openly with you and your family.`,
   },
   {
-    question: "What is the fee?",
-    answer: `${admissionsConfig.feeTotal} ${admissionsConfig.feeNote}. Scholarships up to ${admissionsConfig.scholarshipMax} may be available.`,
+    question: "Who can apply, and is there an entrance exam?",
+    answer:
+      "No entrance exam, no cut-offs, no rank pressure. If you have passed or are appearing for Class 12 in any stream — Science, Commerce, or Arts — you can apply. Recent school leavers (passed out this year or last year) are exactly who VIIV is built for. Recognised equivalent qualifications like IB, IGCSE, CBSE, State Boards, and NIOS are all accepted.",
+  },
+  {
+    question: "How does the application process work?",
+    answer:
+      "It's simple and free — there is no application fee. Fill a 5-minute form with your name, phone, and email; the career guidance team calls you within 48 hours; you share documents and check eligibility; you attend a relaxed student-plus-parent interview; and on selection, your seat is blocked. Most applicants move from form to a confirmed seat within a few weeks.",
+  },
+  {
+    question: "Where is the campus, and can we visit before applying?",
+    answer:
+      "VIIV is at SSPDL Alpha City IT Park, No 25, Rajiv Gandhi Salai, Navalur, Chennai — about 26 km from the airport, 32 km from Chennai Central, and well connected by road. Campus visits are free and take about 45–60 minutes; parents and family members are welcome. First-time visitors should book ahead via cal.com/viivindia/campus-tour.",
+  },
+  {
+    question: "Is accommodation available near campus?",
+    answer:
+      "Yes. VIIV works with partnered hostels and residences near campus offering clean, secure, fully-furnished rooms — with study desks, high-speed internet, 24x7 security, CCTV coverage, a dedicated warden, and managed housekeeping, laundry, and mess facilities. Students can choose shared or private options depending on preference and budget.",
+  },
+  {
+    question: "What does VIIV do for careers and placements?",
+    answer:
+      "Career support starts from Year 1, not after graduation. Students build a professional portfolio and proof of work from the early stages, gain exposure to internships, startup environments, industry mentors, and hiring professionals, and get interview preparation. A dedicated Head of Placements (8+ years in corporate hiring) guides students toward high-growth startups, Founder's Office roles, sales, growth, product, operations, AI-led roles, creator careers, or entrepreneurship — and the mentor and industry network stays available beyond graduation.",
+  },
+  {
+    question: "What does a student graduate with?",
+    answer:
+      "More than a degree — a body of proof. Students graduate with a UGC-recognised online BBA from Kalasalingam University, three years of documented real-world work (MVPs, campaigns, projects, pitches), a launched venture or placement-ready portfolio depending on the Year 3 path they choose, real internship and industry-project experience, a public personal brand built from Year 1, working fluency in AI tools, a Demo Day pitch presented to founders and investors, and a network of mentors and peers built over three years.",
   },
 ] as const;
 

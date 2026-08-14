@@ -40,7 +40,7 @@ export default function LocationPage() {
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
                   <Link
-                    href="/campus"
+                    href="/campus-life/life-at-viiv"
                     className="text-sm text-[color:var(--vil-ivory)]/70 transition-colors hover:text-[color:var(--vil-ivory)]"
                   >
                     Campus Life

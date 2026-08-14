@@ -37,7 +37,7 @@ export const heroSlides: readonly HeroSlide[] = [
     subcopy:
       "VIIV is a full-time, offline learning environment designed around building, experimenting, and creating. From Venture Studios and Build Sprints to mentor reviews, Demo Days, and a thriving founder community — you'll turn ideas into real outcomes, week after week.",
     image: "/cover/cover_2_topview_sspdl.png",
-    primary: { label: "See Campus Life", href: "/campus" },
+    primary: { label: "See Campus Life", href: "/campus-life/life-at-viiv" },
     secondary: { label: "Book a Visit", href: "/campus-life/book-a-tour" },
   },
   {
