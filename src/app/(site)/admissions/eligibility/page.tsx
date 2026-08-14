@@ -17,12 +17,12 @@ import { admissionsConfig } from "@/lib/admissions.config";
 
 const ELIGIBILITY_POINTS = [
   {
-    title: "12th pass or appearing",
-    body: "You must have completed Class 12 (or an equivalent board exam), or be appearing for it this year. Any stream — Science, Commerce, or Arts — qualifies.",
+    title: "Class 12 — completed or appearing",
+    body: "You must have completed Class 12 (or an equivalent board exam), or be appearing for it this year. Any stream — Science, Commerce, or Arts/Humanities — qualifies as permitted by university rules.",
   },
   {
-    title: "Passed out this year or last",
-    body: "The programme is designed for recent school leavers — those who passed out this year or last year. If you're a fresh 12th pass-out, you're exactly who this is for.",
+    title: "Class 12 in 2024, 2025 or 2026",
+    body: "The programme is designed for recent school leavers — those who completed Class 12 in 2024, 2025, or 2026. If you're one of them, you're exactly who this is for.",
   },
   {
     title: "Equivalent qualifications",
@@ -76,10 +76,16 @@ export default function EligibilityPage() {
 
           <p className="viiv-kicker text-[color:var(--vil-gold)]">Eligibility</p>
           <h1 className="mt-5 max-w-3xl font-display text-[clamp(2rem,5.2vw,3.75rem)] font-semibold leading-[1.05] tracking-[-0.04em] text-[color:var(--vil-ivory)]">
-            Class 12 Complete? Step Into the World of Startups &amp; AI.
+            Class 12 Graduates from 2024, 2025 &amp; 2026 Are Eligible
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[color:var(--vil-ivory)]/80 md:text-lg">
-            VIIV is designed for ambitious students fresh out of Class 12 who want to start building from Day One. Learn by solving real challenges, developing industry-relevant skills, and building ventures alongside your degree journey. No entrance exam. No cut-offs. No rank pressure.
+            The program is designed for recent Class 12 graduates who are ready to take a different approach to business education. If you completed Class 12 in 2024, 2025, or 2026, you are eligible to apply to VIIV.
+          </p>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-[color:var(--vil-ivory)]/80 md:text-lg">
+            Students from any stream — Science, Commerce, or Humanities — can apply. At VIIV, we believe that with the right guidance, environment, mentorship, and opportunities, any student can learn to build, create, and achieve something meaningful.
+          </p>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-[color:var(--vil-ivory)]/80 md:text-lg">
+            You don&apos;t need to arrive as an entrepreneur. You need the curiosity and willingness to become a builder.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -96,7 +102,7 @@ export default function EligibilityPage() {
       <SectionShell tone="light">
         <div className="mx-auto max-w-5xl">
           <p className="viiv-kicker">Who can apply</p>
-          <h2 className="viiv-section-title mt-4">The Requirements Are Simple</h2>
+          <h2 className="viiv-section-title mt-4">Class 12 Eligibility</h2>
           <p className="mt-4 max-w-2xl text-[color:var(--text-muted)]">
             We keep eligibility deliberately simple — if you&apos;ve finished
             school recently, you&apos;re in. Here&apos;s exactly what we ask for.
@@ -136,8 +142,8 @@ export default function EligibilityPage() {
                 body: "Most students spend the next 3–4 years in classrooms. You'll spend them launching ventures, talking to customers, and building a portfolio of real work.",
               },
               {
-                title: "Learn by doing, not by rote",
-                body: "You learn marketing by selling, product by shipping, and leadership by leading. By the time your batch graduates, you've done it — not just studied it.",
+                title: "In the AI World, Start Building Early",
+                body: "AI has made it possible to learn, create, and launch faster than ever. At VIIV, you start early — learning marketing by selling, product by building, and leadership by leading. Don't wait until graduation. Start building now.",
               },
               {
                 title: "Earn a recognised BBA too",

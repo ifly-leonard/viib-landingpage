@@ -24,18 +24,32 @@ import { GridBackground } from "@/components/viiv/GridBackground";
 import { HowToApplyButton } from "@/components/viiv/HowToApplyButton";
 import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { SectionShell } from "@/components/viiv/SectionShell";
-import { howToApplyCta, howToApplyEligibility, howToApplyFaq, howToApplyHero, howToApplySteps, howToApplyTimeline } from "@/content/howToApply";
+import {
+  howToApplyCta,
+  howToApplyDegree,
+  howToApplyFaq,
+  howToApplyFees,
+  howToApplyHero,
+  howToApplyInterview,
+  howToApplyJourney,
+  howToApplyLookBeyond,
+  howToApplyOutcomes,
+  howToApplyParents,
+  howToApplySteps,
+  howToApplyTrust,
+  howToApplyWho,
+} from "@/content/howToApply";
 
 import { HowToApplyFooterCta } from "./HowToApplyFooterCta";
 
-const stepIcons = [Send, Phone, FileText, MessagesSquare, CheckCircle2] as const;
+const stepIcons = [Send, Phone, FileText, MessagesSquare, CheckCircle2, CalendarCheck] as const;
 
 export default function HowToApplyPage() {
   return (
     <>
       <HowToApplyFooterCta />
 
-      {/* Hero */}
+      {/* 1. Hero */}
       <section className="relative overflow-hidden bg-[color:var(--vil-navy)] text-[color:var(--vil-ivory)]">
         <GridBackground tone="dark" className="opacity-100" />
         <div className="viiv-container relative z-10 pb-16 pt-28 md:pb-24 md:pt-36">
@@ -90,23 +104,105 @@ export default function HowToApplyPage() {
         </div>
       </section>
 
-      {/* The process */}
+      {/* 2. Degree + VIIV */}
+      <SectionShell tone="light">
+        <div className="mx-auto max-w-5xl">
+          <p className="viiv-kicker">{howToApplyDegree.eyebrow}</p>
+          <h2 className="viiv-section-title mt-4">{howToApplyDegree.headline}</h2>
+          <p className="mt-4 max-w-2xl text-[color:var(--text-muted)]">
+            {howToApplyDegree.description}
+          </p>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {howToApplyDegree.pillars.map((pillar) => (
+              <article key={pillar.title} className="viiv-big-card p-6">
+                <GraduationCap className="h-8 w-8 text-[color:var(--vil-gold-dim)]" />
+                <h3 className="mt-5 font-display text-lg font-bold text-[color:var(--vil-navy)]">
+                  {pillar.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-[color:var(--text-muted)]">
+                  {pillar.body}
+                </p>
+              </article>
+            ))}
+          </div>
+          <p className="mt-8 rounded-2xl bg-[color:var(--vil-gold)]/10 px-6 py-4 text-center font-display text-lg font-semibold text-[color:var(--vil-navy)]">
+            {howToApplyDegree.sharedMessage}
+          </p>
+        </div>
+      </SectionShell>
+
+      {/* 3. 3-Year journey */}
+      <SectionShell tone="dark">
+        <div className="mx-auto max-w-5xl">
+          <p className="viiv-kicker text-[color:var(--vil-gold)]">{howToApplyJourney.eyebrow}</p>
+          <h2 className="viiv-section-title mt-4 text-white">{howToApplyJourney.headline}</h2>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {howToApplyJourney.years.map((year) => (
+              <article key={year.title} className="rounded-[2rem] border border-white/10 bg-white/7 p-6">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[color:var(--vil-gold)]">
+                  {year.label}
+                </p>
+                <h3 className="mt-3 text-3xl font-bold tracking-tight text-white">{year.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/60">{year.body}</p>
+              </article>
+            ))}
+          </div>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            {howToApplyJourney.paths.map((path) => (
+              <span key={path.title} title={path.body} className="rounded-full border border-white/15 bg-white/8 px-4 py-2 text-sm font-semibold text-white/85">
+                {path.title}
+              </span>
+            ))}
+          </div>
+        </div>
+      </SectionShell>
+
+      {/* 4. Who should apply */}
+      <SectionShell tone="light">
+        <div className="mx-auto max-w-5xl">
+          <p className="viiv-kicker">{howToApplyWho.eyebrow}</p>
+          <h2 className="viiv-section-title mt-4">{howToApplyWho.headline}</h2>
+          <p className="mt-4 max-w-2xl text-[color:var(--text-muted)]">{howToApplyWho.description}</p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {howToApplyWho.points.map((point) => (
+              <article key={point.title} className="viiv-big-card p-5">
+                <h3 className="font-display text-base font-bold text-[color:var(--vil-navy)]">{point.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[color:var(--text-muted)]">{point.body}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mt-6 text-center font-semibold text-[color:var(--vil-gold-dim)]">{howToApplyWho.note}</p>
+        </div>
+      </SectionShell>
+
+      {/* 5. We look beyond marks */}
+      <SectionShell tone="gold">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="viiv-kicker text-[color:var(--vil-gold-dim)]">{howToApplyLookBeyond.eyebrow}</p>
+          <h2 className="viiv-section-title mt-4 text-[color:var(--vil-navy)]">{howToApplyLookBeyond.headline}</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-[color:var(--vil-navy)]/70">{howToApplyLookBeyond.description}</p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            {howToApplyLookBeyond.criteria.map((c) => (
+              <span key={c} className="rounded-full bg-[color:var(--vil-ivory)] px-5 py-2.5 text-sm font-bold text-[color:var(--vil-navy)] shadow-sm">
+                {c}
+              </span>
+            ))}
+          </div>
+          <p className="mt-6 font-semibold text-[color:var(--vil-navy)]">{howToApplyLookBeyond.note}</p>
+        </div>
+      </SectionShell>
+
+      {/* 6. 6-step process */}
       <SectionShell tone="light">
         <div className="mx-auto max-w-5xl">
           <p className="viiv-kicker">{howToApplySteps.eyebrow}</p>
           <h2 className="viiv-section-title mt-4">{howToApplySteps.headline}</h2>
-          <p className="mt-4 max-w-2xl text-[color:var(--text-muted)]">
-            {howToApplySteps.description}
-          </p>
-
+          <p className="mt-4 max-w-2xl text-[color:var(--text-muted)]">{howToApplySteps.description}</p>
           <ol className="mt-12 space-y-4">
             {howToApplySteps.steps.map((step, i) => {
               const Icon = stepIcons[i] ?? CheckCircle2;
               return (
-                <li
-                  key={step.title}
-                  className="relative grid gap-4 rounded-2xl border border-[color:var(--border)] bg-white p-6 shadow-[0_16px_40px_-24px_rgba(31,49,73,0.2)] md:grid-cols-[3.5rem_1fr_auto] md:items-start md:p-8"
-                >
+                <li key={step.title} className="relative grid gap-4 rounded-2xl border border-[color:var(--border)] bg-white p-6 shadow-[0_16px_40px_-24px_rgba(31,49,73,0.2)] md:grid-cols-[3.5rem_1fr_auto] md:items-start md:p-8">
                   <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[color:var(--vil-navy)] text-[color:var(--vil-ivory)]">
                     <Icon className="h-6 w-6" />
                   </span>
@@ -115,13 +211,9 @@ export default function HowToApplyPage() {
                       <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[color:var(--vil-gold-dim)]">
                         Step {String(i + 1).padStart(2, "0")}
                       </span>
-                      <h3 className="font-display text-xl font-bold text-[color:var(--vil-navy)]">
-                        {step.title}
-                      </h3>
+                      <h3 className="font-display text-xl font-bold text-[color:var(--vil-navy)]">{step.title}</h3>
                     </div>
-                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[color:var(--text-muted)]">
-                      {step.body}
-                    </p>
+                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[color:var(--text-muted)]">{step.body}</p>
                     <p className="mt-3 flex items-start gap-2 rounded-xl bg-[color:var(--vil-gold)]/10 px-4 py-3 text-sm leading-relaxed text-[color:var(--vil-navy)]/85">
                       <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--vil-gold-dim)]" />
                       {step.detail}
@@ -138,108 +230,130 @@ export default function HowToApplyPage() {
         </div>
       </SectionShell>
 
-      {/* Timeline — from application to first day */}
-      <SectionShell tone="gold">
+      {/* 7. Student + parent interview */}
+      <SectionShell tone="light" className="!bg-[color:var(--vil-surface-muted)]">
         <div className="mx-auto max-w-5xl">
-          <p className="viiv-kicker text-[color:var(--vil-gold-dim)]">{howToApplyTimeline.eyebrow}</p>
-          <h2 className="viiv-section-title mt-4 text-[color:var(--vil-navy)]">
-            {howToApplyTimeline.headline}
-          </h2>
-          <p className="mt-4 max-w-2xl text-[color:var(--vil-navy)]/70">
-            {howToApplyTimeline.description}
-          </p>
-
-          <ol className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-            {howToApplyTimeline.timeline.map((item, i) => (
-              <li
-                key={item.title}
-                className="relative rounded-2xl border border-[color:var(--vil-navy)]/10 bg-[color:var(--vil-ivory)] p-5"
-              >
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[color:var(--vil-navy)] font-display text-xs font-bold text-[color:var(--vil-ivory)]">
-                  {i + 1}
-                </span>
-                <p className="mt-4 text-[11px] font-bold uppercase tracking-[0.18em] text-[color:var(--vil-gold-dim)]">
-                  {item.label}
-                </p>
-                <h3 className="mt-1.5 font-display text-base font-bold text-[color:var(--vil-navy)]">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[color:var(--vil-navy)]/70">
-                  {item.body}
-                </p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </SectionShell>
-
-      {/* Eligibility */}
-      <SectionShell tone="light">
-        <div className="mx-auto max-w-5xl">
-          <p className="viiv-kicker">{howToApplyEligibility.eyebrow}</p>
-          <h2 className="viiv-section-title mt-4">{howToApplyEligibility.headline}</h2>
-          <p className="mt-4 max-w-2xl text-[color:var(--text-muted)]">
-            {howToApplyEligibility.description}
-          </p>
-
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {howToApplyEligibility.points.map((point) => (
+          <p className="viiv-kicker">{howToApplyInterview.eyebrow}</p>
+          <h2 className="viiv-section-title mt-4">{howToApplyInterview.headline}</h2>
+          <p className="mt-4 max-w-2xl text-[color:var(--text-muted)]">{howToApplyInterview.description}</p>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {howToApplyInterview.points.map((point) => (
               <article key={point.title} className="viiv-big-card p-6">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[color:var(--vil-gold)]/15 text-[color:var(--vil-gold-dim)]">
-                  <GraduationCap className="h-5 w-5" />
-                </span>
-                <h3 className="mt-4 font-display text-base font-bold text-[color:var(--vil-navy)]">
-                  {point.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[color:var(--text-muted)]">
-                  {point.body}
-                </p>
+                <h3 className="font-display text-base font-bold text-[color:var(--vil-navy)]">{point.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[color:var(--text-muted)]">{point.body}</p>
               </article>
             ))}
           </div>
+        </div>
+      </SectionShell>
 
-          <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-[color:var(--border)] bg-white p-6 shadow-[0_16px_40px_-24px_rgba(31,49,73,0.2)]">
-            <p className="max-w-xl text-sm leading-relaxed text-[color:var(--text-muted)]">
-              {howToApplyEligibility.note}
-            </p>
-            <Link
-              href="/admissions/eligibility"
-              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-navy)]/20 bg-transparent px-5 py-2.5 text-sm font-semibold text-[color:var(--vil-navy)] transition hover:border-[color:var(--vil-gold)] hover:bg-[color:var(--vil-gold)]"
-            >
-              See full eligibility
-              <ArrowUpRight className="h-4 w-4" />
-            </Link>
+      {/* 8. For parents */}
+      <SectionShell tone="dark">
+        <div className="mx-auto max-w-5xl">
+          <p className="viiv-kicker text-[color:var(--vil-gold)]">{howToApplyParents.eyebrow}</p>
+          <h2 className="viiv-section-title mt-4 text-white">{howToApplyParents.headline}</h2>
+          <p className="mt-4 max-w-2xl text-white/65">{howToApplyParents.description}</p>
+          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+            {howToApplyParents.points.map((point) => (
+              <article key={point.title} className="rounded-[1.5rem] border border-white/10 bg-white/7 p-5">
+                <CheckCircle2 className="h-5 w-5 text-[color:var(--vil-gold)]" />
+                <h3 className="mt-3 font-display text-base font-bold text-white">{point.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/60">{point.body}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mt-8 text-center font-display text-xl font-semibold text-[color:var(--vil-gold)]">
+            {howToApplyParents.message}
+          </p>
+        </div>
+      </SectionShell>
+
+      {/* 9. Outcomes */}
+      <SectionShell tone="light">
+        <div className="mx-auto max-w-5xl">
+          <p className="viiv-kicker">{howToApplyOutcomes.eyebrow}</p>
+          <h2 className="viiv-section-title mt-4">{howToApplyOutcomes.headline}</h2>
+          <p className="mt-4 max-w-2xl text-[color:var(--text-muted)]">{howToApplyOutcomes.description}</p>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {howToApplyOutcomes.paths.map((path) => (
+              <article key={path.title} className="viiv-big-card p-6">
+                <h3 className="font-display text-lg font-bold text-[color:var(--vil-navy)]">{path.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[color:var(--text-muted)]">{path.body}</p>
+              </article>
+            ))}
+          </div>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
+            <span className="text-xs font-bold uppercase tracking-[0.16em] text-[color:var(--text-soft)]">Transferable skills:</span>
+            {howToApplyOutcomes.skills.map((skill) => (
+              <span key={skill} className="rounded-full bg-[color:var(--vil-surface-muted)] px-3 py-1.5 text-xs font-semibold text-[color:var(--vil-navy)]">
+                {skill}
+              </span>
+            ))}
           </div>
         </div>
       </SectionShell>
 
-      {/* FAQ */}
-      <SectionShell tone="light" compact>
+      {/* 10. Fees + scholarships */}
+      <SectionShell tone="gold">
+        <div className="mx-auto max-w-5xl">
+          <p className="viiv-kicker text-[color:var(--vil-gold-dim)]">{howToApplyFees.eyebrow}</p>
+          <h2 className="viiv-section-title mt-4 text-[color:var(--vil-navy)]">{howToApplyFees.headline}</h2>
+          <p className="mt-4 max-w-2xl text-[color:var(--vil-navy)]/70">{howToApplyFees.description}</p>
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
+            {howToApplyFees.items.map((item) => (
+              <article key={item.label} className="rounded-2xl border border-[color:var(--vil-navy)]/10 bg-[color:var(--vil-ivory)] p-5">
+                <h3 className="font-display text-base font-bold text-[color:var(--vil-navy)]">{item.label}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[color:var(--vil-navy)]/70">{item.body}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mt-6 rounded-2xl bg-[color:var(--vil-ivory)] px-5 py-4 text-sm leading-relaxed text-[color:var(--vil-navy)]/80">
+            {howToApplyFees.scholarshipNote}
+          </p>
+        </div>
+      </SectionShell>
+
+      {/* 11. Meet VIIV (trust cards) */}
+      <SectionShell tone="light">
+        <div className="mx-auto max-w-5xl">
+          <p className="viiv-kicker">{howToApplyTrust.eyebrow}</p>
+          <h2 className="viiv-section-title mt-4">{howToApplyTrust.headline}</h2>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {howToApplyTrust.items.map((item) => (
+              <Link key={item.title} href={item.href} className="group flex flex-col justify-between rounded-2xl border border-[color:var(--border)] bg-white p-6 transition hover:-translate-y-1 hover:border-[color:var(--vil-gold)]">
+                <div>
+                  <h3 className="font-display text-lg font-bold text-[color:var(--vil-navy)]">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[color:var(--text-muted)]">{item.body}</p>
+                </div>
+                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[color:var(--vil-gold-dim)]">
+                  Learn more <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </SectionShell>
+
+      {/* 12. FAQ */}
+      <SectionShell tone="light" className="!bg-[color:var(--vil-surface-muted)]">
         <div className="mx-auto max-w-5xl">
           <p className="viiv-kicker">{howToApplyFaq.eyebrow}</p>
           <h2 className="viiv-section-title mt-4">{howToApplyFaq.headline}</h2>
           <div className="mt-8 rounded-[1.5rem] border border-[color:var(--border)] bg-white px-6">
             {howToApplyFaq.items.map((item) => (
-              <details
-                key={item.question}
-                className="group border-b border-[color:var(--border)] last:border-b-0"
-              >
+              <details key={item.question} className="group border-b border-[color:var(--border)] last:border-b-0">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-display text-base font-bold text-[color:var(--vil-navy)] transition hover:text-[color:var(--vil-gold-dim)] [&::-webkit-details-marker]:hidden">
                   {item.question}
-                  <span className="shrink-0 text-[color:var(--vil-gold-dim)] transition-transform duration-300 group-open:rotate-45">
-                    +
-                  </span>
+                  <span className="shrink-0 text-[color:var(--vil-gold-dim)] transition-transform duration-300 group-open:rotate-45">+</span>
                 </summary>
-                <p className="pb-5 text-sm leading-relaxed text-[color:var(--text-muted)]">
-                  {item.answer}
-                </p>
+                <p className="pb-5 text-sm leading-relaxed text-[color:var(--text-muted)]">{item.answer}</p>
               </details>
             ))}
           </div>
         </div>
       </SectionShell>
 
-      {/* Final CTA */}
+      {/* 13. Final CTA */}
       <SectionShell tone="dark" showGrid className="!py-24">
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
           <p className="viiv-kicker text-[color:var(--vil-gold)]">{howToApplyCta.eyebrow}</p>
@@ -251,6 +365,9 @@ export default function HowToApplyPage() {
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <HowToApplyButton label={howToApplyCta.buttonLabel} className="!bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)] hover:!brightness-105" />
+            <Link href="/campus-life/book-a-tour" className="btn-secondary !border-white/25 !text-white">
+              Book a Campus Visit <ArrowUpRight className="h-4 w-4" />
+            </Link>
             <PhoneLink className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-ivory)]/25 px-6 py-3 text-sm font-semibold text-[color:var(--vil-ivory)] transition hover:bg-[color:var(--vil-ivory)]/10">
               <Phone className="h-4 w-4" />
               {howToApplyCta.supportLine}
