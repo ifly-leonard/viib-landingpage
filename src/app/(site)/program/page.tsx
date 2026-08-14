@@ -39,11 +39,6 @@ export default function ProgramPage() {
             </Reveal>
           </div>
 
-          <div className="mt-14 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 md:grid-cols-4">
-            {[{ value: "3", label: "Years" }, { value: "13", label: "Curriculum quests" }, { value: "Real", label: "Customer evidence" }, { value: "1", label: "Demo Day venture" }].map((stat) => (
-              <div key={stat.label} className="bg-[color:var(--vil-navy)] p-5 md:p-6"><p className="text-3xl font-bold text-[color:var(--vil-gold)]">{stat.value}</p><p className="mt-2 text-xs font-bold uppercase tracking-[0.14em] text-white/50">{stat.label}</p></div>
-            ))}
-          </div>
         </div>
       </section>
 

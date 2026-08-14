@@ -121,13 +121,14 @@ const ITEMS: BentoItem[] = [
   {
     id: "bento-8",
     index: "08",
-    title: "Career Outcomes",
+    title: "Career & Venture Outcomes",
     short:
-      "Graduate ready for entrepreneurship, startups, family business, or operator roles.",
+      "Graduate with the skills, experience, and portfolio to create real-world impact from Day One.",
     details: [
-      "The program develops transferable capabilities in research, sales, communication, AI, product, marketing, finance, operations, and leadership.",
-      "Students graduate with evidence that may include a working product or service, customer validation, traction, financial models, pitch decks, and a leadership portfolio.",
-      "That body of work prepares them to build a company, enter a family business, join a startup, or pursue an operator role with practical confidence.",
+      "At VIIV, students graduate with more than academic knowledge — they develop the skills, experience, and portfolio to create real-world impact from Day One.",
+      "Through Challenge-Based Learning, venture building, industry projects, and internships, students build practical capabilities across AI, sales, marketing, product, finance, operations, communication, problem-solving, and leadership.",
+      "By graduation, their portfolio may include validated business ideas, MVPs, customer insights, revenue experiments, financial models, pitch decks, industry projects, and leadership experiences.",
+      "This prepares every VIIV graduate to confidently choose their path — launch and scale a startup, grow a family business, build a creator-led venture, join a high-growth startup, or pursue an industry career.",
     ],
     image: "/cover/cover_3_hackathon.png",
     className: "col-span-1 row-span-1 lg:col-span-1 lg:row-span-1",
