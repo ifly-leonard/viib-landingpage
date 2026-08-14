@@ -50,7 +50,7 @@ export const heroSlides: readonly HeroSlide[] = [
       "Admission is open to 12th-pass students through a student-parent interaction. We look for curiosity, initiative, seriousness, and willingness to build.",
     image: "/cover/cover_3_hackathon.png",
     primary: { label: "Start Application", href: "/admissions/how-to-apply" },
-    secondary: { label: "Talk to Admissions", href: "tel:+919629628389" },
+    secondary: { label: "Talk to Admissions", href: "tel:+918925991788" },
   },
   {
     id: "outcomes",

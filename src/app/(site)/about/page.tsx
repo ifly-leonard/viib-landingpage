@@ -25,15 +25,6 @@ export default function AboutPage() {
             <p className="viiv-kicker">Core positioning</p>
             <h2 className="viiv-section-title mt-4">{siteMeta.tagline}</h2>
             <p className="mt-5 text-[color:var(--text-muted)]">{theGapContent.body}</p>
-            <a
-              href={siteMeta.parentOrgUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.12em] text-[color:var(--vil-navy)]"
-            >
-              {siteMeta.parentOrg}
-              <ArrowUpRight className="h-4 w-4" />
-            </a>
           </div>
           <ImagePlaceholder title="VIIV institution story" size="xl" className="rounded-[2rem]" />
         </div>

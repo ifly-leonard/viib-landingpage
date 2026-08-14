@@ -15,6 +15,7 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 const ogImagePath = latestOgImagePath();
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.viivindia.com"),
   title: "VIIV | Varman Institute of Venture Building",
   description: siteMeta.oneLiner,
   icons: {

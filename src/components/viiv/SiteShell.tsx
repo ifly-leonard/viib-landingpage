@@ -68,7 +68,7 @@ export function ApplyButton({ className = "" }: { className?: string }) {
 
 export function CallButton({ className = "" }: { className?: string }) {
   return (
-    <a href="tel:+919629628389" className={`btn-secondary ${className}`}>
+    <a href="tel:+918925991788" className={`btn-secondary ${className}`}>
       <Phone className="h-4 w-4" />
       Call Admissions
     </a>

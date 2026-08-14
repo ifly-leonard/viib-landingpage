@@ -8,7 +8,7 @@ export const admissionsConfig = {
   scholarshipMax: "₹1L",
   applyUrl: "/admissions/how-to-apply",
   programNoteUrl: "#program-note",
-  admissionsPhone: "+91 96296 28389",
-  admissionsPhoneHref: "tel:+919629628389",
-  whatsappHref: "https://wa.me/919629628389",
+  admissionsPhone: "+91 89259 91788",
+  admissionsPhoneHref: "tel:+918925991788",
+  whatsappHref: "https://wa.me/918925991788",
 } as const;

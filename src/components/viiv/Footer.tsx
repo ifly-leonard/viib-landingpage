@@ -90,14 +90,6 @@ export function Footer() {
             <p className="mt-0 max-w-xs text-sm leading-relaxed text-[color:var(--text-muted)]">
               {siteMeta.fullName}. {siteMeta.tagline}
             </p>
-            <a
-              href={footerContent.parentUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block text-xs font-semibold uppercase tracking-[0.14em] text-[color:var(--vil-gold-dim)] transition-colors hover:text-[color:var(--vil-navy)]"
-            >
-              A {footerContent.parent} company
-            </a>
           </div>
 
           <FooterColumn title="Explore" links={exploreLinks} />

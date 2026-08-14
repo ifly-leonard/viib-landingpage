@@ -138,10 +138,28 @@ function Row({ mentors }: { mentors: readonly Mentor[] }) {
   );
 }
 
-export function MentorsSectionVelocityScroll() {
+/** Animated mentor card grid (two counter-scrolling velocity rows). */
+export function MentorsGrid() {
   const firstRow = MENTORS.slice(0, Math.ceil(MENTORS.length / 2));
   const secondRow = MENTORS.slice(Math.ceil(MENTORS.length / 2));
 
+  return (
+    <div className="space-y-4">
+      <ScrollVelocityContainer>
+        <ScrollVelocityRow baseVelocity={2.5} direction={1}>
+          <Row mentors={firstRow} />
+        </ScrollVelocityRow>
+      </ScrollVelocityContainer>
+      <ScrollVelocityContainer>
+        <ScrollVelocityRow baseVelocity={2.5} direction={-1}>
+          <Row mentors={secondRow} />
+        </ScrollVelocityRow>
+      </ScrollVelocityContainer>
+    </div>
+  );
+}
+
+export function MentorsSectionVelocityScroll() {
   return (
     <section className="relative overflow-hidden bg-[color:var(--vil-surface)]">
       <div className="viiv-container py-20 md:py-28">
@@ -167,18 +185,7 @@ export function MentorsSectionVelocityScroll() {
         </div>
       </div>
 
-      <div className="space-y-4">
-        <ScrollVelocityContainer>
-          <ScrollVelocityRow baseVelocity={2.5} direction={1}>
-            <Row mentors={firstRow} />
-          </ScrollVelocityRow>
-        </ScrollVelocityContainer>
-        <ScrollVelocityContainer>
-          <ScrollVelocityRow baseVelocity={2.5} direction={-1}>
-            <Row mentors={secondRow} />
-          </ScrollVelocityRow>
-        </ScrollVelocityContainer>
-      </div>
+      <MentorsGrid />
     </section>
   );
 }

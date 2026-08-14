@@ -30,7 +30,9 @@ async function loadFont(weight: number): Promise<ArrayBuffer> {
 }
 
 async function loadLogo(): Promise<string> {
-  const buf = await readFile(join(process.cwd(), "public/brand/logo_main.png"));
+  const buf = await readFile(
+    join(/* turbopackIgnore: true */ process.cwd(), "public/brand/logo_main.png"),
+  );
   return `data:image/png;base64,${buf.toString("base64")}`;
 }
 

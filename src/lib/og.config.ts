@@ -53,7 +53,9 @@ export const ogConfig = {
  * yet. Uses `process.cwd()` so it works both in the app and in scripts.
  */
 export function latestOgImagePath(): string {
-  const dir = join(process.cwd(), ogConfig.outputDir);
+  // The og/ directory is scanned at build time to pick the newest image.
+  // The turbopackIgnore comment scopes tracing to public/og only.
+  const dir = join(/* turbopackIgnore: true */ process.cwd(), ogConfig.outputDir);
   let newestName: string | null = null;
 
   try {

@@ -150,7 +150,7 @@ export default function PrivacyPolicyPage() {
                   SSPDL Alpha City IT Park, No. 25, Rajiv Gandhi Salai,<br />
                   Navalur, Chennai, Tamil Nadu 600130, India<br />
                   Email: <a className="font-semibold text-[color:var(--vil-gold-dim)]" href="mailto:contact@viivindia.com">contact@viivindia.com</a><br />
-                  Phone: <a className="font-semibold text-[color:var(--vil-gold-dim)]" href="tel:+919629628389">+91 96296 28389</a>
+                  Phone: <a className="font-semibold text-[color:var(--vil-gold-dim)]" href="tel:+918925991788">+91 89259 91788</a>
                 </address>
               </section>
             </div>

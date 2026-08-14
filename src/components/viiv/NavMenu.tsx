@@ -159,7 +159,7 @@ function GridLayout({
 }) {
   return (
     <div>
-      <div className="grid grid-cols-[1fr_0.6fr]">
+      <div className={menu.side.items.length > 0 ? "grid grid-cols-[1fr_0.6fr]" : undefined}>
         <div className="p-4">
           <MenuHeading>{label}</MenuHeading>
           <div className="grid grid-cols-2 gap-0.5">
@@ -184,56 +184,58 @@ function GridLayout({
           </div>
         </div>
 
-        <div className="border-l border-[color:var(--border)] bg-[color:var(--vil-ivory)]/60 p-4">
-          <MenuHeading>{menu.side.heading}</MenuHeading>
-          <div className="space-y-0.5">
-            {menu.side.items.map((item) => {
-              const Icon = ICON[item.icon];
-              return (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className="group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-200 hover:bg-[color:var(--vil-surface)]"
-                >
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-[color:var(--border)] bg-[color:var(--vil-surface)] text-[color:var(--vil-gold-dim)]">
-                    <Icon className="h-4 w-4" strokeWidth={1.75} />
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="flex items-center gap-1.5 text-sm font-semibold text-[color:var(--vil-navy)]">
-                      {item.title}
-                      {item.badge ? <NewBadge label={item.badge} /> : null}
+        {menu.side.items.length > 0 ? (
+          <div className="border-l border-[color:var(--border)] bg-[color:var(--vil-ivory)]/60 p-4">
+            <MenuHeading>{menu.side.heading}</MenuHeading>
+            <div className="space-y-0.5">
+              {menu.side.items.map((item) => {
+                const Icon = ICON[item.icon];
+                return (
+                  <Link
+                    key={item.title}
+                    href={item.href}
+                    className="group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-200 hover:bg-[color:var(--vil-surface)]"
+                  >
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-[color:var(--border)] bg-[color:var(--vil-surface)] text-[color:var(--vil-gold-dim)]">
+                      <Icon className="h-4 w-4" strokeWidth={1.75} />
                     </span>
-                    <span className="block text-xs text-[color:var(--text-muted)]">{item.description}</span>
-                  </span>
-                  <ArrowRight className="h-3.5 w-3.5 shrink-0 text-[color:var(--text-soft)] transition-transform duration-200 group-hover:translate-x-0.5" />
-                </Link>
-              );
-            })}
-          </div>
-
-          <Link
-            href="/library/student-handbook"
-            className="group mt-3 flex items-center gap-3.5 rounded-xl border border-[color:var(--border)] bg-[color:var(--vil-surface)] p-3 transition-colors duration-200 hover:border-[color:var(--vil-gold)]/45"
-          >
-            <div className="w-[68px] shrink-0">
-              <Book
-                title="Student Handbook"
-                color="#f7bd44"
-                textColor="#1f3149"
-                variant="simple"
-                width={68}
-              />
+                    <span className="min-w-0 flex-1">
+                      <span className="flex items-center gap-1.5 text-sm font-semibold text-[color:var(--vil-navy)]">
+                        {item.title}
+                        {item.badge ? <NewBadge label={item.badge} /> : null}
+                      </span>
+                      <span className="block text-xs text-[color:var(--text-muted)]">{item.description}</span>
+                    </span>
+                    <ArrowRight className="h-3.5 w-3.5 shrink-0 text-[color:var(--text-soft)] transition-transform duration-200 group-hover:translate-x-0.5" />
+                  </Link>
+                );
+              })}
             </div>
-            <span className="min-w-0 flex-1">
-              <span className="block text-sm font-semibold text-[color:var(--vil-navy)]">
-                Student Handbook
+
+            <Link
+              href="/library/student-handbook"
+              className="group mt-3 flex items-center gap-3.5 rounded-xl border border-[color:var(--border)] bg-[color:var(--vil-surface)] p-3 transition-colors duration-200 hover:border-[color:var(--vil-gold)]/45"
+            >
+              <div className="w-[68px] shrink-0">
+                <Book
+                  title="Student Handbook"
+                  color="#f7bd44"
+                  textColor="#1f3149"
+                  variant="simple"
+                  width={68}
+                />
+              </div>
+              <span className="min-w-0 flex-1">
+                <span className="block text-sm font-semibold text-[color:var(--vil-navy)]">
+                  Student Handbook
+                </span>
+                <span className="mt-0.5 block text-xs leading-relaxed text-[color:var(--text-muted)]">
+                  Your guide to life on campus.
+                </span>
               </span>
-              <span className="mt-0.5 block text-xs leading-relaxed text-[color:var(--text-muted)]">
-                Your guide to life on campus.
-              </span>
-            </span>
-          </Link>
-        </div>
+            </Link>
+          </div>
+        ) : null}
       </div>
 
       <Link

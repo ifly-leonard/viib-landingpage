@@ -182,20 +182,8 @@ export const navItems: readonly NavItem[] = [
       ],
       side: {
         heading: "Resources",
-        items: [
-          {
-            title: "Campus brochure",
-            description: "Coming soon",
-            href: "/campus-life/campus-brochure",
-            icon: "file",
-          },
-          {
-            title: "Book a tour",
-            description: "Visit in person",
-            href: "/campus-life/book-a-tour",
-            icon: "compass",
-          },
-        ],
+        // Temporarily hidden — restore items to show the Resources panel again.
+        items: [],
       },
       footer: { label: "Not sure where to start? Talk to us", href: admissionsConfig.admissionsPhoneHref },
     },
