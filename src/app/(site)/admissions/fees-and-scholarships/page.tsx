@@ -143,6 +143,35 @@ export default function FeesScholarshipsPage() {
             <BadgeCheck className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--vil-gold-dim)]" />
             {admissionsConfig.feeNote}
           </p>
+
+          {/* Scholarship card */}
+          <div className="mt-6 overflow-hidden rounded-[2rem] border border-[color:var(--vil-navy)]/10 bg-[color:var(--vil-navy)] text-[color:var(--vil-ivory)] shadow-[0_24px_60px_-30px_rgba(31,49,73,0.5)]">
+            <div className="grid gap-8 p-8 md:grid-cols-[1fr_auto] md:items-center md:p-10">
+              <div>
+                <p className="inline-flex items-center gap-2 rounded-full bg-[color:var(--vil-gold)]/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[color:var(--vil-gold)]">
+                  <Sparkles className="h-3.5 w-3.5" />
+                  Scholarship
+                </p>
+                <h3 className="mt-4 font-display text-3xl font-bold tracking-tight md:text-4xl">
+                  Up to 50% scholarship available
+                </h3>
+                <p className="mt-3 max-w-xl text-sm leading-relaxed text-[color:var(--vil-ivory)]/75">
+                  We don&apos;t use a fixed formula or a complicated &ldquo;merit&rdquo;
+                  score — every scholarship is decided case by case. If you have
+                  the drive, we&apos;ll find a way to make VIIV work for you and
+                  your family.
+                </p>
+              </div>
+              <div className="shrink-0 rounded-2xl border border-[color:var(--vil-ivory)]/15 bg-[color:var(--vil-ivory)]/5 px-7 py-6 text-center">
+                <p className="text-5xl font-bold tracking-tight text-[color:var(--vil-gold)]">
+                  Up to 50%
+                </p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--vil-ivory)]/60">
+                  Case-by-case scholarship
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </SectionShell>
 
@@ -153,7 +182,7 @@ export default function FeesScholarshipsPage() {
             Scholarships
           </p>
           <h2 className="viiv-section-title mt-4 text-[color:var(--vil-navy)]">
-            Merit Meets Need
+            Scholarships, decided case by case
           </h2>
           <p className="mt-4 max-w-2xl text-[color:var(--vil-navy)]/70">
             We believe money should never stop a genuinely deserving builder
