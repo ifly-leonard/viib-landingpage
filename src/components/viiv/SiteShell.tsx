@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import { Phone } from "lucide-react";
 
 import { CallbackDialog } from "@/components/viiv/CallbackDialog";
+import { TriggerDialog } from "@/components/viiv/TriggerDialog";
 import { CallbackProvider } from "@/components/viiv/CallbackContext";
 import { Footer } from "@/components/viiv/Footer";
 import { FooterCtaProvider } from "@/components/viiv/FooterCtaContext";
@@ -31,6 +33,9 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
             <LeadMagnetModal />
             <CallbackDialog />
             <WhatsappFab />
+            <Suspense fallback={null}>
+              <TriggerDialog />
+            </Suspense>
           </LeadMagnetProvider>
         </LeadModalProvider>
       </CallbackProvider>
