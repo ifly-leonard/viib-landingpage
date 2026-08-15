@@ -13,7 +13,7 @@ export interface ViivOgCardProps {
  */
 export const ViivOgCard = ({
   title,
-  credit = "VIIV — Varman Institute of Venture Building",
+  credit = "VIIV — Varman Institute of Innovation and Venture Building",
   logo = "",
 }: ViivOgCardProps) => (
   <div
@@ -96,7 +96,7 @@ export const ViivOgCard = ({
             textTransform: "uppercase",
           }}
         >
-          Varman Institute of Venture Building
+          Varman Institute of Innovation and Venture Building
         </div>
       </div>
     </div>

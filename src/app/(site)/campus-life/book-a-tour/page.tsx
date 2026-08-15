@@ -10,7 +10,7 @@ import { VisitInformationPanel } from "@/components/viiv/campus-visit/VisitInfor
 import { campusVisitHero } from "@/content/campusVisit";
 
 export const metadata: Metadata = {
-  title: "Come Visit Our Campus | VIIV — Varman Institute of Venture Building",
+  title: "Come Visit Our Campus | VIIV — Varman Institute of Innovation and Venture Building",
   description: campusVisitHero.description,
 };
 

@@ -42,7 +42,7 @@ export const ogConfig = {
   height: 630,
   /** Shared copy used across the generated image variants. */
   title: "Earn the degree. Build the venture. Graduate with proof.",
-  credit: "VIIV — Varman Institute of Venture Building",
+  credit: "VIIV — Varman Institute of Innovation and Venture Building",
   ghost: "VIIV",
   siteName: "VIIV",
 } as const;

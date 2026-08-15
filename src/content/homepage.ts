@@ -2,7 +2,7 @@ import { admissionsConfig } from "@/lib/admissions.config";
 
 export const siteMeta = {
   name: "VIIV",
-  fullName: "Varman Institute of Venture Building",
+  fullName: "Varman Institute of Innovation and Venture Building",
   parentOrg: "Varman Innovation Labs",
   parentOrgUrl: "https://varmaninnovationlabs.com",
   tagline: "Earn the BBA. Build the venture. Graduate with proof.",
