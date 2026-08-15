@@ -25,7 +25,7 @@ export function CampusVisitHero() {
       <div className="absolute inset-0 bg-gradient-to-r from-[color:var(--vil-navy)]/95 via-[color:var(--vil-navy)]/70 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--vil-navy)]/85 via-transparent to-[color:var(--vil-navy)]/30" />
 
-      <div className="viiv-container relative z-10 pb-16 pt-28 md:pb-24 md:pt-36">
+      <div className="viiv-container relative z-10 pb-16 pt-32 md:pb-24 md:pt-40">
         <Breadcrumb className="mb-6">
           <BreadcrumbList>
             <BreadcrumbItem>

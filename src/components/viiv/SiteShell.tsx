@@ -55,7 +55,7 @@ export function PageHero({
   children?: React.ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-[color:var(--vil-navy)] pt-28 md:pt-36">
+    <section className="relative overflow-hidden bg-[color:var(--vil-navy)] pt-32 md:pt-40">
       <GridBackground tone="dark" className="opacity-100" />
       <div className="viiv-container relative z-10 pb-16 pt-8 md:pb-24">
         <p className="viiv-kicker text-[color:var(--vil-gold)]">{eyebrow}</p>

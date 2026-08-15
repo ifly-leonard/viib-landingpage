@@ -47,7 +47,7 @@ export function Header() {
         <AnnouncementBar />
         <header
           className={cn(
-            "relative transition-all duration-300 p-3",
+            "relative transition-all duration-300 p-3 md:p-4",
             scrolled
               ? "bg-[color:var(--vil-ivory)]/85 backdrop-blur-xl"
               : "backdrop-blur-2xl",

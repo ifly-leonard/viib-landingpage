@@ -4,7 +4,7 @@ import { ArrowLeft, BookOpen, Construction, MapPin, Sparkles } from "lucide-reac
 
 export default function CampusBrochurePage() {
   return (
-    <section className="relative flex min-h-[85vh] items-center overflow-hidden bg-[color:var(--vil-navy)] px-6 pb-20 pt-32 text-white md:pt-40">
+    <section className="relative flex min-h-[85vh] items-center overflow-hidden bg-[color:var(--vil-navy)] px-6 pb-20 pt-36 text-white md:pt-44">
       <Image src="/cover/cover_2_topview_sspdl.png" alt="" fill priority className="object-cover opacity-25" sizes="100vw" />
       <div className="absolute inset-0 bg-gradient-to-r from-[color:var(--vil-navy)] via-[color:var(--vil-navy)]/92 to-[color:var(--vil-navy)]/55" />
       <div className="absolute -right-20 top-10 h-96 w-96 rounded-full bg-[color:var(--vil-gold)]/20 blur-[100px]" />

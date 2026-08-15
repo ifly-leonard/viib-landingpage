@@ -18,7 +18,7 @@ export function GoldenHeroVariant() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_-10%,rgba(247,189,68,0.5),transparent_48%),radial-gradient(circle_at_85%_15%,rgba(247,189,68,0.18),transparent_32%),linear-gradient(145deg,#17263a_0%,#1f3149_60%,#2a415e_100%)]" />
       <div className="pointer-events-none absolute left-1/2 top-10 h-72 w-72 -translate-x-1/2 rounded-full border border-[color:var(--vil-gold)]/25 md:h-[28rem] md:w-[28rem]" />
 
-      <div className="viiv-container relative z-10 pb-16 pt-28 md:pb-24 md:pt-36">
+      <div className="viiv-container relative z-10 pb-16 pt-32 md:pb-24 md:pt-40">
         <Breadcrumb className="mb-6">
           <BreadcrumbList className="justify-center">
             <BreadcrumbItem>

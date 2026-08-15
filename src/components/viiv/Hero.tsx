@@ -13,7 +13,7 @@ const ctaIcons = {
 
 export function Hero() {
   return (
-    <section className="viiv-section pt-28 md:pt-36">
+    <section className="viiv-section pt-32 md:pt-40">
       <div className="viiv-container">
         <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <div>

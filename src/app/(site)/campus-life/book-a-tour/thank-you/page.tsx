@@ -49,7 +49,7 @@ export default function TourThankYouPage() {
   }, []);
 
   return (
-    <div className="bg-[color:var(--vil-ivory)] pb-20 pt-28 md:pb-28 md:pt-36">
+    <div className="bg-[color:var(--vil-ivory)] pb-20 pt-32 md:pb-28 md:pt-40">
       <div className="viiv-container">
         <div className="mx-auto max-w-xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-gold)]/60 bg-[color:var(--vil-gold)]/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-[color:var(--vil-gold-dim)]">

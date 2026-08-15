@@ -14,7 +14,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[color:var(--vil-navy)] pb-24 pt-36 text-[color:var(--vil-ivory)] md:pb-32 md:pt-44">
+      <section className="relative overflow-hidden bg-[color:var(--vil-navy)] pb-24 pt-40 text-[color:var(--vil-ivory)] md:pb-32 md:pt-48">
         <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] [background-size:30px_30px]" />
         <div className="absolute -right-24 top-10 h-96 w-96 rounded-full bg-[color:var(--vil-gold)]/20 blur-[100px]" />
         <div className="viiv-container relative z-10">

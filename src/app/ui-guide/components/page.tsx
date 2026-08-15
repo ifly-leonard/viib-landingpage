@@ -868,7 +868,7 @@ export default function UiGuideComponentsPage() {
               {/* Navy hero — standard page hero */}
               <Block title="Navy hero — standard page hero">
                 <div className="overflow-hidden rounded-3xl border border-[color:var(--border)]">
-                  <section className="relative overflow-hidden bg-[color:var(--vil-navy)] pt-28 text-[color:var(--vil-ivory)] md:pt-36">
+                  <section className="relative overflow-hidden bg-[color:var(--vil-navy)] pt-32 text-[color:var(--vil-ivory)] md:pt-40">
                     <div className="viiv-container relative z-10 pb-16 pt-8 md:pb-24">
                       <Breadcrumb className="mb-6">
                         <BreadcrumbList className="text-[color:var(--vil-ivory)]/60">

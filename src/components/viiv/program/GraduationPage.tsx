@@ -13,7 +13,7 @@ const audience = ["Angel investors", "Venture capitalists", "Incubators", "Accel
 export function GraduationPage() {
   return (
     <>
-      <section className="relative min-h-[48rem] overflow-hidden bg-[color:var(--vil-navy)] pt-28 text-white md:pt-36">
+      <section className="relative min-h-[48rem] overflow-hidden bg-[color:var(--vil-navy)] pt-32 text-white md:pt-40">
         <Image src="/cover/cover_3_hackathon.png" alt="A VIIV showcase and Demo Day experience" fill priority className="object-cover opacity-50" sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-r from-[color:var(--vil-navy)] via-[color:var(--vil-navy)]/88 to-[color:var(--vil-navy)]/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--vil-navy)] via-transparent to-transparent" />

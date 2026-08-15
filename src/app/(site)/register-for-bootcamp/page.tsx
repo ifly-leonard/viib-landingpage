@@ -26,7 +26,7 @@ export default function RegisterForBootcampPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-[color:var(--vil-navy)] text-[color:var(--vil-ivory)]">
         <GridBackground tone="dark" className="opacity-100" />
-        <div className="viiv-container relative z-10 pb-16 pt-28 md:pb-24 md:pt-36">
+        <div className="viiv-container relative z-10 pb-16 pt-32 md:pb-24 md:pt-40">
           <Breadcrumb className="mb-6">
             <BreadcrumbList>
               <BreadcrumbItem>

@@ -32,7 +32,7 @@ export function ProgramDetailPage({ data }: { data: ProgramPageData }) {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-[color:var(--vil-navy)] pb-20 pt-32 text-white md:pb-28 md:pt-40">
+      <section className="relative overflow-hidden bg-[color:var(--vil-navy)] pb-20 pt-36 text-white md:pb-28 md:pt-44">
         <div className="absolute inset-0 opacity-25 [background-image:radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] [background-size:28px_28px]" />
         <div className="absolute right-[-10%] top-[-20%] h-[34rem] w-[34rem] rounded-full bg-[color:var(--vil-gold)]/15 blur-[110px]" />
         <div className="viiv-container relative z-10 grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">

@@ -6,7 +6,7 @@ import { Reveal } from "@/components/viiv/motion";
 
 export function CampusEditorialHero({ eyebrow, title, description, image, cta }: { eyebrow: string; title: string; description: string; image: string; cta?: { label: string; href: string } }) {
   return (
-    <section className="relative min-h-[44rem] overflow-hidden bg-[color:var(--vil-navy)] pt-28 text-white md:pt-36">
+    <section className="relative min-h-[44rem] overflow-hidden bg-[color:var(--vil-navy)] pt-32 text-white md:pt-40">
       <Image src={image} alt="" fill priority className="object-cover opacity-55" sizes="100vw" />
       <div className="absolute inset-0 bg-gradient-to-r from-[color:var(--vil-navy)] via-[color:var(--vil-navy)]/82 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--vil-navy)] via-transparent to-[color:var(--vil-navy)]/30" />

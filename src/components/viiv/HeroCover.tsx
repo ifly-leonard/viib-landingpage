@@ -92,7 +92,7 @@ export function HeroCover() {
       <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--vil-navy)]/85 via-transparent to-[color:var(--vil-navy)]/20" />
 
       {/* Content */}
-      <div className="viiv-container relative z-10 flex min-h-screen flex-col pb-16 pt-32 md:pt-36">
+      <div className="viiv-container relative z-10 flex min-h-screen flex-col pb-16 pt-44 md:pt-44">
         <div className="flex flex-1 items-center">
           <AnimatePresence mode="wait">
             <motion.div
@@ -157,7 +157,7 @@ export function HeroCover() {
         </div>
 
         {/* Gallery nav with circular timers */}
-        <div className="order-first flex flex-wrap items-center gap-x-4 gap-y-3 pb-8">
+        <div className="order-first flex flex-wrap items-center justify-center gap-x-4 gap-y-3 pb-8 md:justify-start">
           {heroSlides.map((item, i) => {
             const Icon = ICONS[item.icon];
             const active = i === index;
