@@ -94,6 +94,17 @@ export default function HowToApplyPage() {
             {howToApplyHero.description}
           </p>
 
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            {howToApplyHero.highlights.map((highlight) => (
+              <span
+                key={highlight}
+                className="inline-flex items-center rounded-full border border-[color:var(--vil-gold)]/30 bg-[color:var(--vil-gold)]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.12em] text-[color:var(--vil-gold)]"
+              >
+                {highlight}
+              </span>
+            ))}
+          </div>
+
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <HowToApplyButton label={howToApplyHero.ctaLabel} />
             <span className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-ivory)]/15 bg-[color:var(--vil-ivory)]/5 px-4 py-2.5 text-xs text-[color:var(--vil-ivory)]/80 backdrop-blur-sm">

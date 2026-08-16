@@ -72,6 +72,14 @@ export function LeadForm({
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[color:var(--vil-gold-dim)]">
             Start the application process
           </p>
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-[color:var(--vil-gold)]/15 px-3 py-1.5 text-[11px] font-bold text-[color:var(--vil-navy)]">
+              Only 30 seats left
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-[color:var(--vil-gold)]/15 px-3 py-1.5 text-[11px] font-bold text-[color:var(--vil-navy)]">
+              Up to 50% scholarship for eligible students
+            </span>
+          </div>
           <h3 className="mt-2 font-serif text-2xl font-semibold text-[color:var(--vil-navy)]">
             Tell us about yourself
           </h3>

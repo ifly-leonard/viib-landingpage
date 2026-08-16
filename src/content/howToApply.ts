@@ -6,9 +6,14 @@ export const howToApplyHero = {
   breadcrumbLabel: "How to Apply",
   title: "Build Your Future. Start at VIIV.",
   description:
-    "Admissions are now open for VIIV's 2026 cohort in Chennai. VIIV does not select by test scores or rank — the process is built around a conversation. Tell us about yourself, check your eligibility, and meet us for an interview.",
-  ctaLabel: "Apply to VIIV",
+    "Admissions are now open for VIIV's 2026 cohort at the Chennai Campus. At VIIV, admission is not decided by entrance exams, ranks, or cut-offs. We look for students with curiosity, ambition, and the drive to build something of their own. Simply check your eligibility, submit your application, and attend an interaction with our admissions team.",
+  ctaLabel: "2026 Admissions Open — Apply Now",
   supportLine: "2026 Founding Cohort · Chennai Campus · Recognised BBA Pathway",
+  highlights: [
+    "No Entrance Exam",
+    "Only 30 Seats Left at the Chennai Campus",
+    "Up to 50% Scholarship for Eligible Students",
+  ],
 } as const;
 
 /** Degree + VIIV explanation. */
