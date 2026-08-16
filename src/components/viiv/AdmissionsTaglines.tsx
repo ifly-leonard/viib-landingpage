@@ -16,22 +16,21 @@ export const admissionsTaglines = [
 const TAGLINE_DURATION = 2.2; // seconds each tagline is on screen
 const ROTATE_EASE = [0.16, 1, 0.3, 1] as const;
 
-type TaglineTone = "light" | "dark";
+const highlightClasses =
+  "inline-flex items-center bg-[color:var(--vil-gold)] text-white";
 
 /**
- * Rotating admissions taglines — uses the same character-by-character
- * text effect as the announcement bar. Add to any page with:
- *   <AdmissionsTaglines tone="dark" />
- * `tone` picks the text color for light or dark backgrounds.
+ * Rotating admissions taglines — solid gold block with white text and
+ * squared corners, using the same character-by-character text effect as
+ * the announcement bar.
+ *   <AdmissionsTaglines />
  */
 export function AdmissionsTaglines({
   className,
   size = "md",
-  tone = "light",
 }: {
   className?: string;
   size?: "sm" | "md" | "lg";
-  tone?: TaglineTone;
 }) {
   const [index, setIndex] = useState(0);
 
@@ -44,14 +43,15 @@ export function AdmissionsTaglines({
   }, []);
 
   return (
-    <div className={cn("flex flex-col items-center gap-3", className)}>
+    <div className={cn("flex flex-col items-center", className)}>
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
-          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          exit={{ opacity: 0, y: -10, filter: "blur(4px)" }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.45, ease: ROTATE_EASE }}
+          className={cn(highlightClasses, "px-6 py-3")}
         >
           <TextAnimate
             key={`text-${index}`}
@@ -60,13 +60,10 @@ export function AdmissionsTaglines({
             duration={0.9}
             startOnView={false}
             className={cn(
-              "text-center font-display font-bold",
-              tone === "dark"
-                ? "text-[color:var(--vil-ivory)]"
-                : "text-[color:var(--vil-navy)]",
-              size === "sm" && "text-lg sm:text-xl",
-              size === "md" && "text-xl sm:text-2xl",
-              size === "lg" && "text-2xl sm:text-3xl",
+              "text-center font-display font-bold uppercase tracking-[0.14em]",
+              size === "sm" && "text-xs sm:text-sm",
+              size === "md" && "text-sm sm:text-base",
+              size === "lg" && "text-base sm:text-lg",
             )}
             variants={{
               hidden: { opacity: 0 },
@@ -83,26 +80,21 @@ export function AdmissionsTaglines({
 }
 
 /**
- * Morphing variant — swaps between the taglines with a blur-morph effect.
- *   <AdmissionsTaglinesMorphing tone="dark" />
+ * Morphing variant — solid gold block with white text and squared
+ * corners, swapping between the taglines with a blur-morph effect.
+ *   <AdmissionsTaglinesMorphing />
  */
 export function AdmissionsTaglinesMorphing({
   className,
-  tone = "light",
 }: {
   className?: string;
-  tone?: TaglineTone;
 }) {
   return (
-    <MorphingText
-      texts={[...admissionsTaglines]}
-      className={cn(
-        "h-24 w-full max-w-none !max-w-3xl text-xl md:h-28 md:text-2xl lg:text-3xl",
-        tone === "dark"
-          ? "text-[color:var(--vil-ivory)]"
-          : "text-[color:var(--vil-navy)]",
-        className,
-      )}
-    />
+    <div className={cn(highlightClasses, "max-w-full px-6 py-3", className)}>
+      <MorphingText
+        texts={[...admissionsTaglines]}
+        className="h-8 w-full !max-w-3xl text-sm font-bold uppercase tracking-[0.14em] sm:text-base md:h-10"
+      />
+    </div>
   );
 }

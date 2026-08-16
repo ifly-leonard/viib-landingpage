@@ -105,7 +105,7 @@ export function HeroCover() {
               onMouseLeave={() => setPaused(false)}
               className="flex min-h-[26rem] max-w-2xl flex-col justify-center md:min-h-[24rem]"
             >
-              <AdmissionsTaglines tone="dark" size="sm" className="items-start" />
+              <AdmissionsTaglines size="sm" className="items-start" />
 
               <TextAnimate
                 key={`${slide.id}-title`}

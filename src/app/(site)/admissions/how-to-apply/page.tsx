@@ -108,11 +108,11 @@ export default function HowToApplyPage() {
 
           {/* Animated admissions taglines */}
           <div className="mt-12 border-t border-white/10 pt-10">
-            <AdmissionsTaglines tone="dark" />
+            <AdmissionsTaglines />
           </div>
 
           <div className="mt-12 border-t border-white/10 pt-10">
-            <AdmissionsTaglinesMorphing tone="dark" />
+            <AdmissionsTaglinesMorphing />
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
