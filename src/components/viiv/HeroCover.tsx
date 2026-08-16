@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 
 import { TextAnimate } from "@/components/ui/text-animate";
+import { AdmissionsTaglines } from "@/components/viiv/AdmissionsTaglines";
 import { CtaButton } from "@/components/viiv/CtaButton";
 import { HERO_SLIDE_DURATION, heroSlides, type HeroIcon } from "@/content/hero";
 import { cn } from "@/lib/utils";
@@ -104,14 +105,7 @@ export function HeroCover() {
               onMouseLeave={() => setPaused(false)}
               className="flex min-h-[26rem] max-w-2xl flex-col justify-center md:min-h-[24rem]"
             >
-              <motion.span
-                initial={{ opacity: 0, y: -8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="inline-flex w-fit items-center gap-2 rounded-full border border-[color:var(--vil-gold)]/30 bg-[color:var(--vil-gold)]/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--vil-gold)]"
-              >
-                {slide.eyebrow}
-              </motion.span>
+              <AdmissionsTaglines tone="dark" size="sm" className="items-start" />
 
               <TextAnimate
                 key={`${slide.id}-title`}
