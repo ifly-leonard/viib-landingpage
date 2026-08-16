@@ -13,6 +13,7 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
 const ogImagePath = latestOgImagePath();
+const ogTitle = ogConfig.title;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.viivindia.com"),
@@ -31,10 +32,10 @@ export const metadata: Metadata = {
     title: "VIIV",
   },
   openGraph: {
-    title: "VIIV — Earn the BBA. Build the venture. Graduate with proof.",
+    title: ogTitle,
     description: siteMeta.oneLiner,
     type: "website",
-    images: [{ url: ogImagePath, width: ogConfig.width, height: ogConfig.height, alt: ogConfig.title }],
+    images: [{ url: ogImagePath, width: ogConfig.width, height: ogConfig.height, alt: ogTitle }],
   },
   twitter: {
     card: "summary_large_image",

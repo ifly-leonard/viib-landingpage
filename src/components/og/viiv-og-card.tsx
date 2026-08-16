@@ -1,5 +1,7 @@
 export interface ViivOgCardProps {
   title: string;
+  subtitle?: string;
+  highlight?: string;
   credit?: string;
   logo?: string;
 }
@@ -13,6 +15,8 @@ export interface ViivOgCardProps {
  */
 export const ViivOgCard = ({
   title,
+  subtitle,
+  highlight,
   credit = "VIIV — Varman Institute of Innovation and Venture Building",
   logo = "",
 }: ViivOgCardProps) => (
@@ -23,7 +27,7 @@ export const ViivOgCard = ({
       display: "flex",
       flexDirection: "column",
       height: "100%",
-      padding: "72px",
+      padding: "56px 64px",
       position: "relative",
       width: "100%",
     }}
@@ -63,9 +67,9 @@ export const ViivOgCard = ({
         // eslint-disable-next-line @next/next/no-img-element
         <img
           alt=""
-          height={96}
+          height={84}
           src={logo}
-          width={96}
+          width={84}
           style={{ objectFit: "contain" }}
         />
       ) : null}
@@ -79,7 +83,7 @@ export const ViivOgCard = ({
         <div
           style={{
             color: "#1f3149",
-            fontSize: "34px",
+            fontSize: "30px",
             fontWeight: 700,
             letterSpacing: "-0.02em",
             lineHeight: 1,
@@ -90,7 +94,7 @@ export const ViivOgCard = ({
         <div
           style={{
             color: "rgba(31,49,73,0.55)",
-            fontSize: "18px",
+            fontSize: "16px",
             fontWeight: 600,
             letterSpacing: "0.08em",
             textTransform: "uppercase",
@@ -115,9 +119,9 @@ export const ViivOgCard = ({
         style={{
           backgroundColor: "#f7bd44",
           borderRadius: "999px",
-          height: "10px",
-          marginBottom: "32px",
-          width: "64px",
+          height: "8px",
+          marginBottom: "20px",
+          width: "52px",
         }}
       />
       <div
@@ -125,16 +129,54 @@ export const ViivOgCard = ({
           color: "#1f3149",
           display: "flex",
           flexDirection: "column",
-          fontSize: "64px",
+          fontSize: "52px",
           fontWeight: 700,
           letterSpacing: "-0.03em",
-          lineHeight: 1.08,
+          lineHeight: 1.06,
           maxWidth: "880px",
           textWrap: "balance",
         }}
       >
         {title}
       </div>
+
+      {subtitle ? (
+        <div
+          style={{
+            color: "rgba(31,49,73,0.72)",
+            display: "flex",
+            flexDirection: "column",
+            fontSize: "24px",
+            fontWeight: 600,
+            letterSpacing: "-0.01em",
+            lineHeight: 1.25,
+            marginTop: "18px",
+            maxWidth: "820px",
+            textWrap: "balance",
+          }}
+        >
+          {subtitle}
+        </div>
+      ) : null}
+
+      {highlight ? (
+        <div
+          style={{
+            alignItems: "center",
+            alignSelf: "flex-start",
+            backgroundColor: "#f7bd44",
+            color: "#1f3149",
+            display: "flex",
+            fontSize: "20px",
+            fontWeight: 700,
+            letterSpacing: "0.01em",
+            marginTop: "24px",
+            padding: "12px 22px",
+          }}
+        >
+          {highlight}
+        </div>
+      ) : null}
     </div>
 
     {/* Bottom row: credit */}
@@ -144,14 +186,14 @@ export const ViivOgCard = ({
         borderTop: "1px solid rgba(31,49,73,0.12)",
         display: "flex",
         justifyContent: "space-between",
-        paddingTop: "24px",
+        paddingTop: "18px",
         position: "relative",
       }}
     >
       <div
         style={{
           color: "rgba(31,49,73,0.6)",
-          fontSize: "22px",
+          fontSize: "19px",
           fontWeight: 600,
         }}
       >
@@ -160,7 +202,7 @@ export const ViivOgCard = ({
       <div
         style={{
           color: "#bb8806", // --vil-gold-dim
-          fontSize: "18px",
+          fontSize: "16px",
           fontWeight: 700,
           letterSpacing: "0.18em",
           textTransform: "uppercase",

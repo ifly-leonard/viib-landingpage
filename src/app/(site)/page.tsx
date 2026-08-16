@@ -5,7 +5,8 @@ import { EnvisionedBySection } from "@/components/viiv/EnvisionedBySection";
 import { FAQSection } from "@/components/viiv/FAQSection";
 // ForStudentsSection temporarily hidden — restore below when ready.
 import { HeroCover } from "@/components/viiv/HeroCover";
-import { ImmersiveTransition } from "@/components/viiv/ImmersiveTransition";
+// ImmersiveTransition temporarily hidden — restore below when ready.
+// import { ImmersiveTransition } from "@/components/viiv/ImmersiveTransition";
 import { MentorsSectionVelocityScroll } from "@/components/viiv/MentorsSectionVelocityScroll";
 import { StatusQuoSection } from "@/components/viiv/StatusQuoSection";
 import { SectionShell } from "@/components/viiv/SectionShell";
@@ -16,9 +17,10 @@ export default function HomePage() {
     <>
       <HeroCover />
       <StatusQuoSection />
-      <ImmersiveTransition>
-        <BentoSection />
-      </ImmersiveTransition>
+      {/* ImmersiveTransition temporarily hidden — restore below when ready. */}
+      {/* <ImmersiveTransition> */}
+      <BentoSection />
+      {/* </ImmersiveTransition> */}
       <EnvisionedBySection />
       <MentorsSectionVelocityScroll />
       <SectionShell tone="light">

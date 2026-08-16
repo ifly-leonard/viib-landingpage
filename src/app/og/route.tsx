@@ -40,6 +40,8 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
 
   const title = searchParams.get("title") ?? ogConfig.title;
+  const subtitle = searchParams.get("subtitle") ?? ogConfig.subtitle;
+  const highlight = searchParams.get("highlight") ?? ogConfig.highlight;
   const credit = searchParams.get("credit") ?? ogConfig.credit;
 
   const [font600, font700, logo] = await Promise.all([
@@ -49,7 +51,13 @@ export async function GET(request: Request) {
   ]);
 
   return new ImageResponse(
-    <ViivOgCard title={title} credit={credit} logo={logo} />,
+    <ViivOgCard
+      title={title}
+      subtitle={subtitle}
+      highlight={highlight}
+      credit={credit}
+      logo={logo}
+    />,
     {
       width: ogConfig.width,
       height: ogConfig.height,

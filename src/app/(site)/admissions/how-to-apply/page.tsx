@@ -21,7 +21,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { GridBackground } from "@/components/viiv/GridBackground";
-import { AdmissionsTaglines, AdmissionsTaglinesMorphing } from "@/components/viiv/AdmissionsTaglines";
 import { HowToApplyButton } from "@/components/viiv/HowToApplyButton";
 import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { SectionShell } from "@/components/viiv/SectionShell";
@@ -104,15 +103,6 @@ export default function HowToApplyPage() {
                 {highlight}
               </span>
             ))}
-          </div>
-
-          {/* Animated admissions taglines */}
-          <div className="mt-12 border-t border-white/10 pt-10">
-            <AdmissionsTaglines />
-          </div>
-
-          <div className="mt-12 border-t border-white/10 pt-10">
-            <AdmissionsTaglinesMorphing />
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">

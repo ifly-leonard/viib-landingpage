@@ -6,7 +6,8 @@ import { join } from "node:path";
  *
  * The generator (`npm run og:build`) writes versioned PNGs into
  * `public/og/og-<buildstamp>.png`. Each run uses a fresh datetime stamp, so
- * new images get a brand-new filename — no caching issues on social platforms.
+ * new images get a brand-new filename — no caching issues on social
+ * platforms.
  *
  * `latestImage()` resolves the newest generated file from disk, so the site
  * metadata always points at the image that actually exists. Override the
@@ -41,7 +42,9 @@ export const ogConfig = {
   width: 1200,
   height: 630,
   /** Shared copy used across the generated image variants. */
-  title: "Earn the degree. Build the venture. Graduate with proof.",
+  title: "Build Your Startup While You Earn a UGC-Recognised Degree",
+  subtitle: "3-Year UG Certification Program in Startup Mastery & AI Venture Building",
+  highlight: "Up to 50% Scholarship Available for Eligible Students",
   credit: "VIIV — Varman Institute of Innovation and Venture Building",
   ghost: "VIIV",
   siteName: "VIIV",
