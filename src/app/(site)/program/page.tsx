@@ -17,7 +17,7 @@ export default function ProgramPage() {
         <div className="viiv-container relative z-10">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <Reveal>
-              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[color:var(--vil-gold)]">The VIIV Framework</p>
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[color:var(--vil-gold)]">UG certification in Startup Mastery and AI Venture Building</p>
               <h1 className="mt-6 max-w-4xl text-balance text-[clamp(3.8rem,8vw,8rem)] font-bold leading-[0.86] tracking-[-0.065em]">
                 Learn. Build. Launch.
               </h1>

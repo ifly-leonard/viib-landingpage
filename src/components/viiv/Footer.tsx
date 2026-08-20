@@ -8,6 +8,8 @@ import { useFooterCta } from "@/components/viiv/FooterCtaContext";
 import { PhoneLink } from "@/components/viiv/PhoneLink";
 import { footerContent, siteMeta } from "@/content/homepage";
 import { admissionsConfig } from "@/lib/admissions.config";
+import { IconLocation } from '@tabler/icons-react';
+import Img from "next/image";
 
 const campusLinks = [
   { href: "/campus-life/life-at-viiv", label: "Life at VIIV" },
@@ -92,12 +94,31 @@ export function Footer() {
         </div>
       </div>
 
+      <div className="flex justify-center px-6 py-10">
+        <Img
+          src="/brand/logo_full.png"
+          alt="VIIV Logo"
+          width={2000}
+          height={523}
+          className="h-16 w-auto object-contain md:h-20"
+        />
+      </div>
+
       <div className="border-t border-[color:var(--border)]">
         <div className="viiv-container flex flex-col gap-2 py-6 text-xs text-[color:var(--text-soft)] sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; {year} {siteMeta.fullName}. All rights reserved.
           </p>
-          <p>{siteMeta.location}</p>
+          <p>
+            {siteMeta.location}
+
+            <div>
+              <Link href="/campus-life/location" className="flex items-center gap-1 text-[color:var(--vil-gold)] font-bold transition-colors hover:text-[color:var(--vil-gold-dim)]">
+              <IconLocation className="w-3 h-3" strokeWidth={2.5}/>
+                Location Details                
+              </Link>                      
+            </div>
+          </p>
         </div>
       </div>
     </footer>

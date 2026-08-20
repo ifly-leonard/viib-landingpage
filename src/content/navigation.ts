@@ -82,7 +82,7 @@ const COVER = "/cover/cover_1.png";
 
 export const navItems: readonly NavItem[] = [
   {
-    label: "UG Certification: Startup Mastery & AI Venture Building",
+    label: "UG Certification Program",
     href: "/program",
     // menu: {
     //   variant: "feature",

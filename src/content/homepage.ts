@@ -2,13 +2,13 @@ import { admissionsConfig } from "@/lib/admissions.config";
 
 export const siteMeta = {
   name: "VIIV",
-  fullName: "Varman Institute of Innovation and Venture Building",
+  fullName: "Varman Institute of Innovation and Venture Building Pvt Ltd",
   parentOrg: "Varman Innovation Labs",
   parentOrgUrl: "https://varmaninnovationlabs.com",
   tagline: "Earn the BBA. Build the venture. Graduate with proof.",
   oneLiner:
     "VIIV is a 3-year venture-building college in Chennai where students earn an online BBA while building real businesses, brands, and products full-time on campus.",
-  location: "SSPDL Alpha City, Alpha block, 3rd Floor,Navalur, Chennai, India",
+  location: "SSPDL Alpha City, Navalur, Tamil Nadu 600130",
 } as const;
 
 export const navigation = [

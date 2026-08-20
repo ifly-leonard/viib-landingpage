@@ -23,7 +23,7 @@ export const heroSlides: readonly HeroSlide[] = [
     eyebrow: "Degree + Venture Builder",
     title: "Build Your Startup While You Earn a UGC-Recognised Degree",
     subcopy:
-      "A 3-year, full-time venture college in Chennai. Earn an online BBA while you build startups, brands, and products on campus.",
+      "3-Year UG Certification Program in Startup Mastery & AI Venture Building at VIIV Chennai + UGC-Recognised Online BBA from KARE",
     image: "/cover/cover_1.png",
     primary: { label: "Apply Now", href: "/admissions/how-to-apply" },
     secondary: { label: "Explore Program", href: "/program" },

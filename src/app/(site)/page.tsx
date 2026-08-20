@@ -15,12 +15,12 @@ import { Reveal } from "@/components/viiv/motion";
 export default function HomePage() {
   return (
     <>
-      <HeroCover />
-      <StatusQuoSection />
+      <HeroCover />      
       {/* ImmersiveTransition temporarily hidden — restore below when ready. */}
       {/* <ImmersiveTransition> */}
       <EnvisionedBySection />
       <MentorsSectionVelocityScroll />
+      <StatusQuoSection />
       <BentoSection />
       {/* </ImmersiveTransition> */}            
       <SectionShell tone="light">
