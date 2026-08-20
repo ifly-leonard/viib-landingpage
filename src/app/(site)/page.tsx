@@ -19,10 +19,10 @@ export default function HomePage() {
       <StatusQuoSection />
       {/* ImmersiveTransition temporarily hidden — restore below when ready. */}
       {/* <ImmersiveTransition> */}
-      <BentoSection />
-      {/* </ImmersiveTransition> */}
       <EnvisionedBySection />
       <MentorsSectionVelocityScroll />
+      <BentoSection />
+      {/* </ImmersiveTransition> */}            
       <SectionShell tone="light">
         <div className="mx-auto max-w-5xl">
           <Reveal>

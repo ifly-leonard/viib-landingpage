@@ -78,7 +78,7 @@ export const graduateWith = {
   eyebrow: "What will you graduate with?",
   title: "Earn the Degree. Build Something Real. Become Future-Ready.",
   points: [
-    "A UGC recognized undergraduate degree — an online BBA from Kalasalingam University, earned alongside the VIIV experience.",
+    "A UGC recognized undergraduate degree — an online BBA from Kalasalingam University, earned alongside the UG Certification in Startup Mastery and AI Venture Building at VIIV.",
     "Three years of documented real-world work — MVPs, campaigns, projects and pitches, not just assignments.",
     "A launched venture, a creator-led business, or a placement-ready portfolio — depending on the path you chose.",
     "Real internship and industry-project experience, completed during your degree, not after it.",

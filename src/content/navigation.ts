@@ -1,7 +1,7 @@
 import { admissionsConfig } from "@/lib/admissions.config";
 
 export const mainNavigation = [
-  { href: "/program", label: "Program" },
+  { href: "/program", label: "UG certification in Startup Mastery and AI Venture Building" },
   { href: "/campus-life/life-at-viiv", label: "Campus Life" },
   { href: "/admissions/how-to-apply", label: "Admissions" },
   { href: "/about", label: "About" },
@@ -82,7 +82,7 @@ const COVER = "/cover/cover_1.png";
 
 export const navItems: readonly NavItem[] = [
   {
-    label: "Program",
+    label: "UG Certification: Startup Mastery & AI Venture Building",
     href: "/program",
     // menu: {
     //   variant: "feature",

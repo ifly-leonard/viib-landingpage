@@ -19,10 +19,10 @@ export default function ProgramPage() {
             <Reveal>
               <p className="text-xs font-bold uppercase tracking-[0.24em] text-[color:var(--vil-gold)]">The VIIV Framework</p>
               <h1 className="mt-6 max-w-4xl text-balance text-[clamp(3.8rem,8vw,8rem)] font-bold leading-[0.86] tracking-[-0.065em]">
-                Learn. Build. Launch. Scale.
+                Learn. Build. Launch.
               </h1>
               <p className="mt-8 max-w-2xl text-lg leading-relaxed text-white/72 md:text-xl">
-                A three-year, challenge-based venture-building journey at VIIV, pursued alongside a UGC-recognised Online BBA—designed to transform students from learners into builders, builders into entrepreneurs, and entrepreneurs into future-ready leaders.
+                A three-year, challenge-based venture-building journey at VIIV, pursued alongside the UG Certification in Startup Mastery and AI Venture Building program with a UGC-recognised Online BBA pathway—designed to transform students from learners into builders, builders into entrepreneurs, and entrepreneurs into future-ready leaders.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <ApplyButton className="!bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)]" />
@@ -201,7 +201,7 @@ export default function ProgramPage() {
             <GraduationCap className="h-10 w-10 text-[color:var(--vil-navy)]" />
             <p className="viiv-kicker mt-8">{graduateWith.eyebrow}</p>
             <h2 className="mt-4 text-4xl font-bold leading-tight tracking-tight md:text-6xl">{graduateWith.title}</h2>
-            <p className="mt-6 text-lg leading-relaxed text-[color:var(--vil-navy)]/70">A UGC-recognised BBA degree, three years of real work, and a path you chose — all of it presented with the evidence behind it.</p>
+            <p className="mt-6 text-lg leading-relaxed text-[color:var(--vil-navy)]/70">The UG Certification in Startup Mastery and AI Venture Building, a UGC-recognised BBA degree, three years of real work, and a path you chose — all of it presented with the evidence behind it.</p>
           </Reveal>
           <div className="grid gap-3 sm:grid-cols-2">
             {graduateWith.points.map((item, index) => (

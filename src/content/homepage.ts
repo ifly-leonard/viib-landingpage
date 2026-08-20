@@ -8,7 +8,7 @@ export const siteMeta = {
   tagline: "Earn the BBA. Build the venture. Graduate with proof.",
   oneLiner:
     "VIIV is a 3-year venture-building college in Chennai where students earn an online BBA while building real businesses, brands, and products full-time on campus.",
-  location: "Chennai, India",
+  location: "SSPDL Alpha City, Alpha block, 3rd Floor,Navalur, Chennai, India",
 } as const;
 
 export const navigation = [
