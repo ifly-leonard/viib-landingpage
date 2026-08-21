@@ -54,7 +54,7 @@ const variants = [
     name: "default",
     params: {
       title: "Build Your Startup While You Earn a UGC-Recognised Degree",
-      subtitle: "3-Year UG Certification Program in Startup Mastery & AI Venture Building",
+      subtitle: "3-Year UG Program in Startup Mastery & AI Venture Building",
       highlight: "Up to 50% Scholarship Available for Eligible Students",
       credit: "VIIV — Varman Institute of Innovation and Venture Building",
       ghost: "VIIV",
