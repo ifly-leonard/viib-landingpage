@@ -58,7 +58,7 @@ export function CredentialsSection() {
             <div className="flex flex-col items-center border-t border-[color:var(--border)] px-8 py-10">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/partners/kalasalingam_university_chancellor.png"
+                src="/partners/kalasalingam_university_chancellor.png?v=2"
                 alt="Dr. S. Sashi Anand and Mr. Arunmozhivarman at the VIIV–Kalasalingam partnership"
                 className="h-auto w-full max-w-[26rem] rounded-2xl object-contain"
               />
