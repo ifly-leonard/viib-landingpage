@@ -109,16 +109,14 @@ export function Footer() {
           <p>
             &copy; {year} {siteMeta.fullName}. All rights reserved.
           </p>
-          <p>
+          <div>
             {siteMeta.location}
 
-            <div>
-              <Link href="/campus-life/location" className="flex items-center gap-1 text-[color:var(--vil-gold)] font-bold transition-colors hover:text-[color:var(--vil-gold-dim)]">
+            <Link href="/campus-life/location" className="flex items-center gap-1 text-[color:var(--vil-gold)] font-bold transition-colors hover:text-[color:var(--vil-gold-dim)]">
               <IconLocation className="w-3 h-3" strokeWidth={2.5}/>
-                Location Details                
-              </Link>                      
-            </div>
-          </p>
+              Location Details
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
