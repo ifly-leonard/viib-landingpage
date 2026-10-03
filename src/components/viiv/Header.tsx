@@ -20,7 +20,7 @@ export function Header() {
   const { openLeadModal } = useLeadModal();
   // Only the home page starts in transparent/white mode; other pages
   // start in the default (scrolled) colors immediately.
-  const isHome = pathname === "/";
+  const isHome = pathname === "/degree";
   const [scrolled, setScrolled] = useState(!isHome);
   const [open, setOpen] = useState(false);
 
@@ -62,7 +62,7 @@ export function Header() {
             style={{ transformOrigin: "center" }}
           />
           <div className="viiv-container flex h-16 items-center justify-between gap-4 md:h-[4.75rem]">
-          <Link href="/" className="flex items-center gap-2.5">
+          <Link href="/degree" className="flex items-center gap-2.5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={scrolled ? "/brand/logo_main.png" : "/brand/logo_main_white.png"}

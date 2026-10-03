@@ -6,9 +6,9 @@ export const howToApplyHero = {
   breadcrumbLabel: "How to Apply",
   title: "Build Your Future. Start at VIIV.",
   description:
-    "Admissions are now open for VIIV's 2026 cohort at the Chennai Campus. At VIIV, admission is not decided by entrance exams, ranks, or cut-offs. We look for students with curiosity, ambition, and the drive to build something of their own. Simply check your eligibility, submit your application, and attend an interaction with our admissions team.",
-  ctaLabel: "2026 Admissions Open — Apply Now",
-  supportLine: "2026 Founding Cohort · Chennai Campus · Recognised BBA Pathway",
+    "Admissions are now open for VIIV's 2027 cohort at the Chennai Campus. At VIIV, admission is not decided by entrance exams, ranks, or cut-offs. We look for students with curiosity, ambition, and the drive to build something of their own. Simply check your eligibility, submit your application, and attend an interaction with our admissions team.",
+  ctaLabel: "2027 Admissions Open — Apply Now",
+  supportLine: "2027 Founding Cohort · Chennai Campus · Recognised BBA Pathway",
   highlights: [
     "No Entrance Exam",
     "Only 30 Seats Left at the Chennai Campus",
@@ -259,12 +259,12 @@ export const howToApplyTrust = {
   eyebrow: "Meet VIIV",
   headline: "See Who's Behind VIIV",
   items: [
-    { title: "Meet the Founder", href: "/about", body: "Arunmozhivarman Ramachandran — IIM Kozhikode alumnus, 12+ years in startups." },
-    { title: "Head of Placements", href: "/program", body: "Khushbu Ranjan — 8+ years of corporate hiring and talent acquisition." },
-    { title: "Mentor Network", href: "/campus-life/community", body: "100+ mentors from Microsoft, Amazon, IBM, HDFC Bank, Unilever and more." },
+    { title: "Meet the Founder", href: "/degree/about", body: "Arunmozhivarman Ramachandran — IIM Kozhikode alumnus, 12+ years in startups." },
+    { title: "Head of Placements", href: "/degree/program", body: "Khushbu Ranjan — 8+ years of corporate hiring and talent acquisition." },
+    { title: "Mentor Network", href: "/degree/campus-life/community", body: "100+ mentors from Microsoft, Amazon, IBM, HDFC Bank, Unilever and more." },
     { title: "University / Degree Partnership", href: "/", body: "Kalasalingam Academy of Research and Education (KARE) — UGC-recognised, NAAC A++." },
-    { title: "Campus", href: "/campus-life/location", body: "A full-time builder campus at Navalur, Chennai — visit us anytime." },
-    { title: "Sports, Dance & Wellness", href: "/campus-life/life-at-viiv", body: "Riane Sports Centre and Ecstatic Studio of Dance partnerships." },
+    { title: "Campus", href: "/degree/campus-life/location", body: "A full-time builder campus at Navalur, Chennai — visit us anytime." },
+    { title: "Sports, Dance & Wellness", href: "/degree/campus-life/life-at-viiv", body: "Riane Sports Centre and Ecstatic Studio of Dance partnerships." },
   ],
 } as const;
 
@@ -353,8 +353,8 @@ export const howToApplyFaq = {
 
 export const howToApplyCta = {
   eyebrow: "Ready to begin?",
-  headline: "Join VIIV's 2026 Founding Cohort",
-  body: "2026 Founding Cohort · Chennai Campus · Recognised BBA Pathway · Industry Mentor Network · Full-Time Venture-Building Experience. Apply now — our VIIV admissions team will call you within 48 hours.",
+  headline: "Join VIIV's 2027 Founding Cohort",
+  body: "2027 Founding Cohort · Chennai Campus · Recognised BBA Pathway · Industry Mentor Network · Full-Time Venture-Building Experience. Apply now — our VIIV admissions team will call you within 48 hours.",
   buttonLabel: "Apply to VIIV",
   supportLine: "Talk to the Admissions Team: " + admissionsConfig.admissionsPhone + ".",
   phoneHref: admissionsConfig.admissionsPhoneHref,

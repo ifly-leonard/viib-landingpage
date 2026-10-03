@@ -19,7 +19,7 @@ export function GraduationPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--vil-navy)] via-transparent to-transparent" />
         <div className="viiv-container relative z-10 flex min-h-[40rem] items-end pb-20 md:pb-28">
           <Reveal>
-            <Link href="/program" className="inline-flex items-center gap-2 text-sm font-semibold text-white/60 transition hover:text-[color:var(--vil-gold)]"><ArrowLeft className="h-4 w-4" /> Program overview</Link>
+            <Link href="/degree/program" className="inline-flex items-center gap-2 text-sm font-semibold text-white/60 transition hover:text-[color:var(--vil-gold)]"><ArrowLeft className="h-4 w-4" /> Program overview</Link>
             <p className="mt-10 text-xs font-bold uppercase tracking-[0.22em] text-[color:var(--vil-gold)]">Graduation & Demo Day</p>
             <h1 className="mt-5 max-w-5xl text-balance text-[clamp(3.5rem,8vw,7.5rem)] font-bold leading-[0.9] tracking-[-0.06em]">Graduate with proof.</h1>
             <p className="mt-7 max-w-2xl text-xl leading-relaxed text-white/75">The final examination is not a written answer. It is a working venture, credible evidence, and a founder who can defend the journey.</p>
@@ -89,7 +89,7 @@ export function GraduationPage() {
       <SectionShell tone="light" compact>
         <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div><p className="viiv-kicker">The complete journey</p><p className="mt-3 text-3xl font-bold text-[color:var(--vil-navy)]">See how students reach Demo Day.</p></div>
-          <Link href="/program/build-an-enterprise" className="btn-primary">Explore Year 3 <ArrowRight className="h-4 w-4" /></Link>
+          <Link href="/degree/program/build-an-enterprise" className="btn-primary">Explore Year 3 <ArrowRight className="h-4 w-4" /></Link>
         </div>
       </SectionShell>
     </>

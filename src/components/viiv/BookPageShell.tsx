@@ -24,7 +24,7 @@ export function BookPageShell({
         {/* Top bar */}
         <div className="flex items-center justify-between gap-4">
           <Link
-            href="/library"
+            href="/degree/library"
             className="inline-flex items-center gap-2 text-sm font-semibold text-[color:var(--text-muted)] transition-colors hover:text-[color:var(--vil-navy)]"
           >
             <ArrowLeft className="h-4 w-4" />

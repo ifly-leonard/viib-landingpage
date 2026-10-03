@@ -26,6 +26,9 @@ export async function createLead(payload: {
   source?: string;
   description?: string;
   tags?: readonly string[];
+  degree?: string;
+  graduationYear?: string;
+  status?: string;
 }): Promise<LeadResult> {
   try {
     const res = await fetch("/api/lead", {

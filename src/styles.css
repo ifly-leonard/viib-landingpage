@@ -971,3 +971,106 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Landing homepage (ported) — VIIV brand theme                        */
+/* Tokens are scoped under .landing-root so the rest of the site is    */
+/* unaffected. Utilities are generated globally but only used there.   */
+/* ------------------------------------------------------------------ */
+@theme {
+  --color-paper: #f5f3ee;
+  --color-sand: #ece8df;
+  --color-line: #ded8cb;
+  --color-ink: #1f3149;
+  --color-ink-2: #172536;
+  --color-ink-3: #24374f;
+  --color-ink-line: #3b4d64;
+  --color-muted-dark: #aab2c0;
+  --color-accent: #f7bd44;
+  --color-accent-soft: #fbe7bd;
+  --color-accent-ink: #bb8806;
+  --color-accent-bright: #ffd27a;
+  --color-iris: #b6c7e6;
+  --color-iris-soft: #e7edf7;
+
+  --radius-card: 1.25rem;
+  --shadow-card: 0 1px 2px rgb(31 49 73 / 0.04), 0 8px 24px -12px rgb(31 49 73 / 0.14);
+  --shadow-lift: 0 2px 4px rgb(31 49 73 / 0.05), 0 24px 48px -20px rgb(31 49 73 / 0.28);
+
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-dash: dash 1.6s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -12;
+  }
+}
+
+@utility container-x {
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @media (width >= 40rem) {
+    padding-inline: 1.5rem;
+  }
+  @media (width >= 64rem) {
+    padding-inline: 2rem;
+  }
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.landing-root {
+  --color-paper: #f5f3ee;
+  --color-sand: #ece8df;
+  --color-line: #ded8cb;
+  --color-ink: #1f3149;
+  --color-ink-2: #172536;
+  --color-ink-3: #24374f;
+  --color-ink-line: #3b4d64;
+  --color-muted: #5c5f66;
+  --muted: #5c5f66;
+  --color-muted-dark: #aab2c0;
+  --color-accent: #f7bd44;
+  --accent: #f7bd44;
+  --color-accent-soft: #fbe7bd;
+  --color-accent-ink: #bb8806;
+  --color-accent-bright: #ffd27a;
+  --color-iris: #b6c7e6;
+  --color-iris-soft: #e7edf7;
+  --radius-card: 1.25rem;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.landing-root dialog::backdrop {
+  background: rgb(31 49 73 / 0.6);
+  backdrop-filter: blur(4px);
+}

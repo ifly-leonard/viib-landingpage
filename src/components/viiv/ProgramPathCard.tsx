@@ -17,7 +17,7 @@ export function ProgramPathCard({
   description,
   tag,
   tone,
-  href = "/program",
+  href = "/degree/program",
 }: {
   title: string;
   duration: string;

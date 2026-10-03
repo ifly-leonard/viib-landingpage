@@ -71,7 +71,7 @@ export function PageHero({
 
 export function ApplyButton({ className = "" }: { className?: string }) {
   return (
-    <Link href="/admissions/how-to-apply" className={`btn-primary ${className}`}>
+    <Link href="/degree/admissions/how-to-apply" className={`btn-primary ${className}`}>
       Apply Now
     </Link>
   );

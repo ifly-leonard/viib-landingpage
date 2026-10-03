@@ -12,18 +12,18 @@ import { IconLocation } from '@tabler/icons-react';
 import Img from "next/image";
 
 const campusLinks = [
-  { href: "/campus-life/life-at-viiv", label: "Life at VIIV" },
-  { href: "/campus-life/accommodations", label: "Accommodations" },
-  { href: "/campus-life/community", label: "The VIIV Mentor Network" },
-  { href: "/campus-life/gallery", label: "Gallery" },
-  { href: "/campus-life/location", label: "Location" },
-  { href: "/campus-life/book-a-tour", label: "Book a Tour" },
+  { href: "/degree/campus-life/life-at-viiv", label: "Life at VIIV" },
+  { href: "/degree/campus-life/accommodations", label: "Accommodations" },
+  { href: "/degree/campus-life/community", label: "The VIIV Mentor Network" },
+  { href: "/degree/campus-life/gallery", label: "Gallery" },
+  { href: "/degree/campus-life/location", label: "Location" },
+  { href: "/degree/campus-life/book-a-tour", label: "Book a Tour" },
 ] as const;
 
 const admissionsLinks = [
-  { href: "/admissions/how-to-apply", label: "How to apply" },
-  { href: "/admissions/eligibility", label: "Eligibility" },
-  { href: "/admissions/fees-and-scholarships", label: "Fees & scholarships" },
+  { href: "/degree/admissions/how-to-apply", label: "How to apply" },
+  { href: "/degree/admissions/eligibility", label: "Eligibility" },
+  { href: "/degree/admissions/fees-and-scholarships", label: "Fees & scholarships" },
 ] as const;
 
 const legalLinks = [
@@ -53,7 +53,7 @@ export function Footer() {
             <div className="max-w-xl">
               <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[color:var(--vil-gold-dim)]">
                 <span className="h-px w-8 bg-[color:var(--vil-gold)]" />
-                {cta ? cta.eyebrow : "2026 intake · admissions open · limited seats"}
+                {cta ? cta.eyebrow : "2027 intake · admissions open · limited seats"}
               </p>
               <h2 className="mt-5 text-[clamp(1.9rem,3.6vw,2.9rem)] font-bold leading-[1.08] tracking-tight text-[color:var(--vil-navy)]">
                 {cta ? cta.headline : (
@@ -112,7 +112,7 @@ export function Footer() {
           <div>
             {siteMeta.location}
 
-            <Link href="/campus-life/location" className="flex items-center gap-1 text-[color:var(--vil-gold)] font-bold transition-colors hover:text-[color:var(--vil-gold-dim)]">
+            <Link href="/degree/campus-life/location" className="flex items-center gap-1 text-[color:var(--vil-gold)] font-bold transition-colors hover:text-[color:var(--vil-gold-dim)]">
               <IconLocation className="w-3 h-3" strokeWidth={2.5}/>
               Location Details
             </Link>

@@ -420,7 +420,7 @@ export function MentorsSection() {
               <h2 className="mt-8 max-w-md text-balance text-[clamp(2rem,4.5vw,3.25rem)] font-semibold leading-[1.08] tracking-tight text-[color:var(--vil-navy)]">
                 Learn from people who&apos;ve done it before
               </h2>
-              <CtaButton href="/about" variant="outline" className="mt-6">
+              <CtaButton href="/degree/about" variant="outline" className="mt-6">
                 View all mentors
               </CtaButton>
             </Reveal>

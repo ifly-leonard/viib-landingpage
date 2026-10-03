@@ -156,7 +156,7 @@ export function MentorsSectionVelocityScroll() {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <CtaButton href="/about" variant="outline">
+            <CtaButton href="/degree/about" variant="outline">
               View all mentors
             </CtaButton>
           </Reveal>

@@ -52,7 +52,7 @@ export function PortalWebinarForm() {
       });
       if (leadRes.ok) {
         const params = new URLSearchParams({ name: name.trim() });
-        window.location.href = `/portal/success?${params.toString()}`;
+        window.location.href = `/degree/portal/success?${params.toString()}`;
       } else {
         setError(leadRes.error ?? "We couldn't register you. Please try again.");
       }

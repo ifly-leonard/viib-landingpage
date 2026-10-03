@@ -6,7 +6,7 @@ import type { LibraryBook } from "@/content/library";
 
 export function BookEntry({ book }: { book: LibraryBook }) {
   return (
-    <Link href={`/library/${book.slug}`} className="group block">
+    <Link href={`/degree/library/${book.slug}`} className="group block">
       <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:text-left">
         <div className="w-[104px] shrink-0">
           <Book

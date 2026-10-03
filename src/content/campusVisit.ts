@@ -192,7 +192,7 @@ export const campusLocation = {
     headline: "First-time visitors must book ahead",
     body: "To make sure a team member is ready to welcome you, all first-time visits to campus require an advance booking. Students and returning visitors can walk in during campus hours.",
     ctaLabel: "Book a Campus Visit",
-    ctaHref: "/campus-life/book-a-tour",
+    ctaHref: "/degree/campus-life/book-a-tour",
   },
 } as const;
 

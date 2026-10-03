@@ -24,7 +24,7 @@ export function GoldenHeroVariant() {
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
                 <Link
-                  href="/"
+                  href="/degree"
                   className="inline-flex items-center gap-1.5 text-sm text-[color:var(--vil-ivory)]/70 transition-colors hover:text-[color:var(--vil-ivory)]"
                 >
                   <Home className="h-3.5 w-3.5" />

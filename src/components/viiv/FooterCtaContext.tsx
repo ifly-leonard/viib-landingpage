@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState, type ReactNode } from "react";
 
-type FooterCta = {
+export type FooterCta = {
   eyebrow: string;
   headline: string;
   description?: string;
@@ -18,8 +18,14 @@ const FooterCtaContext = createContext<{
   setFooterCta: () => {},
 });
 
-export function FooterCtaProvider({ children }: { children: ReactNode }) {
-  const [footerCta, setFooterCta] = useState<FooterCta | null>(null);
+export function FooterCtaProvider({
+  children,
+  initial = null,
+}: {
+  children: ReactNode;
+  initial?: FooterCta | null;
+}) {
+  const [footerCta, setFooterCta] = useState<FooterCta | null>(initial);
   return (
     <FooterCtaContext.Provider value={{ footerCta, setFooterCta }}>
       {children}

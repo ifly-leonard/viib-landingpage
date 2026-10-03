@@ -25,8 +25,8 @@ export const heroSlides: readonly HeroSlide[] = [
     subcopy:
       "3-Year UG Program in Startup Mastery & AI Venture Building at VIIV Chennai + UGC-Recognised Online BBA from KARE",
     image: "/cover/cover_1.png",
-    primary: { label: "Apply Now", href: "/admissions/how-to-apply" },
-    secondary: { label: "Explore Program", href: "/program" },
+    primary: { label: "Apply Now", href: "/degree/admissions/how-to-apply" },
+    secondary: { label: "Explore Program", href: "/degree/program" },
   },
   {
     id: "campus",
@@ -37,8 +37,8 @@ export const heroSlides: readonly HeroSlide[] = [
     subcopy:
       "VIIV is a full-time, offline learning environment designed around building, experimenting, and creating. From Venture Studios and Build Sprints to mentor reviews, Demo Days, and a thriving founder community — you'll turn ideas into real outcomes, week after week.",
     image: "/cover/cover_2_topview_sspdl.png",
-    primary: { label: "See Campus Life", href: "/campus-life/life-at-viiv" },
-    secondary: { label: "Book a Visit", href: "/campus-life/book-a-tour" },
+    primary: { label: "See Campus Life", href: "/degree/campus-life/life-at-viiv" },
+    secondary: { label: "Book a Visit", href: "/degree/campus-life/book-a-tour" },
   },
   {
     id: "admissions",
@@ -49,7 +49,7 @@ export const heroSlides: readonly HeroSlide[] = [
     subcopy:
       "Admission is open to 12th-pass students through a student-parent interaction. We look for curiosity, initiative, seriousness, and willingness to build.",
     image: "/cover/cover_3_hackathon.png",
-    primary: { label: "Start Application", href: "/admissions/how-to-apply" },
+    primary: { label: "Start Application", href: "/degree/admissions/how-to-apply" },
     secondary: { label: "Talk to Admissions", href: "tel:+918925991788" },
   },
   {
@@ -61,7 +61,7 @@ export const heroSlides: readonly HeroSlide[] = [
     subcopy:
       "Ventures, MVPs, campaigns, pitch decks, and mentor feedback — evidence that opens doors to placements, internships, or your own company.",
     image: "/cover/cover_4_classroom.png",
-    primary: { label: "See Outcomes", href: "/program" },
-    secondary: { label: "Apply Now", href: "/admissions/how-to-apply" },
+    primary: { label: "See Outcomes", href: "/degree/program" },
+    secondary: { label: "Apply Now", href: "/degree/admissions/how-to-apply" },
   },
 ] as const;

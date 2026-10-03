@@ -25,13 +25,13 @@ export function HeroBento() {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
-              href="/admissions/how-to-apply"
+              href="/degree/admissions/how-to-apply"
               className="inline-flex items-center gap-2 rounded-full bg-[color:var(--vil-gold)] px-7 py-3.5 text-sm font-bold text-[color:var(--vil-navy)] transition hover:brightness-105"
             >
               Apply Now
             </Link>
             <Link
-              href="/program"
+              href="/degree/program"
               className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-ivory)]/25 px-6 py-3.5 text-sm font-semibold text-[color:var(--vil-ivory)] transition hover:bg-[color:var(--vil-ivory)]/10"
             >
               Explore Program

@@ -230,7 +230,7 @@ export default function UiGuideComponentsPage() {
         <header className="border-b border-[color:var(--border)] bg-[color:var(--vil-navy)] text-[color:var(--vil-ivory)]">
           <div className="mx-auto max-w-6xl px-6 py-10">
             <Link
-              href="/"
+              href="/degree"
               className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[color:var(--vil-gold)] transition hover:gap-3"
             >
               <ArrowLeft className="h-4 w-4" />
@@ -759,13 +759,13 @@ export default function UiGuideComponentsPage() {
                 <Breadcrumb>
                   <BreadcrumbList>
                     <BreadcrumbItem>
-                      <BreadcrumbLink href="/" className="inline-flex items-center gap-1.5">
+                      <BreadcrumbLink href="/degree" className="inline-flex items-center gap-1.5">
                         <Home className="h-3.5 w-3.5" /> Home
                       </BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
-                      <BreadcrumbLink href="/program">Program</BreadcrumbLink>
+                      <BreadcrumbLink href="/degree/program">Program</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
@@ -781,7 +781,7 @@ export default function UiGuideComponentsPage() {
                 <Breadcrumb>
                   <BreadcrumbList>
                     <BreadcrumbItem>
-                      <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                      <BreadcrumbLink href="/degree">Home</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
@@ -805,11 +805,11 @@ export default function UiGuideComponentsPage() {
                 <Breadcrumb>
                   <BreadcrumbList>
                     <BreadcrumbItem>
-                      <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                      <BreadcrumbLink href="/degree">Home</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator className="text-[color:var(--vil-gold-dim)]">/</BreadcrumbSeparator>
                     <BreadcrumbItem>
-                      <BreadcrumbLink href="/admissions/how-to-apply">Admissions</BreadcrumbLink>
+                      <BreadcrumbLink href="/degree/admissions/how-to-apply">Admissions</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator className="text-[color:var(--vil-gold-dim)]">/</BreadcrumbSeparator>
                     <BreadcrumbItem>
@@ -826,7 +826,7 @@ export default function UiGuideComponentsPage() {
                   <BreadcrumbList className="text-[color:var(--vil-ivory)]/60">
                     <BreadcrumbItem>
                       <BreadcrumbLink
-                        href="/"
+                        href="/degree"
                         className="text-[color:var(--vil-ivory)]/70 hover:text-[color:var(--vil-gold)]"
                       >
                         Home
@@ -835,7 +835,7 @@ export default function UiGuideComponentsPage() {
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
                       <BreadcrumbLink
-                        href="/about"
+                        href="/degree/about"
                         className="text-[color:var(--vil-ivory)]/70 hover:text-[color:var(--vil-gold)]"
                       >
                         About
@@ -874,7 +874,7 @@ export default function UiGuideComponentsPage() {
                         <BreadcrumbList className="text-[color:var(--vil-ivory)]/60">
                           <BreadcrumbItem>
                             <BreadcrumbLink
-                              href="/"
+                              href="/degree"
                               className="text-[color:var(--vil-ivory)]/70 hover:text-[color:var(--vil-gold)]"
                             >
                               Home

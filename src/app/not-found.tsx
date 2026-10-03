@@ -33,14 +33,14 @@ export default function NotFound() {
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
           <Link
-            href="/program"
+            href="/degree/program"
             className="inline-flex items-center gap-2 rounded-full bg-[color:var(--vil-gold)] px-6 py-3.5 text-sm font-bold text-[color:var(--vil-navy)] transition hover:brightness-105"
           >
             Explore the Program
             <ArrowRight className="h-4 w-4" />
           </Link>
           <Link
-            href="/"
+            href="/degree"
             className="inline-flex items-center gap-2 rounded-full border border-[color:var(--vil-navy)]/20 px-6 py-3.5 text-sm font-semibold text-[color:var(--vil-navy)] transition hover:bg-[color:var(--vil-navy)]/[0.04]"
           >
             <Home className="h-4 w-4" />

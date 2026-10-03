@@ -12,10 +12,10 @@ export const siteMeta = {
 } as const;
 
 export const navigation = [
-  { href: "/program", label: "Program" },
-  { href: "/campus-life/life-at-viiv", label: "Campus Life" },
-  { href: "/admissions/how-to-apply", label: "Admissions" },
-  { href: "/about", label: "About" },
+  { href: "/degree/program", label: "Program" },
+  { href: "/degree/campus-life/life-at-viiv", label: "Campus Life" },
+  { href: "/degree/admissions/how-to-apply", label: "Admissions" },
+  { href: "/degree/about", label: "About" },
 ] as const;
 
 export const heroWords = ["earn.", "build.", "prove."] as const;

@@ -1,10 +1,10 @@
 import { admissionsConfig } from "@/lib/admissions.config";
 
 export const mainNavigation = [
-  { href: "/program", label: "UG program in Startup Mastery and AI Venture Building" },
-  { href: "/campus-life/life-at-viiv", label: "Campus Life" },
-  { href: "/admissions/how-to-apply", label: "Admissions" },
-  { href: "/about", label: "About" },
+  { href: "/degree/program", label: "UG program in Startup Mastery and AI Venture Building" },
+  { href: "/degree/campus-life/life-at-viiv", label: "Campus Life" },
+  { href: "/degree/admissions/how-to-apply", label: "Admissions" },
+  { href: "/degree/about", label: "About" },
 ] as const;
 
 export const ctaLinks = {
@@ -83,7 +83,7 @@ const COVER = "/cover/cover_1.png";
 export const navItems: readonly NavItem[] = [
   {
     label: "UG Program",
-    href: "/program",
+    href: "/degree/program",
     // menu: {
     //   variant: "feature",
     //   links: [
@@ -91,7 +91,7 @@ export const navItems: readonly NavItem[] = [
     //       title: "Year 1 — Build Yourself",
     //       description:
     //         "Develop founder thinking, customer understanding, sales, AI skills, and a professional presence.",
-    //       href: "/program/build-yourself",
+    //       href: "/degree/program/build-yourself",
     //       icon: "compass",
     //       image: "/cover/cover_1.png",
     //     },
@@ -99,7 +99,7 @@ export const navItems: readonly NavItem[] = [
     //       title: "Year 2 — Build a Business",
     //       description:
     //         "Build an MVP, launch the brand, acquire customers, and generate revenue.",
-    //       href: "/program/build-a-business",
+    //       href: "/degree/program/build-a-business",
     //       icon: "flask",
     //       image: "/cover/cover_3_hackathon.png",
     //     },
@@ -107,7 +107,7 @@ export const navItems: readonly NavItem[] = [
     //       title: "Year 3 — Build an Enterprise",
     //       description:
     //         "Build a team, create operating systems, and become investment-ready.",
-    //       href: "/program/build-an-enterprise",
+    //       href: "/degree/program/build-an-enterprise",
     //       icon: "building",
     //       image: "/cover/cover_2_topview_sspdl.png",
     //     },
@@ -115,7 +115,7 @@ export const navItems: readonly NavItem[] = [
     //       title: "Graduation & Demo Day",
     //       description:
     //         "Graduate with evidence and present a real venture to a live audience.",
-    //       href: "/program/graduation-and-demo-day",
+    //       href: "/degree/program/graduation-and-demo-day",
     //       icon: "presentation",
     //       image: "/cover/cover_4_classroom.png",
     //     },
@@ -125,45 +125,45 @@ export const navItems: readonly NavItem[] = [
     //     title: "Three years. One transformation.",
     //     description: "Build yourself. Build a business. Build an enterprise.",
     //     image: COVER,
-    //     href: "/program",
+    //     href: "/degree/program",
     //     cta: "Explore the full program",
     //   },
     // },
   },
   {
     label: "Campus Life",
-    href: "/campus-life/life-at-viiv",
+    href: "/degree/campus-life/life-at-viiv",
     menu: {
       variant: "grid",
       links: [
         {
           title: "Life at VIIV",
           description: "A full-time builder campus.",
-          href: "/campus-life/life-at-viiv",
+          href: "/degree/campus-life/life-at-viiv",
           icon: "building",
         },
         {
           title: "Accommodations",
           description: "Comfortable stays near campus.",
-          href: "/campus-life/accommodations",
+          href: "/degree/campus-life/accommodations",
           icon: "building",
         },
         // {
         //   title: "Demo Days",
         //   description: "Ship, pitch, get feedback.",
-        //   href: "/campus-life/demo-days",
+        //   href: "/degree/campus-life/demo-days",
         //   icon: "presentation",
         // },
         {
           title: "The VIIV Mentor Network",
           description: "Founders, mentors, peers.",
-          href: "/campus-life/community",
+          href: "/degree/campus-life/community",
           icon: "users",
         },
         {
           title: "Location",
           description: "In the heart of Chennai.",
-          href: "/campus-life/location",
+          href: "/degree/campus-life/location",
           icon: "pin",
         },
       ],
@@ -176,43 +176,43 @@ export const navItems: readonly NavItem[] = [
   },
   {
     label: "Admissions",
-    href: "/admissions/how-to-apply",
+    href: "/degree/admissions/how-to-apply",
     menu: {
       variant: "list",
       links: [
         {
           title: "How to apply",
           description: "No entrance exam — apply in minutes.",
-          href: "/admissions/how-to-apply",
+          href: "/degree/admissions/how-to-apply",
           icon: "clipboard",
         },
         {
           title: "Eligibility",
           description: "12th pass and ready to build.",
-          href: "/admissions/eligibility",
+          href: "/degree/admissions/eligibility",
           icon: "badge",
         },
         {
           title: "Fees & scholarships",
           description: "₹8L all-in, scholarships available.",
-          href: "/admissions/fees-and-scholarships",
+          href: "/degree/admissions/fees-and-scholarships",
           icon: "wallet",
           badge: "New",
         },
         {
           title: "Book a visit",
           description: "Tour the Chennai campus.",
-          href: "/campus-life/book-a-tour",
+          href: "/degree/campus-life/book-a-tour",
           icon: "pin",
         },
       ],
       cta: {
-        title: "The 2026 intake is open",
+        title: "The 2027 intake is open",
         description: "Limited seats · rolling interviews",
-        href: "/admissions/how-to-apply",
+        href: "/degree/admissions/how-to-apply",
         label: "Apply now",
       },
     },
   },
-  { label: "About", href: "/about" },
+  { label: "About", href: "/degree/about" },
 ] as const;

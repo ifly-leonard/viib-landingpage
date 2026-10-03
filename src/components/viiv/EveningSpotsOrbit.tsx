@@ -75,7 +75,7 @@ export function EveningSpotsOrbit() {
     <div className="relative mx-auto flex aspect-square w-full max-w-[42rem] items-center justify-center">
       {/* Center: location button */}
       <Link
-        href="/campus-life/location"
+        href="/degree/campus-life/location"
         className="relative z-10 flex h-36 w-36 flex-col items-center justify-center gap-1 rounded-full bg-[color:var(--vil-navy)] text-center text-[color:var(--vil-ivory)] shadow-[0_24px_60px_-20px_rgba(31,49,73,0.6)] transition hover:scale-105 sm:h-44 sm:w-44"
       >
         <MapPin className="h-7 w-7 text-[color:var(--vil-gold)]" />

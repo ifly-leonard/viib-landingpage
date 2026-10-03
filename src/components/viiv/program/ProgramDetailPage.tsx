@@ -37,7 +37,7 @@ export function ProgramDetailPage({ data }: { data: ProgramPageData }) {
         <div className="absolute right-[-10%] top-[-20%] h-[34rem] w-[34rem] rounded-full bg-[color:var(--vil-gold)]/15 blur-[110px]" />
         <div className="viiv-container relative z-10 grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
           <Reveal>
-            <Link href="/program" className="inline-flex items-center gap-2 text-sm font-semibold text-white/55 transition hover:text-[color:var(--vil-gold)]">
+            <Link href="/degree/program" className="inline-flex items-center gap-2 text-sm font-semibold text-white/55 transition hover:text-[color:var(--vil-gold)]">
               <ArrowLeft className="h-4 w-4" />
               Program overview
             </Link>
@@ -118,8 +118,8 @@ export function ProgramDetailPage({ data }: { data: ProgramPageData }) {
             <p className="mt-3 text-2xl font-bold md:text-3xl">One year builds into the next.</p>
           </div>
           <div className="flex flex-wrap gap-3">
-            {previous ? <Link href={`/program/${previous.slug}`} className="btn-secondary !border-white/25 !text-white"><ArrowLeft className="h-4 w-4" /> {previous.title}</Link> : null}
-            {next ? <Link href={`/program/${next.slug}`} className="btn-primary !bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)]">{next.title} <ArrowRight className="h-4 w-4" /></Link> : <Link href="/program/graduation-and-demo-day" className="btn-primary !bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)]">Graduation & Demo Day <ArrowRight className="h-4 w-4" /></Link>}
+            {previous ? <Link href={`/degree/program/${previous.slug}`} className="btn-secondary !border-white/25 !text-white"><ArrowLeft className="h-4 w-4" /> {previous.title}</Link> : null}
+            {next ? <Link href={`/degree/program/${next.slug}`} className="btn-primary !bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)]">{next.title} <ArrowRight className="h-4 w-4" /></Link> : <Link href="/degree/program/graduation-and-demo-day" className="btn-primary !bg-[color:var(--vil-gold)] !text-[color:var(--vil-navy)]">Graduation & Demo Day <ArrowRight className="h-4 w-4" /></Link>}
           </div>
         </div>
       </SectionShell>
