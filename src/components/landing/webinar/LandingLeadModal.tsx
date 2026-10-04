@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import {
   CalendarCheck,
-  CheckCircle2,
-  Mail,
+  MessageCircle,
   PartyPopper,
+  PhoneCall,
   Rocket,
   ShieldCheck,
   Target,
@@ -118,7 +118,7 @@ export function LandingLeadModal({ source, onClose }: { source: string; onClose:
                 transition={{ delay: 0.4, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className="relative mt-7 text-xs font-bold uppercase tracking-[0.28em] text-[color:var(--vil-gold)]"
               >
-                You&apos;re registered
+                You&apos;re registered!
               </m.p>
 
               <m.h3
@@ -127,7 +127,7 @@ export function LandingLeadModal({ source, onClose }: { source: string; onClose:
                 transition={{ delay: 0.5, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className="relative mt-3 font-serif text-3xl font-semibold leading-tight sm:text-4xl"
               >
-                See you there, {firstName}!
+                See you soon, {firstName}!
               </m.h3>
 
               <m.p
@@ -136,21 +136,21 @@ export function LandingLeadModal({ source, onClose }: { source: string; onClose:
                 transition={{ delay: 0.62, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className="relative mx-auto mt-4 max-w-md text-sm leading-relaxed text-[color:var(--vil-ivory)]/80"
               >
-                We&apos;ve saved your seat for the free career webinar. Your joining link and
-                reminders will be shared using the contact information you provided.
+                Your registration is confirmed. Our Career Guidance Mentor will connect with you
+                shortly to guide you through the next steps.
               </m.p>
 
               <div className="relative mt-8 grid w-full max-w-md gap-3 text-left">
                 {[
                   {
-                    icon: Mail,
-                    title: "Check your inbox",
-                    body: "Your joining link and reminders will arrive by email.",
+                    icon: PhoneCall,
+                    title: "Expect a Call",
+                    body: "Our Career Guidance Mentor will call you to understand your career goals and current job search and guide you on the next steps.",
                   },
                   {
-                    icon: CheckCircle2,
-                    title: "Join the live session",
-                    body: "Bring your questions — the session is interactive.",
+                    icon: MessageCircle,
+                    title: "Stay Connected on WhatsApp",
+                    body: "We'll also connect with you via WhatsApp with important updates and further information.",
                   },
                 ].map((step, i) => {
                   const Icon = step.icon;
@@ -175,6 +175,15 @@ export function LandingLeadModal({ source, onClose }: { source: string; onClose:
                   );
                 })}
               </div>
+
+              <m.p
+                initial={reduce ? false : { opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1, duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+                className="relative mt-7 text-sm font-medium text-[color:var(--vil-gold)]"
+              >
+                Stay tuned — our team will be calling you soon!
+              </m.p>
 
               <m.button
                 type="button"

@@ -27,7 +27,7 @@ export function Hero() {
           >
             Graduated.
             <br />
-            <span className="text-muted">Still looking for the</span> right&nbsp;job?
+            <span className="text-muted">Still looking for the</span> right&nbsp;career?
           </h1>
 
           <p className="mt-5 font-display text-xl leading-snug font-semibold tracking-tight text-ink sm:text-2xl lg:text-[1.75rem]">
@@ -35,7 +35,8 @@ export function Hero() {
           </p>
 
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            Discover careers on the business side of technology — and build the practical skills companies look for.
+            Discover high-growth careers on the business side of technology — and build the practical sales,
+            communication and business skills companies look for.
           </p>
 
           <div id="hero-cta" className="mt-7 flex flex-col gap-3 sm:flex-row">

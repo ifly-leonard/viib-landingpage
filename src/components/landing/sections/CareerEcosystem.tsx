@@ -9,12 +9,12 @@ import { Photo } from "../ui/Photo";
 
 /** Card anchor positions (percent of the stage) and parallax depth. */
 const layout = [
-  { x: 0, y: 10, depth: 18 },
-  { x: 60, y: 2, depth: 26 },
-  { x: 64, y: 36, depth: 14 },
-  { x: -4, y: 50, depth: 22 },
-  { x: 58, y: 72, depth: 20 },
-  { x: 4, y: 86, depth: 12 },
+  { x: 0, y: 8, depth: 18 },
+  { x: 58, y: 0, depth: 26 },
+  { x: 62, y: 34, depth: 14 },
+  { x: -2, y: 46, depth: 22 },
+  { x: 56, y: 70, depth: 20 },
+  { x: 2, y: 82, depth: 12 },
 ];
 
 function useFinePointer() {
@@ -50,21 +50,21 @@ function FloatingCard({
   const y = useTransform(py, (v) => v * depth);
   return (
     <m.li
-      className="absolute w-[12.5rem]"
+      className="absolute w-[8rem] sm:w-[9.75rem] lg:w-[12.5rem]"
       style={{ ...style, x, y }}
       initial={{ opacity: 0, scale: 0.92 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.35 + index * 0.09, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
       <div
-        className="animate-float rounded-2xl bg-white/95 p-3.5 shadow-lift ring-1 ring-line backdrop-blur-sm motion-reduce:animate-none"
+        className="animate-float rounded-2xl bg-white/95 p-2.5 shadow-lift ring-1 ring-line backdrop-blur-sm motion-reduce:animate-none lg:p-3.5"
         style={{ animationDelay: `${index * -1.1}s` }}
       >
-        <p className="flex items-center gap-2 text-[13px] font-semibold text-ink">
-          <span aria-hidden className={cn("size-2 rounded-full", index % 2 ? "bg-iris" : "bg-accent")} />
+        <p className="flex items-center gap-2 text-[11px] font-semibold text-ink lg:text-[13px]">
+          <span aria-hidden className={cn("size-1.5 shrink-0 rounded-full lg:size-2", index % 2 ? "bg-iris" : "bg-accent")} />
           {title}
         </p>
-        <p className="mt-1 text-xs leading-snug text-muted">{line}</p>
+        <p className="mt-1 text-[10px] leading-snug text-muted lg:text-xs">{line}</p>
       </div>
     </m.li>
   );
@@ -98,14 +98,18 @@ export function CareerEcosystem({ roles }: { roles: readonly string[] }) {
 
   return (
     <div className="min-w-0">
-      {/* Desktop / large screens: floating ecosystem */}
-      <div ref={stage} className="relative mx-auto hidden aspect-[1/1.02] w-full max-w-[36rem] lg:block">
-        <m.div className="absolute inset-x-[17%] inset-y-[6%]" style={{ x: photoX, y: photoY }}>
+      {/* The people image with the career cards annotated around it, at every
+          breakpoint (parallax only kicks in on fine pointers). */}
+      <div
+        ref={stage}
+        className="relative mx-auto aspect-[1/1.02] w-full max-w-[21rem] sm:max-w-[28rem] lg:max-w-[36rem]"
+      >
+        <m.div className="absolute inset-x-[16%] inset-y-[8%] lg:inset-x-[17%] lg:inset-y-[6%]" style={{ x: photoX, y: photoY }}>
           <div className="absolute -inset-3 rounded-[2.5rem] bg-sand" aria-hidden />
           <Photo
             media={media.hero}
             priority
-            sizes="(min-width: 1024px) 26rem, 100vw"
+            sizes="(min-width: 1024px) 26rem, (min-width: 640px) 20rem, 100vw"
             className="absolute inset-0 rounded-[2.2rem] shadow-lift"
           />
         </m.div>
@@ -143,37 +147,6 @@ export function CareerEcosystem({ roles }: { roles: readonly string[] }) {
             />
           ))}
         </ul>
-      </div>
-
-      {/* Mobile / tablet: static image + swipeable career cards */}
-      <div className="lg:hidden">
-        <div className="relative mx-auto max-w-md">
-          <Photo
-            media={media.hero}
-            sizes="(min-width: 640px) 28rem, 100vw"
-            className="aspect-[4/3.4] rounded-[1.75rem] shadow-card"
-          />
-        </div>
-        <div className="-mx-4 mt-5 sm:-mx-6">
-          <p id="hero-roles-label" className="px-4 text-xs font-semibold uppercase tracking-[0.16em] text-muted sm:px-6">
-            Careers to explore · swipe
-          </p>
-          <ul
-            aria-labelledby="hero-roles-label"
-            tabIndex={0}
-            className="no-scrollbar mt-3 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-2 sm:scroll-px-6 sm:px-6"
-          >
-            {cards.map((c, i) => (
-              <li key={c.title} className="w-[68%] max-w-[16rem] shrink-0 snap-start rounded-2xl bg-white p-4 shadow-card ring-1 ring-line">
-                <p className="flex items-center gap-2 text-sm font-semibold">
-                  <span aria-hidden className={cn("size-2 rounded-full", i % 2 ? "bg-iris" : "bg-accent")} />
-                  {c.title}
-                </p>
-                <p className="mt-1.5 text-[13px] leading-snug text-muted">{c.line}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
     </div>
   );
