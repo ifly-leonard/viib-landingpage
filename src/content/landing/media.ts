@@ -21,31 +21,20 @@ export const media = {
   },
   learnByDoing: [
     {
-      src: null,
-      alt: "Two young professionals practising a sales roleplay",
+      src: "/images/varman_talking_sales_top.jpeg",
+      alt: "Arunmozhivarman Ramachandran leading a sales session",
+      brief: "Sales session led by the founder",
+    },
+    {
+      src: "/images/landing_sales_left.jpeg",
+      alt: "Participants practising a sales roleplay",
       brief: "Sales roleplay between two young Indian professionals",
     },
     {
-      src: null,
-      alt: "A learner on a mock sales call with a headset and laptop",
+      src: "/images/landing_sales_right.jpeg",
+      alt: "A learner practising a pitch",
       brief: "Mock call with headset, CRM on laptop",
     },
-    {
-      src: null,
-      alt: "A small team discussing a pitch around a table",
-      brief: "Team pitch discussion, candid",
-    },
   ],
-  founder: {
-    src: null,
-    alt: "Arunmozhivarman Ramachandran, Founder of VIIV by Varman",
-    brief: "Professional portrait of the founder, 4:5",
-  },
 } satisfies Record<string, MediaItem | MediaItem[]>;
 
-/**
- * Show clearly-labelled placeholders for unverified or missing content
- * (founder achievements, photos). Set NEXT_PUBLIC_SHOW_PLACEHOLDERS=false to hide
- * text placeholders in production.
- */
-export const showPlaceholders = process.env.NEXT_PUBLIC_SHOW_PLACEHOLDERS !== "false";

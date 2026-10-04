@@ -200,7 +200,6 @@ export function LandingLeadModal({ source, onClose }: { source: string; onClose:
                 <div className="pointer-events-none absolute inset-0 opacity-40 [background-image:radial-gradient(circle_at_1px_1px,rgba(247,189,68,0.25)_1px,transparent_0)] [background-size:22px_22px]" />
 
                 <m.div className="relative" variants={container} initial={reduce ? false : "hidden"} animate="show">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <m.img variants={item} src="/brand/logo_main_white.png" alt="VIIV" className="h-12 w-auto" />
                   <m.h2 variants={item} className="mt-8 font-serif text-2xl font-semibold leading-tight">
                     Your career options are
