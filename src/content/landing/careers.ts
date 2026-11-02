@@ -24,21 +24,21 @@ export const careerPaths: CareerPath[] = [
   },
   {
     id: "sales-development",
-    title: "Sales Development",
+    title: "Full-Stack Business Development",
     short: "Find, connect with and qualify potential customers.",
     whatYouDo:
       "Research prospects, reach out across calls, email and LinkedIn, and qualify whether a customer is a good fit before handing over to closers.",
     skills: ["Prospecting", "Cold calling", "Written outreach", "Qualification"],
-    progression: ["SDR / BDR", "Senior SDR", "Account Executive", "Sales Manager"],
+    progression: ["SDR / BDR", "Senior SDR", "Account Executive", "Full-Stack Business Manager"],
   },
   {
     id: "inside-sales",
-    title: "Inside Sales",
+    title: "Inside Full-Stack Business",
     short: "Understand customer requirements and convert opportunities.",
     whatYouDo:
       "Run discovery conversations, present solutions remotely, handle objections and guide customers to a decision.",
     skills: ["Discovery", "Product pitching", "Objection handling", "Closing"],
-    progression: ["Inside Sales Associate", "Senior Associate", "Team Lead", "Sales Manager"],
+    progression: ["Inside Full-Stack Business Associate", "Senior Associate", "Team Lead", "Full-Stack Business Manager"],
   },
   {
     id: "customer-success",
@@ -72,8 +72,8 @@ export const careerPaths: CareerPath[] = [
 /** Roles used by the hero ecosystem and the job-discovery simulation. */
 export const heroRoles = [
   "Business Development",
-  "Sales Development",
-  "Inside Sales",
+  "Full-Stack Business Development",
+  "Inside Full-Stack Business",
   "Customer Success",
   "Account Management",
   "Growth",
@@ -86,12 +86,12 @@ export const discoveryRoles: { query: string; focus: string; skills: string[] }[
     skills: ["Communication", "Research", "Pitching"],
   },
   {
-    query: "Sales Development",
+    query: "Full-Stack Business Development",
     focus: "Reaching out to prospects and qualifying their needs.",
     skills: ["Prospecting", "Calling", "CRM"],
   },
   {
-    query: "Inside Sales",
+    query: "Inside Full-Stack Business",
     focus: "Consulting customers remotely and converting interest into decisions.",
     skills: ["Discovery", "Objection handling", "Closing"],
   },
@@ -115,7 +115,7 @@ export const graduateReality = [
   },
   {
     title: "Career Confusion",
-    body: "Developer? MBA? Marketing? Sales? What should you actually choose?",
+    body: "Developer? MBA? Marketing? Full-Stack Business? What should you actually choose?",
     icon: "compass",
   },
   {
@@ -139,7 +139,7 @@ export const businessFunctions = [
   { name: "Engineering", role: "Builds the product.", highlight: false },
   { name: "Marketing", role: "Creates demand.", highlight: false },
   { name: "Business Development", role: "Creates opportunities.", highlight: true },
-  { name: "Sales", role: "Converts opportunities into customers.", highlight: true },
+  { name: "Full-Stack Business", role: "Converts opportunities into customers.", highlight: true },
   { name: "Customer Success", role: "Helps customers succeed.", highlight: true },
   { name: "Account Management", role: "Builds and grows relationships.", highlight: true },
   { name: "Revenue Operations", role: "Supports the revenue engine.", highlight: true },

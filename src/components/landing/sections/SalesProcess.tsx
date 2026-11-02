@@ -41,7 +41,7 @@ export function SalesProcess() {
           </h3>
         </div>
         <p className="max-w-sm text-muted-dark">
-          Full-Stack Sales trains every stage of a real customer conversation — not just the pitch.
+          Full-Stack Business trains every stage of a real customer conversation — not just the pitch.
         </p>
       </div>
 

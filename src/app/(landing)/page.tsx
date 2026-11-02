@@ -5,7 +5,8 @@ import { Navbar } from "@/components/landing/layout/Navbar";
 import { StickyMobileCTA } from "@/components/landing/layout/StickyMobileCTA";
 import { BusinessSideOfTech } from "@/components/landing/sections/BusinessSideOfTech";
 import { CareerReadiness } from "@/components/landing/sections/CareerReadiness";
-import { CareerTransformation } from "@/components/landing/sections/CareerTransformation";
+// "Your degree got you here" section temporarily hidden — restore below when ready.
+// import { CareerTransformation } from "@/components/landing/sections/CareerTransformation";
 import { FAQ } from "@/components/landing/sections/FAQ";
 import { FinalCTA } from "@/components/landing/sections/FinalCTA";
 import { FounderSection } from "@/components/landing/sections/FounderSection";
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
 /**
  * Homepage narrative: I need a job → my options are bigger →
  * business careers beyond coding → sales is a business career → skill gap →
- * Full-Stack Sales teaches it → practice + proof → real experience → free webinar.
+ * Full-Stack Business teaches it → practice + proof → real experience → free webinar.
  */
 export default function LandingPage() {
   return (
@@ -69,7 +70,8 @@ export default function LandingPage() {
         <VIIVMethod />
         <ProofOfWork />
         <CareerReadiness />
-        <CareerTransformation />
+        {/* "Your degree got you here" section temporarily hidden — restore below when ready. */}
+        {/* <CareerTransformation /> */}
         <FounderSection />
         <WebinarSection />
         <FAQ />

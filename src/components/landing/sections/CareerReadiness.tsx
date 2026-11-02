@@ -10,7 +10,7 @@ export function CareerReadiness() {
         id="readiness-title"
         eyebrow="Career readiness"
         title="Learning the skill is only part of the journey."
-        lede="Full-Stack Sales also helps you present yourself, prepare for interviews and approach your job search with a plan."
+        lede="Full-Stack Business also helps you present yourself, prepare for interviews and approach your job search with a plan."
       />
 
       <Stagger as="ol" className="mt-12 grid gap-3 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-4">

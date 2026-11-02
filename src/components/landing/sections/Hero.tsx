@@ -45,7 +45,7 @@ export function Hero() {
           </div>
 
           <ul aria-label="Career paths" className="mt-5 flex flex-wrap gap-x-2 gap-y-1 text-[13px] text-muted sm:mt-6 sm:text-sm">
-            {["Business Development", "Sales", "Customer Success", "Account Management"].map((r, i) => (
+            {["Business Development", "Full-Stack Business", "Customer Success", "Account Management"].map((r, i) => (
               <li key={r} className="whitespace-nowrap">
                 {i > 0 && <span aria-hidden className="mr-2">•</span>}
                 {r}

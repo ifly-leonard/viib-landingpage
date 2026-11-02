@@ -63,7 +63,7 @@ export function LandingLeadForm({
         degree,
         graduationYear,
         status,
-        source: `VIIV Full-Stack Sales — ${source}`,
+        source: `VIIV Full-Stack Business — ${source}`,
         tags: ["full_stack_sales_webinar"],
       });
       if (leadRes.ok) {

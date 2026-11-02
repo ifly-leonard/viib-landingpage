@@ -12,10 +12,10 @@ export function WhySales() {
       <TrackView event="why_sales_view">
         <SectionHeading
           id="why-sales-title"
-          eyebrow="Why sales"
+          eyebrow="Why Full-Stack Business"
           title={
             <>
-              Why learn sales?
+              Why learn Full-Stack Business?
               <br />
               <span className="text-accent-ink">Because every business needs customers.</span>
             </>
@@ -72,13 +72,13 @@ export function WhySales() {
                 </div>
               ))}
               <div className="absolute top-1/2 left-1/2 flex size-24 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-ink font-display text-lg font-semibold text-paper shadow-lift sm:size-28 sm:text-xl">
-                Sales
+                Business
               </div>
             </div>
           </Reveal>
           <div>
             <p className="font-display text-2xl leading-tight font-semibold tracking-tight sm:text-3xl">
-              Sales sits at the intersection of people, business, communication and revenue.
+              Full-Stack Business sits at the intersection of people, business, communication and revenue.
             </p>
             <p className="mt-4 text-muted">
               That is why the skill travels across industries — the product changes, the customer conversation doesn&rsquo;t.

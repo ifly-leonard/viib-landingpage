@@ -15,9 +15,9 @@ export const site = {
   url: resolveSiteUrl(),
   locale: "en_IN",
   seo: {
-    title: "VIIV by Varman — Careers Beyond Coding | Full-Stack Sales Program",
+    title: "VIIV by Varman — Careers Beyond Coding | Full-Stack Business Program",
     description:
-      "Graduated and still looking for the right job? Discover business careers in tech — Business Development, Sales, Customer Success — and build practical, job-ready skills with VIIV Full-Stack Sales. Join the free career webinar.",
+      "Graduated and still looking for the right job? Discover business careers in tech — Business Development, Full-Stack Business, Customer Success — and build practical, job-ready skills with VIIV Full-Stack Business. Join the free career webinar.",
   },
   contact: {
     // Add verified contact details when available. Empty values are not rendered.
@@ -44,8 +44,8 @@ export const anchors = {
 } as const;
 
 export const nav = [
-  { label: "Why Sales", href: `#${anchors.whySales}` },
-  { label: "Full-Stack Sales", href: `#${anchors.fullStackSales}` },
+  { label: "Why Full-Stack Business", href: `#${anchors.whySales}` },
+  { label: "VIIV Full-Stack Business", href: `#${anchors.fullStackSales}` },
   { label: "How It Works", href: `#${anchors.method}` },
   { label: "About", href: `#${anchors.founder}` },
 ] as const;
@@ -54,7 +54,7 @@ export const ctas = {
   webinar: "Join Free Career Webinar",
   webinarShort: "Join Free Webinar",
   webinarReserve: "Reserve My Free Seat",
-  explore: "Explore Full-Stack Sales",
+  explore: "Explore Full-Stack Business",
 } as const;
 
 export const footer = {
@@ -62,8 +62,8 @@ export const footer = {
     {
       title: "Explore",
       links: [
-        { label: "Why Sales", href: `/#${anchors.whySales}` },
-        { label: "Full-Stack Sales", href: `/#${anchors.fullStackSales}` },
+        { label: "Why Full-Stack Business", href: `/#${anchors.whySales}` },
+        { label: "Full-Stack Business", href: `/#${anchors.fullStackSales}` },
         { label: "The VIIV Method", href: `/#${anchors.method}` },
       ],
     },

@@ -53,7 +53,7 @@ export function SkillGap() {
 
       <Reveal className="mt-12 text-center lg:mt-16">
         <p className="mx-auto max-w-3xl font-display text-2xl leading-tight font-semibold tracking-tight sm:text-3xl">
-          This is the gap <span className="text-accent-ink">VIIV Full-Stack Sales</span> is designed to address.
+          This is the gap <span className="text-accent-ink">VIIV Full-Stack Business</span> is designed to address.
         </p>
       </Reveal>
     </Section>

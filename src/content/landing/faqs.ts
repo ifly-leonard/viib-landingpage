@@ -1,7 +1,7 @@
 export const faqs = [
   {
-    q: "Is Full-Stack Sales only for commerce students?",
-    a: "No. Full-Stack Sales is designed for graduates and final-year students from many backgrounds — B.E/B.Tech, B.Com, BBA, BCA, B.Sc, BA, MBA and similar — who want to explore customer-facing and revenue careers.",
+    q: "Is Full-Stack Business only for commerce students?",
+    a: "No. Full-Stack Business is designed for graduates and final-year students from many backgrounds — B.E/B.Tech, B.Com, BBA, BCA, B.Sc, BA, MBA and similar — who want to explore customer-facing and revenue careers.",
   },
   {
     q: "Do I need previous sales experience?",
@@ -12,8 +12,8 @@ export const faqs = [
     a: "Yes, it can be. Technology companies need people who understand both the product and the customer. An engineering background can be a genuine advantage in roles such as sales development, pre-sales conversations and customer success.",
   },
   {
-    q: "Is this only for Sales jobs?",
-    a: "No. The skills — communication, discovery, pitching, objection handling, negotiation and CRM — are relevant to roles such as Business Development, Sales Development, Inside Sales, Customer Success and Account Management.",
+    q: "Is this only for Full-Stack Business jobs?",
+    a: "No. The skills — communication, discovery, pitching, objection handling, negotiation and CRM — are relevant to roles such as Business Development, Full-Stack Business Development, Inside Full-Stack Business, Customer Success and Account Management.",
   },
   {
     q: "Is a job guaranteed?",
@@ -21,7 +21,7 @@ export const faqs = [
   },
   {
     q: "Is this just recorded videos?",
-    a: "No. Full-Stack Sales is built around learning by doing — roleplays, mock calls, discovery and pitch practice, objection-handling drills, CRM exercises and assessments with feedback.",
+    a: "No. Full-Stack Business is built around learning by doing — roleplays, mock calls, discovery and pitch practice, objection-handling drills, CRM exercises and assessments with feedback.",
   },
   {
     q: "What will I have at the end of the program?",
@@ -33,6 +33,6 @@ export const faqs = [
   },
   {
     q: "Is the webinar really free? Will I be pressured to join the program?",
-    a: "Yes, it's free. The webinar focuses on career options on the business side of tech. You'll also hear about Full-Stack Sales, and you can decide for yourself whether it's right for you.",
+    a: "Yes, it's free. The webinar focuses on career options on the business side of tech. You'll also hear about Full-Stack Business, and you can decide for yourself whether it's right for you.",
   },
 ] as const;

@@ -11,7 +11,7 @@ export const webinar = {
   copy: "Before choosing another course, understand the career opportunities available on the business side of technology.",
   topics: [
     "Business Development",
-    "Sales",
+    "Full-Stack Business",
     "Customer Success",
     "Account Management",
     "How revenue teams work",

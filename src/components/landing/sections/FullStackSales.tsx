@@ -21,7 +21,7 @@ export function FullStackSales() {
           <h2 id="fss-title" className="mt-5 font-display text-[3rem] leading-[0.9] min-[400px]:text-[3.4rem] font-bold tracking-[-0.045em] uppercase sm:text-[6rem] lg:text-[9rem]">
             Full-Stack
             <br />
-            <span className="text-accent">Sales</span>
+            <span className="text-accent">Business</span>
           </h2>
         </Reveal>
 

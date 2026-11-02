@@ -1,12 +1,12 @@
 /**
- * VIIV Full-Stack Sales — program content.
+ * VIIV Full-Stack Business — program content.
  * Edit curriculum, process and proof-of-work outputs here.
  */
 
 export const program = {
   label: "VIIV by Varman",
-  name: "Full-Stack Sales",
-  headline: "Learn the Complete Modern Sales Journey.",
+  name: "Full-Stack Business",
+  headline: "Learn the Complete Modern Full-Stack Business Journey.",
   description:
     "A practical career-focused program designed to help aspiring business professionals learn sales from first conversation to customer conversion — while building communication, business, technology and career-readiness skills.",
   pillars: [
@@ -29,7 +29,7 @@ export const salesModules: SalesModule[] = [
     number: "01",
     title: "Foundation",
     summary: "The mindset and fundamentals every business professional needs.",
-    topics: ["Communication", "Business Fundamentals", "Customer Psychology", "Sales Mindset"],
+    topics: ["Communication", "Business Fundamentals", "Customer Psychology", "Full-Stack Business Mindset"],
   },
   {
     number: "02",
@@ -63,9 +63,9 @@ export const salesModules: SalesModule[] = [
   },
   {
     number: "07",
-    title: "Sales Technology",
+    title: "Full-Stack Business Technology",
     summary: "Work like a modern sales team.",
-    topics: ["CRM", "Pipeline Management", "Sales Automation", "AI for Sales", "Productivity Tools"],
+    topics: ["CRM", "Pipeline Management", "Full-Stack Business Automation", "AI for Full-Stack Business", "Productivity Tools"],
   },
   {
     number: "08",
@@ -126,7 +126,7 @@ export const learnByDoing = {
     "Negotiation Practice",
     "CRM Exercises",
     "AI Workflows",
-    "Sales Assignments",
+    "Full-Stack Business Assignments",
     "Mock Interviews",
   ],
   loop: ["Practice", "Feedback", "Improve", "Repeat"],
@@ -141,12 +141,12 @@ export const viivMethod = [
 ] as const;
 
 export const proofOfWork = [
-  { title: "Sales Portfolio", kind: "Portfolio" },
-  { title: "Recorded Sales Pitch", kind: "Recording" },
+  { title: "Full-Stack Business Portfolio", kind: "Portfolio" },
+  { title: "Recorded Full-Stack Business Pitch", kind: "Recording" },
   { title: "Discovery Call Assessment", kind: "Assessment" },
   { title: "Objection Handling Assessment", kind: "Assessment" },
   { title: "CRM Project", kind: "Project" },
-  { title: "Sales Case Study", kind: "Project" },
+  { title: "Full-Stack Business Case Study", kind: "Project" },
   { title: "Professional LinkedIn Profile", kind: "Profile" },
   { title: "Optimised Naukri Profile", kind: "Profile" },
   { title: "Interview Readiness", kind: "Readiness" },

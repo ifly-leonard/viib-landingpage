@@ -27,7 +27,7 @@ const copyPoints = [
   {
     icon: Target,
     title: "Careers beyond coding",
-    body: "Business Development, Sales, Customer Success, Account Management and more.",
+    body: "Business Development, Full-Stack Business, Customer Success, Account Management and more.",
   },
   {
     icon: Rocket,

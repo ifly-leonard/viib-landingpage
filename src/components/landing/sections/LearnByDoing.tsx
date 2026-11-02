@@ -18,7 +18,7 @@ export function LearnByDoing() {
             eyebrow="Learn by doing"
             title={
               <>
-                Sales cannot be learned just by watching videos.
+                Full-Stack Business cannot be learned just by watching videos.
               </>
             }
             lede={<span className="font-semibold text-ink">You learn sales by doing sales.</span>}

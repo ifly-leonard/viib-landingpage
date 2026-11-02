@@ -1,14 +1,14 @@
 /**
  * Founder / leadership content for the landing page. The section is presented
  * like the /degree founder block (circular portrait + experience logos) with
- * Full-Stack Sales copy.
+ * Full-Stack Business copy.
  */
 
 export const founder = {
   heading: "Envisioned & Led by Industry Experience",
   name: "Arunmozhivarman Ramachandran",
   title: "Founder, VIIV — Varman Institute of Innovation and Venture Building",
-  credentials: "IIM Kozhikode Alumnus | 12+ Years of Startup & Sales Leadership",
+  credentials: "IIM Kozhikode Alumnus | 12+ Years of Startup & Full-Stack Business Leadership",
   companies: "Ex-Practo · Ex-Toppr · Ex-WheelsEye · Ex-NxtWave",
   photo: "/photos/mentors/arunmozhivarman_circle.png",
   iimLogo: "/founder/iim-k.jpeg",
@@ -19,14 +19,14 @@ export const founder = {
     "He holds a Bachelor of Engineering in Electronics and Communication Engineering, a PGPM from ICFAI Business School, Bangalore, and completed the Executive Programme in Strategic Management at IIM Kozhikode.",
   ],
   why: {
-    heading: "Why VIIV Full Stack Sales?",
+    heading: "Why VIIV Full-Stack Business?",
     lead: "Across years of hiring, training and managing sales professionals, Arunmozhivarman observed one recurring gap:",
     points: [
       "Companies need sales talent — but many graduates enter the workforce without enough real-world sales exposure.",
       "Knowing sales concepts is not enough.",
       "A modern sales professional needs to know how to find prospects, start conversations, discover customer needs, create value, pitch solutions, handle objections, follow up, negotiate and close.",
     ],
-    insight: "That insight led to the creation of the VIIV Full Stack Sales Program.",
+    insight: "That insight led to the creation of the VIIV Full-Stack Business Program.",
     program:
       "The program is designed around real-world sales execution, not just classroom theory. Learners develop practical capabilities across the complete sales cycle:",
     salesCycle: [
@@ -39,16 +39,16 @@ export const founder = {
       "Follow-up",
       "Negotiation",
       "Closing",
-      "CRM & Sales Analytics",
+      "CRM & Full-Stack Business Analytics",
     ],
     learnThrough:
       "Students learn through live simulations, role plays, calling exercises, case studies, sales challenges, CRM exposure, AI-powered sales tools and real-world projects.",
   },
   vision: {
     heading: "The Vision",
-    lead: "The goal of VIIV Full Stack Sales is simple:",
+    lead: "The goal of VIIV Full-Stack Business is simple:",
     line: "Don't just learn sales. Learn how to sell.",
-    body: "We want learners to complete the program with more than a certificate — with the confidence, skills, practical exposure and evidence of execution required to pursue careers in Sales, Business Development, Sales Development and Revenue roles in today's AI-driven business environment.",
+    body: "We want learners to complete the program with more than a certificate — with the confidence, skills, practical exposure and evidence of execution required to pursue careers in Full-Stack Business, Business Development, Full-Stack Business Development and Revenue roles in today's AI-driven business environment.",
   },
   companiesLogos: [
     { name: "Practo", logo: "/founder/practo.png" },

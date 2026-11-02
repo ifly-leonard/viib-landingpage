@@ -23,12 +23,12 @@ export const media = {
     {
       src: "/images/varman_talking_sales_top.jpeg",
       alt: "Arunmozhivarman Ramachandran leading a sales session",
-      brief: "Sales session led by the founder",
+      brief: "Full-Stack Business session led by the founder",
     },
     {
       src: "/images/landing_sales_left.jpeg",
       alt: "Participants practising a sales roleplay",
-      brief: "Sales roleplay between two young Indian professionals",
+      brief: "Full-Stack Business roleplay between two young Indian professionals",
     },
     {
       src: "/images/landing_sales_right.jpeg",

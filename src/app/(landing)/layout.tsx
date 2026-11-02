@@ -5,14 +5,14 @@ import { Providers } from "@/components/landing/Providers";
 import { anchors } from "@/content/landing/site";
 
 /**
- * Full-Stack Sales footer CTA for the landing page. The degree-focused copy
+ * Full-Stack Business footer CTA for the landing page. The degree-focused copy
  * ("Earn the degree. Build the venture.") stays on /degree only.
  */
 const landingFooterCta: FooterCta = {
-  eyebrow: "Free career webinar · Full-Stack Sales",
+  eyebrow: "Free career webinar · Full-Stack Business",
   headline: "Build skills. Prove skills. Launch your career.",
   description:
-    "Join the free career webinar to see the business careers growing fastest in tech — then build the practical, job-ready skills companies look for with VIIV Full-Stack Sales.",
+    "Join the free career webinar to see the business careers growing fastest in tech — then build the practical, job-ready skills companies look for with VIIV Full-Stack Business.",
   buttonLabel: "Join Free Webinar",
   buttonHref: `#${anchors.webinar}`,
 };

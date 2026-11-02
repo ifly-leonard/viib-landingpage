@@ -57,7 +57,7 @@ export function FounderSection() {
           </Reveal>
         </div>
 
-        {/* Why VIIV Full Stack Sales */}
+        {/* Why VIIV Full-Stack Business */}
         <Reveal delay={0.06} className="mt-14 border-t border-line pt-10">
           <h3 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">{founder.why.heading}</h3>
 

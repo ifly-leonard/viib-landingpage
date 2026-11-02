@@ -11,7 +11,7 @@ import { Section, SectionHeading } from "../ui/Section";
 import { SalesProcess } from "./SalesProcess";
 
 /**
- * The Full-Stack Sales framework: 8 modules.
+ * The Full-Stack Business framework: 8 modules.
  * Desktop — vertical tabs + detail panel. Mobile — accordion.
  */
 export function SalesStack() {
@@ -44,14 +44,14 @@ export function SalesStack() {
     <Section id={anchors.curriculum} tone="light" labelledBy="curriculum-title">
       <SectionHeading
         id="curriculum-title"
-        eyebrow="The Full-Stack Sales framework"
+        eyebrow="The Full-Stack Business framework"
         title="From first conversation to customer conversion — and your career."
         lede="Eight connected modules that take you through the complete modern sales journey, including the technology and career skills around it."
       />
 
       {/* Desktop tabs */}
       <div className="mt-14 hidden gap-6 lg:grid lg:grid-cols-[22rem_1fr]">
-        <div role="tablist" aria-orientation="vertical" aria-label="Full-Stack Sales modules" className="flex flex-col gap-1">
+        <div role="tablist" aria-orientation="vertical" aria-label="Full-Stack Business modules" className="flex flex-col gap-1">
           {salesModules.map((s, i) => (
             <button
               key={s.number}
